@@ -1,0 +1,6 @@
+framework module Pods_Broomstick_BroomstickUITests {
+  umbrella header "Pods-Broomstick-BroomstickUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

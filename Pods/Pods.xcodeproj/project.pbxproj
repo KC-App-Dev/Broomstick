@@ -1,0 +1,1060 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03B700B087B4701F55C64F7FD4C36FEF /* Pods-Broomstick-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 404FD1B38D7FD53AEDA3A44566834BBD /* Pods-Broomstick-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		07EC05367FB06380F8534C2019A4B573 /* PieChartDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A71312B02FB50904A68CC9865EAFCA6 /* PieChartDelegate.swift */; };
+		0C9E8BCCB172BB6150E5E700AE6DD12A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 276842F3A283EE87124FE6C3EAAFD184 /* CoreGraphics.framework */; };
+		18B8C262593617A927666E1B87BB1CF4 /* PieChartLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4ED1677E88B06CEE457CF7D79B7B01 /* PieChartLayer.swift */; };
+		3727D81A8E60CB1969513D03205F4D1F /* AlphaPieViewLayerAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCCF04640205262D0E0D768836B8A4E /* AlphaPieViewLayerAnimator.swift */; };
+		44E6CD4B7D47F5ED1E7C60D961BB60AC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD608BCCF279B1277BB911F33106997F /* Foundation.framework */; };
+		4F1482B381CE2F3CCC62015F22F2CD86 /* PieChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = B122BFB9824A4FDDD7458DF9FA54BBF9 /* PieChart.swift */; };
+		592338DF9D79C04FE081DE04A81E93AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD608BCCF279B1277BB911F33106997F /* Foundation.framework */; };
+		5FDBACE328D82B6557E164F4C21A7B1F /* PieCustomViewsLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9675111D3F5F5410FD92B7CEF324CC /* PieCustomViewsLayer.swift */; };
+		6817252EC3EEB201A9A25F15E1E2579C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01BDA658338AD3813D969D7011B56B8D /* UIKit.framework */; };
+		6D42FD4C06FBECD4D0076BA0F164E3D7 /* AlphaPieLineTextLayerAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0ACCABB313336BDD5AB5A71ECF40702 /* AlphaPieLineTextLayerAnimator.swift */; };
+		78FAD6E2B3FE9DD871270AF82D20D4DA /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4703712A4BDECEEBFB10873462DE6BE9 /* Globals.swift */; };
+		7D59790DD284C538AE7A84AB08339777 /* Pods-Broomstick-BroomstickUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DF4D354969494B337E849C08191A4140 /* Pods-Broomstick-BroomstickUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8C809B8D6EA15674DD23A0C29EA4C2B3 /* Pods-BroomstickTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 43849E99E9EDAD53E65CDFCE8CD31682 /* Pods-BroomstickTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8FC5F418CCE55C127CE29D3505753C6B /* Pods-Broomstick-BroomstickUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9B2CF622427AF9CBF52772AAF1B0E6 /* Pods-Broomstick-BroomstickUITests-dummy.m */; };
+		913AF8577C52A01F3C0DCAF27FDE9AA5 /* PieSlice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355808556948EF25180A28F4E190EDE2 /* PieSlice.swift */; };
+		945F66CC57EB589300296B053DE94D2C /* PieSliceLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA15AACA1EADA04418ECD9F52A93633 /* PieSliceLayer.swift */; };
+		9C261BBCFB1CD3D46607EE353D21A7E4 /* Pods-Broomstick-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 891BE78844E2A789BEC0D82559BFD564 /* Pods-Broomstick-dummy.m */; };
+		9D42D95CF916C54F70AB417E50ABCFD2 /* PieLineTextLayerAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B37BCDCCAFDE9C8109A3E901B999A3C /* PieLineTextLayerAnimator.swift */; };
+		A885151A6F1300266EDE677E27EA8CF7 /* PieSliceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4880654E76989B3F50A0FE6AF189C2 /* PieSliceModel.swift */; };
+		AF63525C26B16ECA99775FEEB5D9DAFB /* CGPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9349B2C91D29C62BA2F317A543BD4E6 /* CGPoint.swift */; };
+		AFF7F55D23FA4CA564ED698D00434174 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD608BCCF279B1277BB911F33106997F /* Foundation.framework */; };
+		B03E8E2F62190B19257A70EAABA5B97C /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82396A890AF0067AFE8E95BF83849305 /* Int.swift */; };
+		B2AC85E53FA4319F6FF7D0CC6BBFB40D /* PieViewLayerAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D72A9E8382C9C5C63DD8071197AB9DD1 /* PieViewLayerAnimator.swift */; };
+		BBAF931620A2C7B622EC073B2FA16F89 /* PieCharts-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B5E2DB9E4381EF31DDAB4F2748B8DD7 /* PieCharts-dummy.m */; };
+		BCD6AA5DAAC2C1EF829F74DEC81D9308 /* CGRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913ECE0B258C13B2B3EF5E8FB319C373 /* CGRect.swift */; };
+		C76BF61E4968CD16E92EC3F5A47A4F64 /* PieSliceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2062891A12C5577E443CA67A77778AE4 /* PieSliceDelegate.swift */; };
+		C8E0D25B4B31731E2D9AE57508C5458C /* CGSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BDB76475A730FA234DA0013C8B7B64 /* CGSize.swift */; };
+		CD683A40B68E215866CEE0ED609C5EFD /* PieLineTextLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371524205EBEDE6B49CB6C0D5D46EB7D /* PieLineTextLayer.swift */; };
+		CFED1D8E117462229AD408C055556D88 /* PieSliceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115DEA6A6AB189F8DE81B2CB6822058D /* PieSliceData.swift */; };
+		D63E22038D157AA162B92B8FD0AE3232 /* FloatingPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7444A963BC1F78C522709675272F9A6 /* FloatingPoint.swift */; };
+		D77483E153D9327C337288531B48D3E6 /* PieChartLabelSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E0FFD65DA2A853BEF8C2A79D3E58F4 /* PieChartLabelSettings.swift */; };
+		E4EBFADC8B2C90F5310907FF21A45B54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD608BCCF279B1277BB911F33106997F /* Foundation.framework */; };
+		EC975F7502419A2CBAAEE9C4F98184EA /* PieCharts-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 30C82AA412EB4E01F9AFC8F85518DF29 /* PieCharts-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F416418C794FCA137962287221D2B15B /* PiePlainTextLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1AB374F25FF92B516A4B10CD59535C /* PiePlainTextLayer.swift */; };
+		F4FFBD3B286B5903EFEC2A9391944428 /* Pods-BroomstickTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BF48B3505116294C556455BBDF2A2B7B /* Pods-BroomstickTests-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1E6A4E5338D1BCFA2D233639799E4053 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1EA7CEEEEF981610C9686430DF5B8A5;
+			remoteInfo = "Pods-Broomstick";
+		};
+		D259426AE7A7A0D3E2FD35A44BAB4095 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5352E9F7E2BA40B729D6F4355D629ED5;
+			remoteInfo = PieCharts;
+		};
+		D4E7CE02BFE7A45CD66258B195DC6039 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5352E9F7E2BA40B729D6F4355D629ED5;
+			remoteInfo = PieCharts;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00A877AE0A8650A051D9ACB2E2837485 /* Pods-Broomstick-BroomstickUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Broomstick-BroomstickUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		01BDA658338AD3813D969D7011B56B8D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		04121C8AD2BCD733EE463B1A4B48349D /* Pods-Broomstick.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Broomstick.modulemap"; sourceTree = "<group>"; };
+		0B5E2DB9E4381EF31DDAB4F2748B8DD7 /* PieCharts-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PieCharts-dummy.m"; sourceTree = "<group>"; };
+		115DEA6A6AB189F8DE81B2CB6822058D /* PieSliceData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PieSliceData.swift; path = PieCharts/Model/PieSliceData.swift; sourceTree = "<group>"; };
+		141C771D00B32327501B56425523D398 /* PieCharts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PieCharts.framework; path = PieCharts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		18BDB76475A730FA234DA0013C8B7B64 /* CGSize.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CGSize.swift; path = PieCharts/Extensions/CGSize.swift; sourceTree = "<group>"; };
+		1D4ED1677E88B06CEE457CF7D79B7B01 /* PieChartLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PieChartLayer.swift; path = PieCharts/Layer/PieChartLayer.swift; sourceTree = "<group>"; };
+		2062891A12C5577E443CA67A77778AE4 /* PieSliceDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PieSliceDelegate.swift; path = PieCharts/Core/Slice/PieSliceDelegate.swift; sourceTree = "<group>"; };
+		20787798431938B21BB55D7A6161A5F4 /* Pods-BroomstickTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BroomstickTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		2203B7810F3103E776DBB8F6C07806BE /* PieCharts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PieCharts.release.xcconfig; sourceTree = "<group>"; };
+		276842F3A283EE87124FE6C3EAAFD184 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		281E403313CEA8D06A128FB8DB1BCA01 /* Pods-Broomstick-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Broomstick-frameworks.sh"; sourceTree = "<group>"; };
+		2B9675111D3F5F5410FD92B7CEF324CC /* PieCustomViewsLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PieCustomViewsLayer.swift; path = PieCharts/Layer/Impl/View/PieCustomViewsLayer.swift; sourceTree = "<group>"; };
+		30C82AA412EB4E01F9AFC8F85518DF29 /* PieCharts-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PieCharts-umbrella.h"; sourceTree = "<group>"; };
+		355808556948EF25180A28F4E190EDE2 /* PieSlice.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PieSlice.swift; path = PieCharts/Core/Slice/PieSlice.swift; sourceTree = "<group>"; };
+		371524205EBEDE6B49CB6C0D5D46EB7D /* PieLineTextLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PieLineTextLayer.swift; path = PieCharts/Layer/Impl/LineText/PieLineTextLayer.swift; sourceTree = "<group>"; };
+		3B37BCDCCAFDE9C8109A3E901B999A3C /* PieLineTextLayerAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PieLineTextLayerAnimator.swift; path = PieCharts/Layer/Impl/LineText/Anim/PieLineTextLayerAnimator.swift; sourceTree = "<group>"; };
+		3F009DFB8551BD11AD96CD1D0B470613 /* Pods-BroomstickTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BroomstickTests.debug.xcconfig"; sourceTree = "<group>"; };
+		404FD1B38D7FD53AEDA3A44566834BBD /* Pods-Broomstick-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Broomstick-umbrella.h"; sourceTree = "<group>"; };
+		43849E99E9EDAD53E65CDFCE8CD31682 /* Pods-BroomstickTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BroomstickTests-umbrella.h"; sourceTree = "<group>"; };
+		4703712A4BDECEEBFB10873462DE6BE9 /* Globals.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Globals.swift; path = PieCharts/Util/Globals.swift; sourceTree = "<group>"; };
+		484CC63E11A3ABED14C3B6187BB200BB /* Pods-Broomstick-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Broomstick-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4E5F271D310C3F9F6B82E62F4345EB12 /* PieCharts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PieCharts.debug.xcconfig; sourceTree = "<group>"; };
+		5A71312B02FB50904A68CC9865EAFCA6 /* PieChartDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PieChartDelegate.swift; path = PieCharts/Core/Chart/PieChartDelegate.swift; sourceTree = "<group>"; };
+		5B1AB374F25FF92B516A4B10CD59535C /* PiePlainTextLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PiePlainTextLayer.swift; path = PieCharts/Layer/Impl/PlainText/PiePlainTextLayer.swift; sourceTree = "<group>"; };
+		61C6037FD3443A2A03E06B9034350CD2 /* Pods-Broomstick.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Broomstick.debug.xcconfig"; sourceTree = "<group>"; };
+		66EA50C7AE650C3C7C1A8974525F33A3 /* Pods-BroomstickTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BroomstickTests-Info.plist"; sourceTree = "<group>"; };
+		69BFC472D8F745B040C3D3EEE896CAA6 /* Pods-BroomstickTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BroomstickTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6B4880654E76989B3F50A0FE6AF189C2 /* PieSliceModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PieSliceModel.swift; path = PieCharts/Model/PieSliceModel.swift; sourceTree = "<group>"; };
+		6CCCF04640205262D0E0D768836B8A4E /* AlphaPieViewLayerAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlphaPieViewLayerAnimator.swift; path = PieCharts/Layer/Impl/View/Anim/AlphaPieViewLayerAnimator.swift; sourceTree = "<group>"; };
+		6F441976B0E48AD4BA4D3F0F91FCD8DC /* Pods-Broomstick-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Broomstick-acknowledgements.plist"; sourceTree = "<group>"; };
+		82396A890AF0067AFE8E95BF83849305 /* Int.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Int.swift; path = PieCharts/Extensions/Int.swift; sourceTree = "<group>"; };
+		845B3BC4BC3FECC3C8BB63C50A80CC1A /* Pods-Broomstick-BroomstickUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Broomstick-BroomstickUITests.release.xcconfig"; sourceTree = "<group>"; };
+		85348B67844F1EE97C729E399E6B49F8 /* Pods-BroomstickTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BroomstickTests.modulemap"; sourceTree = "<group>"; };
+		88C8BA00B58D3845A38C3E22627FDE0C /* Pods-Broomstick-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Broomstick-Info.plist"; sourceTree = "<group>"; };
+		891BE78844E2A789BEC0D82559BFD564 /* Pods-Broomstick-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Broomstick-dummy.m"; sourceTree = "<group>"; };
+		913ECE0B258C13B2B3EF5E8FB319C373 /* CGRect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CGRect.swift; path = PieCharts/Extensions/CGRect.swift; sourceTree = "<group>"; };
+		9A1D0DA12D7D1C7ABE395DBF6A949EE3 /* Pods_Broomstick_BroomstickUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Broomstick_BroomstickUITests.framework; path = "Pods-Broomstick-BroomstickUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B0ACCABB313336BDD5AB5A71ECF40702 /* AlphaPieLineTextLayerAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlphaPieLineTextLayerAnimator.swift; path = PieCharts/Layer/Impl/LineText/Anim/AlphaPieLineTextLayerAnimator.swift; sourceTree = "<group>"; };
+		B10AD982D9B3B4F455BAB9C07A0146C4 /* Pods-Broomstick-BroomstickUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Broomstick-BroomstickUITests-frameworks.sh"; sourceTree = "<group>"; };
+		B122BFB9824A4FDDD7458DF9FA54BBF9 /* PieChart.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PieChart.swift; path = PieCharts/Core/Chart/PieChart.swift; sourceTree = "<group>"; };
+		B1F8249BF6C1EEEF8067497558BCB208 /* Pods_Broomstick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Broomstick.framework; path = "Pods-Broomstick.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3E0FFD65DA2A853BEF8C2A79D3E58F4 /* PieChartLabelSettings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PieChartLabelSettings.swift; path = PieCharts/Layer/Impl/Common/PieChartLabelSettings.swift; sourceTree = "<group>"; };
+		BC4032E5B2CE0DA72E59BBA293B38FB0 /* Pods-BroomstickTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BroomstickTests.release.xcconfig"; sourceTree = "<group>"; };
+		BEFB031C590BF65F7FED33908EC96886 /* Pods-Broomstick-BroomstickUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Broomstick-BroomstickUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		BF48B3505116294C556455BBDF2A2B7B /* Pods-BroomstickTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BroomstickTests-dummy.m"; sourceTree = "<group>"; };
+		C130158D09015EAC3150BBE793AB94A0 /* Pods_BroomstickTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BroomstickTests.framework; path = "Pods-BroomstickTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C586F53AD0D3C2924D0C1256E49477BE /* Pods-Broomstick-BroomstickUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Broomstick-BroomstickUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C9349B2C91D29C62BA2F317A543BD4E6 /* CGPoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CGPoint.swift; path = PieCharts/Extensions/CGPoint.swift; sourceTree = "<group>"; };
+		D31A37763D4CF8138F38B5511141800C /* PieCharts-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PieCharts-Info.plist"; sourceTree = "<group>"; };
+		D4DDE4CC4ABF2076DAF7BDBCC043E846 /* Pods-Broomstick.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Broomstick.release.xcconfig"; sourceTree = "<group>"; };
+		D72A9E8382C9C5C63DD8071197AB9DD1 /* PieViewLayerAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PieViewLayerAnimator.swift; path = PieCharts/Layer/Impl/View/Anim/PieViewLayerAnimator.swift; sourceTree = "<group>"; };
+		D7444A963BC1F78C522709675272F9A6 /* FloatingPoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FloatingPoint.swift; path = PieCharts/Extensions/FloatingPoint.swift; sourceTree = "<group>"; };
+		DF4D354969494B337E849C08191A4140 /* Pods-Broomstick-BroomstickUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Broomstick-BroomstickUITests-umbrella.h"; sourceTree = "<group>"; };
+		E169C90E87C3AB752764AB59761C891F /* PieCharts-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PieCharts-prefix.pch"; sourceTree = "<group>"; };
+		E298B2926E2444272E57ACC89339FC3B /* Pods-Broomstick-BroomstickUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Broomstick-BroomstickUITests-Info.plist"; sourceTree = "<group>"; };
+		F51F5E1F1AC268D9E22CE11968776077 /* Pods-Broomstick-BroomstickUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Broomstick-BroomstickUITests.modulemap"; sourceTree = "<group>"; };
+		FB9B2CF622427AF9CBF52772AAF1B0E6 /* Pods-Broomstick-BroomstickUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Broomstick-BroomstickUITests-dummy.m"; sourceTree = "<group>"; };
+		FCA15AACA1EADA04418ECD9F52A93633 /* PieSliceLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PieSliceLayer.swift; path = PieCharts/Core/Slice/PieSliceLayer.swift; sourceTree = "<group>"; };
+		FD608BCCF279B1277BB911F33106997F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		FEE9C9AD2E1D1585198B4A95F8C7C9A9 /* PieCharts.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PieCharts.modulemap; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D4B2F98600ECE980731A6953B8B2817 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				592338DF9D79C04FE081DE04A81E93AE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98A7D21F3CE0AD7A5C6CA87B3F9E0D29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44E6CD4B7D47F5ED1E7C60D961BB60AC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB67F84D9A3FF6EB6ABE0B73FE84E949 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFF7F55D23FA4CA564ED698D00434174 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4587802A9E6EC1DA0596665E3E11F18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C9E8BCCB172BB6150E5E700AE6DD12A /* CoreGraphics.framework in Frameworks */,
+				E4EBFADC8B2C90F5310907FF21A45B54 /* Foundation.framework in Frameworks */,
+				6817252EC3EEB201A9A25F15E1E2579C /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03C5C200A0787E300053CFA8F53CA094 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ABE8076CBFEE71A3B199C34F20F66745 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		324E973FE71CAEDE3ECAF30C645A6A68 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8CD6420C5F40E3585FC707581DD4E248 /* Pods-Broomstick */,
+				BF9978F06FE70803A315817EE1FC5342 /* Pods-Broomstick-BroomstickUITests */,
+				FC7C75C319F2D3007D300B89906E2B33 /* Pods-BroomstickTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		4DF16F1427F5EAEF4238E7D44DA2B553 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				141C771D00B32327501B56425523D398 /* PieCharts.framework */,
+				B1F8249BF6C1EEEF8067497558BCB208 /* Pods_Broomstick.framework */,
+				9A1D0DA12D7D1C7ABE395DBF6A949EE3 /* Pods_Broomstick_BroomstickUITests.framework */,
+				C130158D09015EAC3150BBE793AB94A0 /* Pods_BroomstickTests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6156067AD3298D0490E28C4A5DF13A9A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CF4BDCB8AEF137267D616F51AF2C4F07 /* PieCharts */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8CD6420C5F40E3585FC707581DD4E248 /* Pods-Broomstick */ = {
+			isa = PBXGroup;
+			children = (
+				04121C8AD2BCD733EE463B1A4B48349D /* Pods-Broomstick.modulemap */,
+				484CC63E11A3ABED14C3B6187BB200BB /* Pods-Broomstick-acknowledgements.markdown */,
+				6F441976B0E48AD4BA4D3F0F91FCD8DC /* Pods-Broomstick-acknowledgements.plist */,
+				891BE78844E2A789BEC0D82559BFD564 /* Pods-Broomstick-dummy.m */,
+				281E403313CEA8D06A128FB8DB1BCA01 /* Pods-Broomstick-frameworks.sh */,
+				88C8BA00B58D3845A38C3E22627FDE0C /* Pods-Broomstick-Info.plist */,
+				404FD1B38D7FD53AEDA3A44566834BBD /* Pods-Broomstick-umbrella.h */,
+				61C6037FD3443A2A03E06B9034350CD2 /* Pods-Broomstick.debug.xcconfig */,
+				D4DDE4CC4ABF2076DAF7BDBCC043E846 /* Pods-Broomstick.release.xcconfig */,
+			);
+			name = "Pods-Broomstick";
+			path = "Target Support Files/Pods-Broomstick";
+			sourceTree = "<group>";
+		};
+		ABE8076CBFEE71A3B199C34F20F66745 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				276842F3A283EE87124FE6C3EAAFD184 /* CoreGraphics.framework */,
+				FD608BCCF279B1277BB911F33106997F /* Foundation.framework */,
+				01BDA658338AD3813D969D7011B56B8D /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		BF9978F06FE70803A315817EE1FC5342 /* Pods-Broomstick-BroomstickUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F51F5E1F1AC268D9E22CE11968776077 /* Pods-Broomstick-BroomstickUITests.modulemap */,
+				00A877AE0A8650A051D9ACB2E2837485 /* Pods-Broomstick-BroomstickUITests-acknowledgements.markdown */,
+				BEFB031C590BF65F7FED33908EC96886 /* Pods-Broomstick-BroomstickUITests-acknowledgements.plist */,
+				FB9B2CF622427AF9CBF52772AAF1B0E6 /* Pods-Broomstick-BroomstickUITests-dummy.m */,
+				B10AD982D9B3B4F455BAB9C07A0146C4 /* Pods-Broomstick-BroomstickUITests-frameworks.sh */,
+				E298B2926E2444272E57ACC89339FC3B /* Pods-Broomstick-BroomstickUITests-Info.plist */,
+				DF4D354969494B337E849C08191A4140 /* Pods-Broomstick-BroomstickUITests-umbrella.h */,
+				C586F53AD0D3C2924D0C1256E49477BE /* Pods-Broomstick-BroomstickUITests.debug.xcconfig */,
+				845B3BC4BC3FECC3C8BB63C50A80CC1A /* Pods-Broomstick-BroomstickUITests.release.xcconfig */,
+			);
+			name = "Pods-Broomstick-BroomstickUITests";
+			path = "Target Support Files/Pods-Broomstick-BroomstickUITests";
+			sourceTree = "<group>";
+		};
+		C371106C1258ECC1BE46981B92652A31 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FEE9C9AD2E1D1585198B4A95F8C7C9A9 /* PieCharts.modulemap */,
+				0B5E2DB9E4381EF31DDAB4F2748B8DD7 /* PieCharts-dummy.m */,
+				D31A37763D4CF8138F38B5511141800C /* PieCharts-Info.plist */,
+				E169C90E87C3AB752764AB59761C891F /* PieCharts-prefix.pch */,
+				30C82AA412EB4E01F9AFC8F85518DF29 /* PieCharts-umbrella.h */,
+				4E5F271D310C3F9F6B82E62F4345EB12 /* PieCharts.debug.xcconfig */,
+				2203B7810F3103E776DBB8F6C07806BE /* PieCharts.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PieCharts";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				03C5C200A0787E300053CFA8F53CA094 /* Frameworks */,
+				6156067AD3298D0490E28C4A5DF13A9A /* Pods */,
+				4DF16F1427F5EAEF4238E7D44DA2B553 /* Products */,
+				324E973FE71CAEDE3ECAF30C645A6A68 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		CF4BDCB8AEF137267D616F51AF2C4F07 /* PieCharts */ = {
+			isa = PBXGroup;
+			children = (
+				B0ACCABB313336BDD5AB5A71ECF40702 /* AlphaPieLineTextLayerAnimator.swift */,
+				6CCCF04640205262D0E0D768836B8A4E /* AlphaPieViewLayerAnimator.swift */,
+				C9349B2C91D29C62BA2F317A543BD4E6 /* CGPoint.swift */,
+				913ECE0B258C13B2B3EF5E8FB319C373 /* CGRect.swift */,
+				18BDB76475A730FA234DA0013C8B7B64 /* CGSize.swift */,
+				D7444A963BC1F78C522709675272F9A6 /* FloatingPoint.swift */,
+				4703712A4BDECEEBFB10873462DE6BE9 /* Globals.swift */,
+				82396A890AF0067AFE8E95BF83849305 /* Int.swift */,
+				B122BFB9824A4FDDD7458DF9FA54BBF9 /* PieChart.swift */,
+				5A71312B02FB50904A68CC9865EAFCA6 /* PieChartDelegate.swift */,
+				B3E0FFD65DA2A853BEF8C2A79D3E58F4 /* PieChartLabelSettings.swift */,
+				1D4ED1677E88B06CEE457CF7D79B7B01 /* PieChartLayer.swift */,
+				2B9675111D3F5F5410FD92B7CEF324CC /* PieCustomViewsLayer.swift */,
+				371524205EBEDE6B49CB6C0D5D46EB7D /* PieLineTextLayer.swift */,
+				3B37BCDCCAFDE9C8109A3E901B999A3C /* PieLineTextLayerAnimator.swift */,
+				5B1AB374F25FF92B516A4B10CD59535C /* PiePlainTextLayer.swift */,
+				355808556948EF25180A28F4E190EDE2 /* PieSlice.swift */,
+				115DEA6A6AB189F8DE81B2CB6822058D /* PieSliceData.swift */,
+				2062891A12C5577E443CA67A77778AE4 /* PieSliceDelegate.swift */,
+				FCA15AACA1EADA04418ECD9F52A93633 /* PieSliceLayer.swift */,
+				6B4880654E76989B3F50A0FE6AF189C2 /* PieSliceModel.swift */,
+				D72A9E8382C9C5C63DD8071197AB9DD1 /* PieViewLayerAnimator.swift */,
+				C371106C1258ECC1BE46981B92652A31 /* Support Files */,
+			);
+			name = PieCharts;
+			path = PieCharts;
+			sourceTree = "<group>";
+		};
+		FC7C75C319F2D3007D300B89906E2B33 /* Pods-BroomstickTests */ = {
+			isa = PBXGroup;
+			children = (
+				85348B67844F1EE97C729E399E6B49F8 /* Pods-BroomstickTests.modulemap */,
+				69BFC472D8F745B040C3D3EEE896CAA6 /* Pods-BroomstickTests-acknowledgements.markdown */,
+				20787798431938B21BB55D7A6161A5F4 /* Pods-BroomstickTests-acknowledgements.plist */,
+				BF48B3505116294C556455BBDF2A2B7B /* Pods-BroomstickTests-dummy.m */,
+				66EA50C7AE650C3C7C1A8974525F33A3 /* Pods-BroomstickTests-Info.plist */,
+				43849E99E9EDAD53E65CDFCE8CD31682 /* Pods-BroomstickTests-umbrella.h */,
+				3F009DFB8551BD11AD96CD1D0B470613 /* Pods-BroomstickTests.debug.xcconfig */,
+				BC4032E5B2CE0DA72E59BBA293B38FB0 /* Pods-BroomstickTests.release.xcconfig */,
+			);
+			name = "Pods-BroomstickTests";
+			path = "Target Support Files/Pods-BroomstickTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		6C7370855A760D84052C35B6C131C81D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D59790DD284C538AE7A84AB08339777 /* Pods-Broomstick-BroomstickUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78E6B2F3AC8922F9A412B28633C55D46 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03B700B087B4701F55C64F7FD4C36FEF /* Pods-Broomstick-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1B9B10B196D10E781CA0C9D849980AD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C809B8D6EA15674DD23A0C29EA4C2B3 /* Pods-BroomstickTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F15EAF85C124A4F3537985C41149C87C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC975F7502419A2CBAAEE9C4F98184EA /* PieCharts-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5352E9F7E2BA40B729D6F4355D629ED5 /* PieCharts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8DA41CBA4B931F1A9E7DE3E4D1E69EC9 /* Build configuration list for PBXNativeTarget "PieCharts" */;
+			buildPhases = (
+				F15EAF85C124A4F3537985C41149C87C /* Headers */,
+				438196256BCAB393BC19E79EAC70B86C /* Sources */,
+				F4587802A9E6EC1DA0596665E3E11F18 /* Frameworks */,
+				79E684FEA95D6A26F12A60AF88F1B2E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PieCharts;
+			productName = PieCharts;
+			productReference = 141C771D00B32327501B56425523D398 /* PieCharts.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		947E56738E94B66C4E18CED9738D419E /* Pods-Broomstick-BroomstickUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 983921F8A8C2DF92C3DE5C82D649D887 /* Build configuration list for PBXNativeTarget "Pods-Broomstick-BroomstickUITests" */;
+			buildPhases = (
+				6C7370855A760D84052C35B6C131C81D /* Headers */,
+				24DC7F7C01AA6F89369EA60F668A2B5A /* Sources */,
+				98A7D21F3CE0AD7A5C6CA87B3F9E0D29 /* Frameworks */,
+				42732AAA070C995ED43B6003CCE18149 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				37BA40729BED0AE9160FDD63C119A582 /* PBXTargetDependency */,
+			);
+			name = "Pods-Broomstick-BroomstickUITests";
+			productName = "Pods-Broomstick-BroomstickUITests";
+			productReference = 9A1D0DA12D7D1C7ABE395DBF6A949EE3 /* Pods_Broomstick_BroomstickUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F1EA7CEEEEF981610C9686430DF5B8A5 /* Pods-Broomstick */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2ABDD8186B85F7965A91D03B76315DC3 /* Build configuration list for PBXNativeTarget "Pods-Broomstick" */;
+			buildPhases = (
+				78E6B2F3AC8922F9A412B28633C55D46 /* Headers */,
+				364BD2C1BED427761A658B1C375B6FD3 /* Sources */,
+				EB67F84D9A3FF6EB6ABE0B73FE84E949 /* Frameworks */,
+				262EA1DEDACF4E369B0B2A71A6BD558F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F4AEFF2034B8C97EC48B0D23D4124EB0 /* PBXTargetDependency */,
+			);
+			name = "Pods-Broomstick";
+			productName = "Pods-Broomstick";
+			productReference = B1F8249BF6C1EEEF8067497558BCB208 /* Pods_Broomstick.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FC7055C97A585A5A44CEFC4BC843E6A9 /* Pods-BroomstickTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A382055E48267079C43020897A3D337 /* Build configuration list for PBXNativeTarget "Pods-BroomstickTests" */;
+			buildPhases = (
+				C1B9B10B196D10E781CA0C9D849980AD /* Headers */,
+				26C8E8F909F6A853093B104D86FAF2EA /* Sources */,
+				1D4B2F98600ECE980731A6953B8B2817 /* Frameworks */,
+				B65E9697E72271FC784338F079E1D6E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D53B5B95A29A2C23E3BE40CEF982DC06 /* PBXTargetDependency */,
+			);
+			name = "Pods-BroomstickTests";
+			productName = "Pods-BroomstickTests";
+			productReference = C130158D09015EAC3150BBE793AB94A0 /* Pods_BroomstickTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 4DF16F1427F5EAEF4238E7D44DA2B553 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5352E9F7E2BA40B729D6F4355D629ED5 /* PieCharts */,
+				F1EA7CEEEEF981610C9686430DF5B8A5 /* Pods-Broomstick */,
+				947E56738E94B66C4E18CED9738D419E /* Pods-Broomstick-BroomstickUITests */,
+				FC7055C97A585A5A44CEFC4BC843E6A9 /* Pods-BroomstickTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		262EA1DEDACF4E369B0B2A71A6BD558F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42732AAA070C995ED43B6003CCE18149 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79E684FEA95D6A26F12A60AF88F1B2E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B65E9697E72271FC784338F079E1D6E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		24DC7F7C01AA6F89369EA60F668A2B5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FC5F418CCE55C127CE29D3505753C6B /* Pods-Broomstick-BroomstickUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26C8E8F909F6A853093B104D86FAF2EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4FFBD3B286B5903EFEC2A9391944428 /* Pods-BroomstickTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		364BD2C1BED427761A658B1C375B6FD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C261BBCFB1CD3D46607EE353D21A7E4 /* Pods-Broomstick-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		438196256BCAB393BC19E79EAC70B86C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D42FD4C06FBECD4D0076BA0F164E3D7 /* AlphaPieLineTextLayerAnimator.swift in Sources */,
+				3727D81A8E60CB1969513D03205F4D1F /* AlphaPieViewLayerAnimator.swift in Sources */,
+				AF63525C26B16ECA99775FEEB5D9DAFB /* CGPoint.swift in Sources */,
+				BCD6AA5DAAC2C1EF829F74DEC81D9308 /* CGRect.swift in Sources */,
+				C8E0D25B4B31731E2D9AE57508C5458C /* CGSize.swift in Sources */,
+				D63E22038D157AA162B92B8FD0AE3232 /* FloatingPoint.swift in Sources */,
+				78FAD6E2B3FE9DD871270AF82D20D4DA /* Globals.swift in Sources */,
+				B03E8E2F62190B19257A70EAABA5B97C /* Int.swift in Sources */,
+				4F1482B381CE2F3CCC62015F22F2CD86 /* PieChart.swift in Sources */,
+				07EC05367FB06380F8534C2019A4B573 /* PieChartDelegate.swift in Sources */,
+				D77483E153D9327C337288531B48D3E6 /* PieChartLabelSettings.swift in Sources */,
+				18B8C262593617A927666E1B87BB1CF4 /* PieChartLayer.swift in Sources */,
+				BBAF931620A2C7B622EC073B2FA16F89 /* PieCharts-dummy.m in Sources */,
+				5FDBACE328D82B6557E164F4C21A7B1F /* PieCustomViewsLayer.swift in Sources */,
+				CD683A40B68E215866CEE0ED609C5EFD /* PieLineTextLayer.swift in Sources */,
+				9D42D95CF916C54F70AB417E50ABCFD2 /* PieLineTextLayerAnimator.swift in Sources */,
+				F416418C794FCA137962287221D2B15B /* PiePlainTextLayer.swift in Sources */,
+				913AF8577C52A01F3C0DCAF27FDE9AA5 /* PieSlice.swift in Sources */,
+				CFED1D8E117462229AD408C055556D88 /* PieSliceData.swift in Sources */,
+				C76BF61E4968CD16E92EC3F5A47A4F64 /* PieSliceDelegate.swift in Sources */,
+				945F66CC57EB589300296B053DE94D2C /* PieSliceLayer.swift in Sources */,
+				A885151A6F1300266EDE677E27EA8CF7 /* PieSliceModel.swift in Sources */,
+				B2AC85E53FA4319F6FF7D0CC6BBFB40D /* PieViewLayerAnimator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		37BA40729BED0AE9160FDD63C119A582 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PieCharts;
+			target = 5352E9F7E2BA40B729D6F4355D629ED5 /* PieCharts */;
+			targetProxy = D259426AE7A7A0D3E2FD35A44BAB4095 /* PBXContainerItemProxy */;
+		};
+		D53B5B95A29A2C23E3BE40CEF982DC06 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Broomstick";
+			target = F1EA7CEEEEF981610C9686430DF5B8A5 /* Pods-Broomstick */;
+			targetProxy = 1E6A4E5338D1BCFA2D233639799E4053 /* PBXContainerItemProxy */;
+		};
+		F4AEFF2034B8C97EC48B0D23D4124EB0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PieCharts;
+			target = 5352E9F7E2BA40B729D6F4355D629ED5 /* PieCharts */;
+			targetProxy = D4E7CE02BFE7A45CD66258B195DC6039 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1001E34ACA5BC58657411DDE078BB914 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4DDE4CC4ABF2076DAF7BDBCC043E846 /* Pods-Broomstick.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Broomstick/Pods-Broomstick-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Broomstick/Pods-Broomstick.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1422B121EAEAEA11307496903FA623C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		6B69046C126E9024F7720F29FF3FCAD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2203B7810F3103E776DBB8F6C07806BE /* PieCharts.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PieCharts/PieCharts-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PieCharts/PieCharts-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/PieCharts/PieCharts.modulemap";
+				PRODUCT_MODULE_NAME = PieCharts;
+				PRODUCT_NAME = PieCharts;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		82C95067BEF65ACEADED94C94766E349 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C586F53AD0D3C2924D0C1256E49477BE /* Pods-Broomstick-BroomstickUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Broomstick-BroomstickUITests/Pods-Broomstick-BroomstickUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Broomstick-BroomstickUITests/Pods-Broomstick-BroomstickUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		946FDD915959129A69AED2A34FB8CF8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F009DFB8551BD11AD96CD1D0B470613 /* Pods-BroomstickTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BroomstickTests/Pods-BroomstickTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BroomstickTests/Pods-BroomstickTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A91E44C709BCC1C42AD4B29B949104CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61C6037FD3443A2A03E06B9034350CD2 /* Pods-Broomstick.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Broomstick/Pods-Broomstick-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Broomstick/Pods-Broomstick.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C5741315F53946C6AED64B92945B2042 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 845B3BC4BC3FECC3C8BB63C50A80CC1A /* Pods-Broomstick-BroomstickUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Broomstick-BroomstickUITests/Pods-Broomstick-BroomstickUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Broomstick-BroomstickUITests/Pods-Broomstick-BroomstickUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C5A984A3BA2E80D228A5CEE569900643 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E5F271D310C3F9F6B82E62F4345EB12 /* PieCharts.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PieCharts/PieCharts-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PieCharts/PieCharts-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/PieCharts/PieCharts.modulemap";
+				PRODUCT_MODULE_NAME = PieCharts;
+				PRODUCT_NAME = PieCharts;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DF07BF32981C3A82C8A30EA81C5F5142 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC4032E5B2CE0DA72E59BBA293B38FB0 /* Pods-BroomstickTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BroomstickTests/Pods-BroomstickTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BroomstickTests/Pods-BroomstickTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		ED7888FA6713EABBF66D26A8003AD1CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1A382055E48267079C43020897A3D337 /* Build configuration list for PBXNativeTarget "Pods-BroomstickTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				946FDD915959129A69AED2A34FB8CF8D /* Debug */,
+				DF07BF32981C3A82C8A30EA81C5F5142 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2ABDD8186B85F7965A91D03B76315DC3 /* Build configuration list for PBXNativeTarget "Pods-Broomstick" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A91E44C709BCC1C42AD4B29B949104CA /* Debug */,
+				1001E34ACA5BC58657411DDE078BB914 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED7888FA6713EABBF66D26A8003AD1CA /* Debug */,
+				1422B121EAEAEA11307496903FA623C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8DA41CBA4B931F1A9E7DE3E4D1E69EC9 /* Build configuration list for PBXNativeTarget "PieCharts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5A984A3BA2E80D228A5CEE569900643 /* Debug */,
+				6B69046C126E9024F7720F29FF3FCAD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		983921F8A8C2DF92C3DE5C82D649D887 /* Build configuration list for PBXNativeTarget "Pods-Broomstick-BroomstickUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82C95067BEF65ACEADED94C94766E349 /* Debug */,
+				C5741315F53946C6AED64B92945B2042 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
