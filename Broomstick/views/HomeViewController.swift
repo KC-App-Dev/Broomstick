@@ -256,6 +256,7 @@ class HomeViewController: UIViewController {
         
         return view
     }
+
     
     @objc func showMenu() {
         //shows the hamburger menu
@@ -265,21 +266,17 @@ class HomeViewController: UIViewController {
     {
         if (sender.tag == 0) {
             //the first item is tapped
+            animateButton(inputButton: detailButton1)
         } else if (sender.tag == 1) {
             //the second item is tapped
+            animateButton(inputButton: detailButton2)
         }
     }
     @objc func cleanUp() {
-        //adjusts the button size
-        UIView.animate(withDuration: 0.1, delay: 0, options: .curveEaseOut, animations: {
-            self.button.transform = CGAffineTransform(scaleX: 0.92, y: 0.92)
-        }) { (_) in
-            UIView.animate(withDuration: 0.07, delay: 0.1, options: .curveEaseOut, animations: {
-                self.button.transform = CGAffineTransform(scaleX: 1, y: 1)
-            })
-        }
+        animateButton(inputButton: button)
         //executes the clean up method
     }
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -290,4 +287,6 @@ class HomeViewController: UIViewController {
     
     
 }
+
+
 

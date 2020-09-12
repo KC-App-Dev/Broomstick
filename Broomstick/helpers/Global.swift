@@ -60,3 +60,15 @@ var smallLabel = UIFont(name: "ProximaNova-Regular", size: 18)
 
 //Auto layout
 var screenRatio = 1.0 as CGFloat
+
+//button click animation
+func animateButton(inputButton: UIButton) {
+    //animates a UI button so it can be clicked
+    UIView.animate(withDuration: 0.1, delay: 0, options: .curveEaseOut, animations: {
+        inputButton.transform = CGAffineTransform(scaleX: 0.92, y: 0.92)
+    }) { (_) in
+        UIView.animate(withDuration: 0.1, delay: 0.05, options: .curveEaseOut, animations: {
+            inputButton.transform = CGAffineTransform(scaleX: 1, y: 1)
+        })
+    }
+}
