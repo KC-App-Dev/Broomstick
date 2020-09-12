@@ -283,6 +283,10 @@ class HomeViewController: UIViewController {
     }
     @objc func cleanUp() {
         animateButton(inputButton: button)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.15) {
+            let vc = ScanLoadingViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
         //executes the clean up method
     }
 
