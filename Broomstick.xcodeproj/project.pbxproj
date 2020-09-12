@@ -19,6 +19,7 @@
 		C83790B0250C9C9E00ED58B9 /* noRecentScans.png in Resources */ = {isa = PBXBuildFile; fileRef = C83790AC250C9C9E00ED58B9 /* noRecentScans.png */; };
 		C83790B1250C9C9E00ED58B9 /* noRecentScans.svg in Resources */ = {isa = PBXBuildFile; fileRef = C83790AD250C9C9E00ED58B9 /* noRecentScans.svg */; };
 		C8BB3D98250D5F5000C6B511 /* ScanResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BB3D97250D5F5000C6B511 /* ScanResultViewController.swift */; };
+		C8BB3D9A250D95A900C6B511 /* ScanLoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BB3D99250D95A900C6B511 /* ScanLoadingViewController.swift */; };
 		F017B2C5250C89860015C4BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F017B2C4250C89860015C4BD /* AppDelegate.swift */; };
 		F017B2C7250C89860015C4BD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F017B2C6250C89860015C4BD /* SceneDelegate.swift */; };
 		F017B2C9250C89860015C4BD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F017B2C8250C89860015C4BD /* HomeViewController.swift */; };
@@ -66,6 +67,7 @@
 		C83790AC250C9C9E00ED58B9 /* noRecentScans.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noRecentScans.png; sourceTree = "<group>"; };
 		C83790AD250C9C9E00ED58B9 /* noRecentScans.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = noRecentScans.svg; sourceTree = "<group>"; };
 		C8BB3D97250D5F5000C6B511 /* ScanResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanResultViewController.swift; sourceTree = "<group>"; };
+		C8BB3D99250D95A900C6B511 /* ScanLoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanLoadingViewController.swift; sourceTree = "<group>"; };
 		E17CA6CAB3FB8EB633EF3E01 /* Pods-BroomstickTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BroomstickTests.debug.xcconfig"; path = "Target Support Files/Pods-BroomstickTests/Pods-BroomstickTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E26E59C46147498D9F6590D7 /* Pods-Broomstick-BroomstickUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Broomstick-BroomstickUITests.release.xcconfig"; path = "Target Support Files/Pods-Broomstick-BroomstickUITests/Pods-Broomstick-BroomstickUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E634AFF8397ED1616FA68993 /* Pods-Broomstick.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Broomstick.release.xcconfig"; path = "Target Support Files/Pods-Broomstick/Pods-Broomstick.release.xcconfig"; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 			children = (
 				F017B2C8250C89860015C4BD /* HomeViewController.swift */,
 				C8BB3D97250D5F5000C6B511 /* ScanResultViewController.swift */,
+				C8BB3D99250D95A900C6B511 /* ScanLoadingViewController.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -501,6 +504,7 @@
 				C58DF296250D942F00AB82A1 /* PhotoAnalyzer.swift in Sources */,
 				C837908D250C942500ED58B9 /* Global.swift in Sources */,
 				F017B2C5250C89860015C4BD /* AppDelegate.swift in Sources */,
+				C8BB3D9A250D95A900C6B511 /* ScanLoadingViewController.swift in Sources */,
 				F017B2C7250C89860015C4BD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
