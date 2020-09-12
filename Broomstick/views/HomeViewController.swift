@@ -267,9 +267,18 @@ class HomeViewController: UIViewController {
         if (sender.tag == 0) {
             //the first item is tapped
             animateButton(inputButton: detailButton1)
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.15) {
+                let vc = ScanResultViewController(scanDate: Date(), totalStorage: 0.5, deleted: 25, kept: 5, screenshots: 30, incoherant: 12, duplicates: 10, scanFinished: true)
+                self.navigationController?.pushViewController(vc, animated: true)
+            }
+            
         } else if (sender.tag == 1) {
             //the second item is tapped
             animateButton(inputButton: detailButton2)
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.15) {
+                
+            }
+            
         }
     }
     @objc func cleanUp() {

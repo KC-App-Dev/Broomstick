@@ -72,3 +72,28 @@ func animateButton(inputButton: UIButton) {
         })
     }
 }
+
+//label card
+func labelCard(inputText: String, color: UIColor, centerX: CGFloat, y: CGFloat) -> UIView {
+    let view = UIView()
+    let characterCount = CGFloat(inputText.count)
+    var padding: CGFloat = 48
+    if (characterCount > 10) {
+        padding = 24
+    } else if characterCount > 8 {
+        padding = 36
+    }
+    let finalWidth = characterCount * 10 * screenRatio + padding * screenRatio
+    let finalPos = centerX - finalWidth / 2
+    view.frame = CGRect(x: finalPos, y: y, width: finalWidth, height: 32 * screenRatio)
+    view.backgroundColor = color
+    view.layer.cornerRadius = 16 * screenRatio
+    let label = UILabel()
+    label.frame = CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height)
+    label.text = inputText
+    label.font = boldLabel
+    label.textColor = (color == whiteColor) ? blackColor : whiteColor
+    label.textAlignment = .center
+    view.addSubview(label)
+    return view
+}

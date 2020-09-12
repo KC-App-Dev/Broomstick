@@ -1,0 +1,6 @@
+framework module Pods_Broomstick {
+  umbrella header "Pods-Broomstick-umbrella.h"
+
+  export *
+  module * { export * }
+}
