@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+
 		C837908D250C942500ED58B9 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = C837908C250C942500ED58B9 /* Global.swift */; };
 		C837909D250C993C00ED58B9 /* ProximaNova_Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = C8379091250C993C00ED58B9 /* ProximaNova_Light.otf */; };
 		C837909E250C993C00ED58B9 /* ProximaNova_Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = C8379092250C993C00ED58B9 /* ProximaNova_Regular.otf */; };
@@ -16,6 +17,8 @@
 		C83790AF250C9C9E00ED58B9 /* noRecentScans@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C83790AB250C9C9E00ED58B9 /* noRecentScans@3x.png */; };
 		C83790B0250C9C9E00ED58B9 /* noRecentScans.png in Resources */ = {isa = PBXBuildFile; fileRef = C83790AC250C9C9E00ED58B9 /* noRecentScans.png */; };
 		C83790B1250C9C9E00ED58B9 /* noRecentScans.svg in Resources */ = {isa = PBXBuildFile; fileRef = C83790AD250C9C9E00ED58B9 /* noRecentScans.svg */; };
+		C58DF294250CC5DD00AB82A1 /* PhotoAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58DF293250CC5DD00AB82A1 /* PhotoAnalyzer.swift */; };
+
 		F017B2C5250C89860015C4BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F017B2C4250C89860015C4BD /* AppDelegate.swift */; };
 		F017B2C7250C89860015C4BD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F017B2C6250C89860015C4BD /* SceneDelegate.swift */; };
 		F017B2C9250C89860015C4BD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F017B2C8250C89860015C4BD /* HomeViewController.swift */; };
@@ -44,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+
 		C837908C250C942500ED58B9 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		C8379091250C993C00ED58B9 /* ProximaNova_Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ProximaNova_Light.otf; sourceTree = "<group>"; };
 		C8379092250C993C00ED58B9 /* ProximaNova_Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ProximaNova_Regular.otf; sourceTree = "<group>"; };
@@ -53,6 +57,7 @@
 		C83790AB250C9C9E00ED58B9 /* noRecentScans@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "noRecentScans@3x.png"; sourceTree = "<group>"; };
 		C83790AC250C9C9E00ED58B9 /* noRecentScans.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noRecentScans.png; sourceTree = "<group>"; };
 		C83790AD250C9C9E00ED58B9 /* noRecentScans.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = noRecentScans.svg; sourceTree = "<group>"; };
+		C58DF293250CC5DD00AB82A1 /* PhotoAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PhotoAnalyzer.swift; path = ../../../../../Downloads/AnalyzingImageSimilarityWithFeaturePrint/PhotoAnalyzer.swift; sourceTree = "<group>"; };
 		F017B2C1250C89860015C4BD /* Broomstick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Broomstick.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F017B2C4250C89860015C4BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F017B2C6250C89860015C4BD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -98,6 +103,10 @@
 			isa = PBXGroup;
 			children = (
 				C837908C250C942500ED58B9 /* Global.swift */,
+		C58DF292250CC5CB00AB82A1 /* helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C58DF293250CC5DD00AB82A1 /* PhotoAnalyzer.swift */,
 			);
 			path = helpers;
 			sourceTree = "<group>";
@@ -175,6 +184,7 @@
 				C83790B5250CA07600ED58B9 /* views */,
 				C837908E250C985900ED58B9 /* assets */,
 				C837908B250C940700ED58B9 /* helpers */,
+				C58DF292250CC5CB00AB82A1 /* helpers */,
 				F017B2C4250C89860015C4BD /* AppDelegate.swift */,
 				F017B2C6250C89860015C4BD /* SceneDelegate.swift */,
 				F017B2CA250C89860015C4BD /* Main.storyboard */,
@@ -345,6 +355,7 @@
 				F017B2C9250C89860015C4BD /* HomeViewController.swift in Sources */,
 				C837908D250C942500ED58B9 /* Global.swift in Sources */,
 				F017B2C5250C89860015C4BD /* AppDelegate.swift in Sources */,
+				C58DF294250CC5DD00AB82A1 /* PhotoAnalyzer.swift in Sources */,
 				F017B2C7250C89860015C4BD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
