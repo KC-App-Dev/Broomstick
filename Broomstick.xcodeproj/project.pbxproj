@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5D1B184B59A83FEF31435B10 /* Pods_BroomstickTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5FFCE1EFD9F6D20F5BB41F4 /* Pods_BroomstickTests.framework */; };
+		C58DF296250D942F00AB82A1 /* PhotoAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58DF295250D942F00AB82A1 /* PhotoAnalyzer.swift */; };
 		C837908D250C942500ED58B9 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = C837908C250C942500ED58B9 /* Global.swift */; };
 		C837909D250C993C00ED58B9 /* ProximaNova_Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = C8379091250C993C00ED58B9 /* ProximaNova_Light.otf */; };
 		C837909E250C993C00ED58B9 /* ProximaNova_Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = C8379092250C993C00ED58B9 /* ProximaNova_Regular.otf */; };
@@ -54,6 +55,7 @@
 		A0E32A834A6B93BFAFFF713D /* Pods-BroomstickTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BroomstickTests.release.xcconfig"; path = "Target Support Files/Pods-BroomstickTests/Pods-BroomstickTests.release.xcconfig"; sourceTree = "<group>"; };
 		AFF83D21CC1977651A061F1A /* Pods-Broomstick.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Broomstick.debug.xcconfig"; path = "Target Support Files/Pods-Broomstick/Pods-Broomstick.debug.xcconfig"; sourceTree = "<group>"; };
 		B5FFCE1EFD9F6D20F5BB41F4 /* Pods_BroomstickTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BroomstickTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C58DF295250D942F00AB82A1 /* PhotoAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoAnalyzer.swift; sourceTree = "<group>"; };
 		C837908C250C942500ED58B9 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		C8379091250C993C00ED58B9 /* ProximaNova_Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ProximaNova_Light.otf; sourceTree = "<group>"; };
 		C8379092250C993C00ED58B9 /* ProximaNova_Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ProximaNova_Regular.otf; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				C837908C250C942500ED58B9 /* Global.swift */,
+				C58DF295250D942F00AB82A1 /* PhotoAnalyzer.swift */,
 			);
 			path = helpers;
 			sourceTree = "<group>";
@@ -495,6 +498,7 @@
 			files = (
 				F017B2C9250C89860015C4BD /* HomeViewController.swift in Sources */,
 				C8BB3D98250D5F5000C6B511 /* ScanResultViewController.swift in Sources */,
+				C58DF296250D942F00AB82A1 /* PhotoAnalyzer.swift in Sources */,
 				C837908D250C942500ED58B9 /* Global.swift in Sources */,
 				F017B2C5250C89860015C4BD /* AppDelegate.swift in Sources */,
 				F017B2C7250C89860015C4BD /* SceneDelegate.swift in Sources */,
