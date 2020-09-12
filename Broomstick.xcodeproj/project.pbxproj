@@ -7,9 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C837908D250C942500ED58B9 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = C837908C250C942500ED58B9 /* Global.swift */; };
+		C837909D250C993C00ED58B9 /* ProximaNova_Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = C8379091250C993C00ED58B9 /* ProximaNova_Light.otf */; };
+		C837909E250C993C00ED58B9 /* ProximaNova_Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = C8379092250C993C00ED58B9 /* ProximaNova_Regular.otf */; };
+		C83790A6250C993C00ED58B9 /* ProximaNova_Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = C837909A250C993C00ED58B9 /* ProximaNova_Bold.otf */; };
+		C83790A8250C993C00ED58B9 /* ProximaNova_SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = C837909C250C993C00ED58B9 /* ProximaNova_SemiBold.otf */; };
+		C83790AE250C9C9E00ED58B9 /* noRecentScans@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C83790AA250C9C9E00ED58B9 /* noRecentScans@2x.png */; };
+		C83790AF250C9C9E00ED58B9 /* noRecentScans@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C83790AB250C9C9E00ED58B9 /* noRecentScans@3x.png */; };
+		C83790B0250C9C9E00ED58B9 /* noRecentScans.png in Resources */ = {isa = PBXBuildFile; fileRef = C83790AC250C9C9E00ED58B9 /* noRecentScans.png */; };
+		C83790B1250C9C9E00ED58B9 /* noRecentScans.svg in Resources */ = {isa = PBXBuildFile; fileRef = C83790AD250C9C9E00ED58B9 /* noRecentScans.svg */; };
 		F017B2C5250C89860015C4BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F017B2C4250C89860015C4BD /* AppDelegate.swift */; };
 		F017B2C7250C89860015C4BD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F017B2C6250C89860015C4BD /* SceneDelegate.swift */; };
-		F017B2C9250C89860015C4BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F017B2C8250C89860015C4BD /* ViewController.swift */; };
+		F017B2C9250C89860015C4BD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F017B2C8250C89860015C4BD /* HomeViewController.swift */; };
 		F017B2CC250C89860015C4BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F017B2CA250C89860015C4BD /* Main.storyboard */; };
 		F017B2CE250C89870015C4BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F017B2CD250C89870015C4BD /* Assets.xcassets */; };
 		F017B2D1250C89870015C4BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F017B2CF250C89870015C4BD /* LaunchScreen.storyboard */; };
@@ -35,10 +44,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C837908C250C942500ED58B9 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		C8379091250C993C00ED58B9 /* ProximaNova_Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ProximaNova_Light.otf; sourceTree = "<group>"; };
+		C8379092250C993C00ED58B9 /* ProximaNova_Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ProximaNova_Regular.otf; sourceTree = "<group>"; };
+		C837909A250C993C00ED58B9 /* ProximaNova_Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ProximaNova_Bold.otf; sourceTree = "<group>"; };
+		C837909C250C993C00ED58B9 /* ProximaNova_SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ProximaNova_SemiBold.otf; sourceTree = "<group>"; };
+		C83790AA250C9C9E00ED58B9 /* noRecentScans@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "noRecentScans@2x.png"; sourceTree = "<group>"; };
+		C83790AB250C9C9E00ED58B9 /* noRecentScans@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "noRecentScans@3x.png"; sourceTree = "<group>"; };
+		C83790AC250C9C9E00ED58B9 /* noRecentScans.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noRecentScans.png; sourceTree = "<group>"; };
+		C83790AD250C9C9E00ED58B9 /* noRecentScans.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = noRecentScans.svg; sourceTree = "<group>"; };
 		F017B2C1250C89860015C4BD /* Broomstick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Broomstick.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F017B2C4250C89860015C4BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F017B2C6250C89860015C4BD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F017B2C8250C89860015C4BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F017B2C8250C89860015C4BD /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F017B2CB250C89860015C4BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F017B2CD250C89870015C4BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F017B2D0250C89870015C4BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -76,6 +94,61 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C837908B250C940700ED58B9 /* helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C837908C250C942500ED58B9 /* Global.swift */,
+			);
+			path = helpers;
+			sourceTree = "<group>";
+		};
+		C837908E250C985900ED58B9 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				C83790B2250C9CA600ED58B9 /* icons */,
+				C83790A9250C9C9E00ED58B9 /* images */,
+				C8379090250C993C00ED58B9 /* fonts */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+		C8379090250C993C00ED58B9 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				C8379091250C993C00ED58B9 /* ProximaNova_Light.otf */,
+				C8379092250C993C00ED58B9 /* ProximaNova_Regular.otf */,
+				C837909A250C993C00ED58B9 /* ProximaNova_Bold.otf */,
+				C837909C250C993C00ED58B9 /* ProximaNova_SemiBold.otf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		C83790A9250C9C9E00ED58B9 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				C83790AA250C9C9E00ED58B9 /* noRecentScans@2x.png */,
+				C83790AB250C9C9E00ED58B9 /* noRecentScans@3x.png */,
+				C83790AC250C9C9E00ED58B9 /* noRecentScans.png */,
+				C83790AD250C9C9E00ED58B9 /* noRecentScans.svg */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		C83790B2250C9CA600ED58B9 /* icons */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = icons;
+			sourceTree = "<group>";
+		};
+		C83790B5250CA07600ED58B9 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				F017B2C8250C89860015C4BD /* HomeViewController.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
 		F017B2B8250C89860015C4BD = {
 			isa = PBXGroup;
 			children = (
@@ -99,9 +172,11 @@
 		F017B2C3250C89860015C4BD /* Broomstick */ = {
 			isa = PBXGroup;
 			children = (
+				C83790B5250CA07600ED58B9 /* views */,
+				C837908E250C985900ED58B9 /* assets */,
+				C837908B250C940700ED58B9 /* helpers */,
 				F017B2C4250C89860015C4BD /* AppDelegate.swift */,
 				F017B2C6250C89860015C4BD /* SceneDelegate.swift */,
-				F017B2C8250C89860015C4BD /* ViewController.swift */,
 				F017B2CA250C89860015C4BD /* Main.storyboard */,
 				F017B2CD250C89870015C4BD /* Assets.xcassets */,
 				F017B2CF250C89870015C4BD /* LaunchScreen.storyboard */,
@@ -233,8 +308,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				F017B2D1250C89870015C4BD /* LaunchScreen.storyboard in Resources */,
+				C83790AF250C9C9E00ED58B9 /* noRecentScans@3x.png in Resources */,
+				C83790A6250C993C00ED58B9 /* ProximaNova_Bold.otf in Resources */,
 				F017B2CE250C89870015C4BD /* Assets.xcassets in Resources */,
+				C83790B1250C9C9E00ED58B9 /* noRecentScans.svg in Resources */,
+				C83790A8250C993C00ED58B9 /* ProximaNova_SemiBold.otf in Resources */,
 				F017B2CC250C89860015C4BD /* Main.storyboard in Resources */,
+				C83790B0250C9C9E00ED58B9 /* noRecentScans.png in Resources */,
+				C837909E250C993C00ED58B9 /* ProximaNova_Regular.otf in Resources */,
+				C837909D250C993C00ED58B9 /* ProximaNova_Light.otf in Resources */,
+				C83790AE250C9C9E00ED58B9 /* noRecentScans@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +342,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F017B2C9250C89860015C4BD /* ViewController.swift in Sources */,
+				F017B2C9250C89860015C4BD /* HomeViewController.swift in Sources */,
+				C837908D250C942500ED58B9 /* Global.swift in Sources */,
 				F017B2C5250C89860015C4BD /* AppDelegate.swift in Sources */,
 				F017B2C7250C89860015C4BD /* SceneDelegate.swift in Sources */,
 			);
@@ -366,7 +450,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -420,7 +504,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -437,7 +521,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 698LHTYCM9;
 				INFOPLIST_FILE = Broomstick/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -456,7 +540,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 698LHTYCM9;
 				INFOPLIST_FILE = Broomstick/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -476,7 +560,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 698LHTYCM9;
 				INFOPLIST_FILE = BroomstickTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -498,7 +582,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 698LHTYCM9;
 				INFOPLIST_FILE = BroomstickTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
