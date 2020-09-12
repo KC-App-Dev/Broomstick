@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C58DF294250CC5DD00AB82A1 /* PhotoAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58DF293250CC5DD00AB82A1 /* PhotoAnalyzer.swift */; };
 		F017B2C5250C89860015C4BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F017B2C4250C89860015C4BD /* AppDelegate.swift */; };
 		F017B2C7250C89860015C4BD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F017B2C6250C89860015C4BD /* SceneDelegate.swift */; };
 		F017B2C9250C89860015C4BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F017B2C8250C89860015C4BD /* ViewController.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C58DF293250CC5DD00AB82A1 /* PhotoAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PhotoAnalyzer.swift; path = ../../../../../Downloads/AnalyzingImageSimilarityWithFeaturePrint/PhotoAnalyzer.swift; sourceTree = "<group>"; };
 		F017B2C1250C89860015C4BD /* Broomstick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Broomstick.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F017B2C4250C89860015C4BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F017B2C6250C89860015C4BD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +78,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C58DF292250CC5CB00AB82A1 /* helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C58DF293250CC5DD00AB82A1 /* PhotoAnalyzer.swift */,
+			);
+			path = helpers;
+			sourceTree = "<group>";
+		};
 		F017B2B8250C89860015C4BD = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +109,7 @@
 		F017B2C3250C89860015C4BD /* Broomstick */ = {
 			isa = PBXGroup;
 			children = (
+				C58DF292250CC5CB00AB82A1 /* helpers */,
 				F017B2C4250C89860015C4BD /* AppDelegate.swift */,
 				F017B2C6250C89860015C4BD /* SceneDelegate.swift */,
 				F017B2C8250C89860015C4BD /* ViewController.swift */,
@@ -261,6 +272,7 @@
 			files = (
 				F017B2C9250C89860015C4BD /* ViewController.swift in Sources */,
 				F017B2C5250C89860015C4BD /* AppDelegate.swift in Sources */,
+				C58DF294250CC5DD00AB82A1 /* PhotoAnalyzer.swift in Sources */,
 				F017B2C7250C89860015C4BD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
