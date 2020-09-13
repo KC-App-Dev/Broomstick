@@ -63,6 +63,7 @@ class PhotoAnalyzer {
     var similar_groups: [[Int]] = []
     var images_to_delete: [Int] = []
     var images_flagged: [Int] = []
+    var current_review_arr: [Int] = []
     
     // saving
     var clean_save: SavedClean = SavedClean(screenshots: -1, blurry: -1, duplicates: -1, kept: -1, size_detected: 0.0, size_cleaned: 0.0, date_cleaned: Date(), completed: true)
@@ -494,12 +495,40 @@ class PhotoAnalyzer {
         var images_arr: [UIImage] = []
         for index in images_flagged {
             do {
+                current_review_arr.append(index)
                 images_arr.append(try loadImage(index: index)!)
             } catch {
                 print("something went wrong while converting index to image.")
             }
         }
         return images_arr
+    }
+    
+    func category_images_to_display(category: TypeOfWaste) -> [UIImage] {
+        var images_arr: [UIImage] = []
+        current_review_arr = []
+        for index in images_flagged {
+            do {
+                if final_categorization[index] == category {
+                    images_arr.append(try loadImage(index: index)!)
+                    current_review_arr.append(index)
+                }
+            } catch {
+                print("something went wrong while converting index to image.")
+            }
+        }
+        return images_arr
+    }
+    
+    func swiped(index: Int, delete: Bool) {
+        /*
+         Updates the images_to_delete array with index referring to current_review_arr.
+         current_review_arr[index] returns index referring to the actual photocollection.
+         */
+        if delete{
+            print("updating images_to_delete. adding: ", current_review_arr[index])
+            images_to_delete.append(current_review_arr[index])
+        }
     }
     
     func delete_categories() -> [TypeOfWaste] {
