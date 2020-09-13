@@ -29,6 +29,11 @@ class ScanLoadingViewController: UIViewController {
   
     }
     
+    func processImages() {
+        let analyzer = PhotoAnalyzer()
+        analyzer.setup()
+        analyzer.complete_scan()
+    }
     
 
     /*

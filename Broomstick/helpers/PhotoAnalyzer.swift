@@ -30,6 +30,10 @@ enum TypeOfWaste {
     case normal
 }
 
+struct ScanStats {
+    
+}
+
 class PhotoAnalyzer {
     
     var photoCollection: PHFetchResult<PHAsset> = PHFetchResult()
@@ -236,7 +240,7 @@ class PhotoAnalyzer {
         return Calendar.current.dateComponents([.day], from: pic1, to: pic2).day!
     }
     
-    func loopThroughPhotos() {
+    func complete_scan() {
         /*
          A function to demonstrate loopthroughs of the entire camera roll
          Simply prints the results for now.
