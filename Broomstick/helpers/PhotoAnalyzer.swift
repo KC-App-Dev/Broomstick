@@ -42,7 +42,7 @@ struct SavedClean {
     var blurry: Int
     var duplicates: Int
     var kept: Int
-    var sized_detected: Double
+    var size_detected: Double
     var size_cleaned: Double
     var date_cleaned: Date
     var completed: Bool
@@ -64,9 +64,8 @@ class PhotoAnalyzer {
     var images_to_delete: [Int] = []
     var images_flagged: [Int] = []
     
-    // experimental
-    var incoherent_detected: [Bool] = []
-    var featureprints: [VNFeaturePrintObservation] = []
+    // saving
+    var clean_save: SavedClean = SavedClean(screenshots: -1, blurry: -1, duplicates: -1, kept: -1, size_detected: 0.0, size_cleaned: 0.0, date_cleaned: Date(), completed: true)
     
     init(debug_status: Bool = false) {
         if debug_status {
@@ -503,6 +502,17 @@ class PhotoAnalyzer {
         return images_arr
     }
     
+    func delete_categories() -> [TypeOfWaste] {
+        /*
+         Returns the categories of each image in images_flagged
+         */
+        var categories: [TypeOfWaste] = []
+        for i in images_flagged {
+            categories.append(final_categorization[i])
+        }
+        return categories
+    }
+    
     func update_images_to_delete(indices: [Int]) {
         /*
          Delete images. The indices passed in are applied to images_flagged.
@@ -512,4 +522,8 @@ class PhotoAnalyzer {
         }
     }
     
+    func save_clean(save: SavedClean) {
+        let defaults = UserDefaults.standard
+        defaults.set(save, forKey: "clean_save1")
+    }
 }
