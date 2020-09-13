@@ -138,7 +138,7 @@ class PhotoAnalyzer {
     func request_perms(completionHandler: (Bool) -> Void) {
         print("requesting permissions...")
         var request_status = false;
-        PHPhotoLibrary.requestAuthorization{
+        PHPhotoLibrary.requestAuthorization {
             received_status in
             print(received_status)
             if received_status == .authorized {
@@ -179,8 +179,16 @@ class PhotoAnalyzer {
                     case .notDetermined:
                         print("Permission is not determined.^2")
                         imageToReturn = nil
+                case .limited:
+                    imageToReturn = try self.loadImage(index:index)
+                @unknown default:
+                    break;
                 }
-            }
+        case .limited:
+            imageToReturn = try loadImage(index:index)
+        @unknown default:
+            break;
+        }
         if imageToReturn != nil {
             print("imageToReturn is not nil.")
         } else {

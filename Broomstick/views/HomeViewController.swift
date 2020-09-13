@@ -7,11 +7,12 @@
 //
 
 import UIKit
+import Photos
 
 class HomeViewController: UIViewController {
     
     //***(TEMP)*** number of recent scans variable
-    let scans = [[30, 25, true], [45, 12, true]]
+    let scans: [Scan] = []
     
     
     //button as class var
@@ -371,7 +372,7 @@ class HomeViewController: UIViewController {
             //the first item is tapped
             animateButton(inputButton: detailButton1)
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.15) {
-                let vc = ScanResultViewController(scanDate: Date(), totalStorage: 0.5, deleted: 25, kept: 5, screenshots: 30, incoherant: 12, duplicates: 10, reviewFinished: true, analyzer: nil, photosToDelete: nil)
+                let vc = ScanResultViewController(scanDate: Date(), totalStorage: 0.5, deleted: 25, kept: 5, screenshots: 30, incoherent: 12, duplicates: 10, reviewFinished: true, analyzer: nil, photosToDelete: nil)
                 self.navigationController?.pushViewController(vc, animated: true)
             }
             
@@ -379,7 +380,7 @@ class HomeViewController: UIViewController {
             //the second item is tapped
             animateButton(inputButton: detailButton2)
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.15) {
-                let vc = ScanResultViewController(scanDate: Date(), totalStorage: 0.5, deleted: 25, kept: 5, screenshots: 30, incoherant: 12, duplicates: 10, reviewFinished: true, analyzer: nil, photosToDelete: nil)
+                let vc = ScanResultViewController(scanDate: Date(), totalStorage: 0.5, deleted: 25, kept: 5, screenshots: 30, incoherent: 12, duplicates: 10, reviewFinished: true, analyzer: nil, photosToDelete: nil)
                 self.navigationController?.pushViewController(vc, animated: true)
             }
             
@@ -395,14 +396,34 @@ class HomeViewController: UIViewController {
     }
     
     
-    
+    func noPermission() {
+        self.view.backgroundColor = mediumColor
+        let label = UILabel()
+        label.text = "We do not have permission to access the photo library."
+        label.font = boldLabel
+        label.textColor = whiteColor
+        label.textAlignment = .center
+        label.frame = CGRect(x: 0, y: 0, width: 250 * screenRatio, height: 100 * screenRatio)
+        label.numberOfLines = 2
+        label.center = self.view.center
+        self.view.addSubview(label)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let analyzer = PhotoAnalyzer()
-        analyzer.request_perms { (completed) in
-            initializeRatio()
-            setUp()
+        initializeRatio()
+        PHPhotoLibrary.requestAuthorization { (status) in
+            if status == .authorized {
+                DispatchQueue.main.async {
+                    self.setUp()
+                }
+            } else {
+                DispatchQueue.main.async {
+                    self.noPermission()
+                }
+               
+            }
+            
         }
     }
     
