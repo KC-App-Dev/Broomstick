@@ -277,7 +277,11 @@ class PhotoReviewViewController: UIViewController {
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.15) {
               //TODO: confirms deleting all the pics, invoke system method
         }
-      
+        var deletion_status = false
+        deletion_status = self.analyzer.delete_selected_images()
+        while !deletion_status {}
+        let vc = FinishedScanViewController(totalDeleted: analyzer.total_deleted)
+        self.navigationController?.pushViewController(vc, animated: false)
     }
     
     override func viewDidLoad() {

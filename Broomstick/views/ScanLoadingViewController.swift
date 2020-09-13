@@ -51,7 +51,7 @@ class ScanLoadingViewController: UIViewController {
         analyzer.complete_scan()
         let results = analyzer.scan_results()
         print(results)
-        let vc = ScanResultViewController(scanDate: Date(), totalStorage: results.total_size, deleted: nil, kept: nil, screenshots: results.screenshots, incoherant: results.blurry, duplicates: results.duplicates, reviewFinished: false, analyzer: analyzer, photosToDelete: analyzer.all_images_to_display())
+        let vc = ScanResultViewController(scanDate: Date(), totalStorage: results.total_size, deleted: nil, kept: nil, screenshots: results.screenshots, incoherent: results.blurry, duplicates: results.duplicates, reviewFinished: false, analyzer: analyzer, photosToDelete: analyzer.all_images_to_display())
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
