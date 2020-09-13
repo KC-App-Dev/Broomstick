@@ -34,6 +34,7 @@
 		F017B2D1250C89870015C4BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F017B2CF250C89870015C4BD /* LaunchScreen.storyboard */; };
 		F017B2DC250C89870015C4BD /* BroomstickTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F017B2DB250C89870015C4BD /* BroomstickTests.swift */; };
 		F017B2E7250C89870015C4BD /* BroomstickUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F017B2E6250C89870015C4BD /* BroomstickUITests.swift */; };
+		F04E4FD7250E4C0000CDBDBB /* Scan.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04E4FD6250E4C0000CDBDBB /* Scan.swift */; };
 		F3D2CED4869555B9CB1B58D2 /* Pods_Broomstick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BE54D500EBD20F842864F07 /* Pods_Broomstick.framework */; };
 		FF51C83340CAEB124674AFAB /* Pods_Broomstick_BroomstickUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 205F701DAC85D383417BF292 /* Pods_Broomstick_BroomstickUITests.framework */; };
 /* End PBXBuildFile section */
@@ -97,6 +98,7 @@
 		F017B2E2250C89870015C4BD /* BroomstickUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BroomstickUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F017B2E6250C89870015C4BD /* BroomstickUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BroomstickUITests.swift; sourceTree = "<group>"; };
 		F017B2E8250C89870015C4BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F04E4FD6250E4C0000CDBDBB /* Scan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scan.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 				C837908C250C942500ED58B9 /* Global.swift */,
 				C58DF295250D942F00AB82A1 /* PhotoAnalyzer.swift */,
 				C8BB3DA1250E112400C6B511 /* CustomOverlay.swift */,
+				F04E4FD6250E4C0000CDBDBB /* Scan.swift */,
 			);
 			path = helpers;
 			sourceTree = "<group>";
@@ -521,6 +524,7 @@
 				F017B2C9250C89860015C4BD /* HomeViewController.swift in Sources */,
 				C8BB3D98250D5F5000C6B511 /* ScanResultViewController.swift in Sources */,
 				C8BB3D9C250DB36100C6B511 /* SlideUpViewCell.swift in Sources */,
+				F04E4FD7250E4C0000CDBDBB /* Scan.swift in Sources */,
 				C58DF298250D972C00AB82A1 /* MobileNetV2.mlmodel in Sources */,
 				C58DF296250D942F00AB82A1 /* PhotoAnalyzer.swift in Sources */,
 				C8BB3D9E250DD4B400C6B511 /* PreferencesViewController.swift in Sources */,

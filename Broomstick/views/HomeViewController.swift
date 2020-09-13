@@ -7,12 +7,18 @@
 //
 
 import UIKit
+import Photos
 
 class HomeViewController: UIViewController {
     
     //***(TEMP)*** number of recent scans variable
+<<<<<<< HEAD
+    let scans: [Scan] = []
+    
+=======
     var scans = [[30, 25, true], [45, 12, true]]
     var scans_object: [SavedClean] = []
+>>>>>>> master
     
     //button as class var
     let button = UIButton()
@@ -411,12 +417,38 @@ class HomeViewController: UIViewController {
     }
     
     
-    
+    func noPermission() {
+        self.view.backgroundColor = mediumColor
+        let label = UILabel()
+        label.text = "We do not have permission to access the photo library."
+        label.font = boldLabel
+        label.textColor = whiteColor
+        label.textAlignment = .center
+        label.frame = CGRect(x: 0, y: 0, width: 250 * screenRatio, height: 100 * screenRatio)
+        label.numberOfLines = 2
+        label.center = self.view.center
+        self.view.addSubview(label)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+<<<<<<< HEAD
+        initializeRatio()
+        PHPhotoLibrary.requestAuthorization { (status) in
+            if status == .authorized {
+                DispatchQueue.main.async {
+                    self.setUp()
+                }
+            } else {
+                DispatchQueue.main.async {
+                    self.noPermission()
+                }
+               
+            }
+=======
         let analyzer = PhotoAnalyzer(debug_status: true)
         analyzer.request_perms { (completed) in
+>>>>>>> master
             
         }
     
