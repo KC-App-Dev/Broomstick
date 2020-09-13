@@ -97,3 +97,8 @@ func labelCard(inputText: String, color: UIColor, centerX: CGFloat, y: CGFloat) 
     view.addSubview(label)
     return view
 }
+
+
+let randomImage = ["trophy", "alert", "back", "close", "duplicate", "menu", "lock", "user", "trophy", "finishScan", "finishScan"]
+
+

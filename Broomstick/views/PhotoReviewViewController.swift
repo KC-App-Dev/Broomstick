@@ -235,7 +235,7 @@ class PhotoReviewViewController: UIViewController {
             _tagString = "Screenshot"
         } else if category.lowercased() == "duplicate" {
             _color = whiteColor
-            _tagString = "Duplicate \(currentDuplicate!)/\(totalDuplicate!)"
+            _tagString = "Duplicate"
         }
         categoryTag = labelCard(inputText: _tagString, color: _color, centerX: self.view.center.x, y: 200 * screenRatio)
         
