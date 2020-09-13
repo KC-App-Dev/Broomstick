@@ -11,8 +11,8 @@ import UIKit
 class HomeViewController: UIViewController {
     
     //***(TEMP)*** number of recent scans variable
-    let scans = [[30, 25, true], [45, 12, true]]
-    
+    var scans = [[30, 25, true], [45, 12, true]]
+    var scans_object: [SavedClean] = []
     
     //button as class var
     let button = UIButton()
@@ -141,6 +141,17 @@ class HomeViewController: UIViewController {
         recentCleanUpsView.leadingAnchor.constraint(equalTo: parent.leadingAnchor, constant: 37 * screenRatio).isActive = true
         recentCleanUpsView.topAnchor.constraint(equalTo: parent.topAnchor, constant: 428 * screenRatio).isActive = true
         
+        // load scans
+        let loaded_scan = loadPastCleans()
+        if loaded_scan == nil {
+            scans = []
+        } else {
+            scans_object = loaded_scan!
+            for scan in loaded_scan! {
+                scans.append([scan.blurry+scan.blurry+scan.duplicates, scan.blurry+scan.blurry+scan.duplicates-scan.kept, true])
+            }
+        }
+        
         if scans.count == 0 {
             //Image for no scans
             let noScanImageView = UIImageView()
@@ -189,16 +200,16 @@ class HomeViewController: UIViewController {
     
     func numPhotos() -> Int {
         //returns the total number of photos in the user's photo library
-        let analyzer = PhotoAnalyzer()
+        let analyzer = PhotoAnalyzer(debug_status: true)
         analyzer.setup()
         let num_pics = analyzer.num_pics
         return num_pics
     }
     
     func numStorage() -> Double {
-        //returns the total Space of storage taken up by photos
+        // returns the total Space of storage taken up by photos
         let cutoff = 0.01
-        let analyzer = PhotoAnalyzer()
+        let analyzer = PhotoAnalyzer(debug_status: true)
         analyzer.setup()
         let size = analyzer.load_total_size()
         return (size - size.truncatingRemainder(dividingBy: cutoff)).rounded()
@@ -244,7 +255,7 @@ class HomeViewController: UIViewController {
         totalDeletedLabel.font = number
         let deletedPhotoDesc = UILabel()
         deletedPhotoDesc.frame = CGRect(x: 0, y: 0, width: 50 * screenRatio, height: 14 * screenRatio)
-        deletedPhotoDesc.text = "Photos"
+        deletedPhotoDesc.text = "Deleted"
         deletedPhotoDesc.textColor = darkColor
         deletedPhotoDesc.font = smallLabel
         let deletedPhotosView = UIStackView(arrangedSubviews: [totalDeletedLabel, deletedPhotoDesc])
@@ -396,7 +407,7 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let analyzer = PhotoAnalyzer()
+        let analyzer = PhotoAnalyzer(debug_status: true)
         analyzer.request_perms { (completed) in
             initializeRatio()
             setUp()

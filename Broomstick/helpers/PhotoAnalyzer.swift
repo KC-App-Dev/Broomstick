@@ -52,6 +52,7 @@ class PhotoAnalyzer {
     // device info
     var num_pics: Int = -1
     var total_image_size: Double = 0.0
+    var dyn_total_image_size: Double = 0.0
     
     // mid analysis
     var photoCollection: PHFetchResult<PHAsset> = PHFetchResult()
@@ -66,6 +67,7 @@ class PhotoAnalyzer {
     var current_review_arr: [Int] = []
     var current_categories: [TypeOfWaste] = []
     var total_deleted: Int = 0
+    var sized_deleted: Float = 0.0
     
     // saving
     var clean_save: SavedClean = SavedClean(screenshots: -1, blurry: -1, duplicates: -1, kept: -1, size_detected: 0.0, size_cleaned: 0.0, date_cleaned: Date(), completed: true)
@@ -83,8 +85,11 @@ class PhotoAnalyzer {
          */
         let fetchResult: PHFetchResult = PHAsset.fetchAssets(with: .image, options: fetchOptions())
         photoCollection = fetchResult
-        if debug && photoCollection.count >= 50{
-            num_pics = 50
+        let limit = 50
+        print("debug: ", debug)
+        print("photoCollection.count: ", photoCollection.count)
+        if debug && photoCollection.count >= limit {
+            num_pics = limit
         } else {
             num_pics = photoCollection.count
         }
@@ -515,6 +520,11 @@ class PhotoAnalyzer {
         return images_arr
     }
     
+    func update_self_save() {
+        let scanresults = scan_results()
+        clean_save = SavedClean(screenshots: scanresults.screenshots, blurry: scanresults.blurry, duplicates: scanresults.duplicates, kept: scanresults.screenshots+scanresults.blurry+scanresults.duplicates-images_to_delete.count, size_detected: scanresults.total_size, size_cleaned: 12.6, date_cleaned: Date(), completed: true)
+    }
+    
     func category_images_to_display(category: TypeOfWaste) -> [UIImage] {
         var images_arr: [UIImage] = []
         current_review_arr = []
@@ -561,6 +571,14 @@ class PhotoAnalyzer {
     
     func save_clean(save: SavedClean) {
         let defaults = UserDefaults.standard
-        defaults.set(save, forKey: "clean_save1")
+        var past_cleans: [SavedClean] = []
+        var loaded_cleans = defaults.object(forKey: "pastCleans") as? [SavedClean]
+        if loaded_cleans == nil {
+            past_cleans = []
+        } else {
+            past_cleans = loaded_cleans!
+        }
+        past_cleans.append(clean_save)
+        defaults.set(past_cleans, forKey: "pastCleans")
     }
 }
