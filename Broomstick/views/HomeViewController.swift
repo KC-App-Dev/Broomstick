@@ -401,11 +401,12 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let analyzer = PhotoAnalyzer()
-        analyzer.request_perms()
+        analyzer.request_perms() {status in
+            print("status: ", status)
+        }
         initializeRatio()
         setUp()
-        
-        
+
     }
     
     

@@ -49,17 +49,24 @@ struct SavedClean {
 }
 
 class PhotoAnalyzer {
-    
-    var photoCollection: PHFetchResult<PHAsset> = PHFetchResult()
+    // device info
     var num_pics: Int = -1
+    var total_image_size: Double = 0.0
+    
+    // mid analysis
+    var photoCollection: PHFetchResult<PHAsset> = PHFetchResult()
     var image_data: [ImageAnalysis] = []
     var final_categorization: [TypeOfWaste] = []
+    
+    // post analysis(cleanup)
+    var debug = false
     var similar_groups: [[Int]] = []
     var images_to_delete: [Int] = []
     var images_flagged: [Int] = []
-    var total_image_size: Double = 0.0
-    var debug = false
-
+    
+    // experimental
+    var incoherent_detected: [Bool] = []
+    var featureprints: [VNFeaturePrintObservation] = []
     
     init(debug_status: Bool = false) {
         if debug_status {
@@ -74,7 +81,7 @@ class PhotoAnalyzer {
          */
         let fetchResult: PHFetchResult = PHAsset.fetchAssets(with: .image, options: fetchOptions())
         photoCollection = fetchResult
-        if debug {
+        if debug && photoCollection.count >= 50{
             num_pics = 50
         } else {
             num_pics = photoCollection.count
@@ -280,22 +287,79 @@ class PhotoAnalyzer {
          Simply prints the results for now.
          */
         
+        image_data = Array(repeating: ImageAnalysis(creation_date: Date(), featureprint: VNFeaturePrintObservation(), size_mb: 0.0, screenshot: false, blurry: false), count: num_pics)
+        var queue_total = 0
+        var timestamp = NSDate()
+        
+        // test async loading
+        let queue = OperationQueue()
+        queue.name = "com.KCAppDev.concurrent"
+        queue.qualityOfService = .userInitiated
+        queue.maxConcurrentOperationCount = 10
+        for i in 0 ... num_pics-1 {
+            queue.addOperation {
+                do {
+                    print("TRYING INDEX: ", i)
+
+                    let image_retrieved = try self.retrievePhoto(index: i)
+                    
+                    // metadata processing
+                    let metadata = self.fetch_metadata(index: i)
+                    print("metadata: ", metadata)
+                    
+                    // ml model processing
+                    let blurry = self.mobilenet_results(image: image_retrieved!)[0].1 < 0.1
+                    
+                    // feature print processing
+                    let feature_print = self.generate_features(image: image_retrieved!)
+                    print("size in bytes: ", image_retrieved!.jpegData(compressionQuality: 1.0)!.count)
+
+                    // add analysis to total array
+                    let analysis = ImageAnalysis (
+                        creation_date: metadata["creationDate"] as! Date,
+                        featureprint: feature_print,
+                        size_mb: Double(image_retrieved!.jpegData(compressionQuality: 1.0)!.count) / Double(1024 * 1024),
+                        screenshot: self.image_is_screenshot(image: image_retrieved!, metadata: metadata),
+                        blurry: blurry
+                    )
+                    self.image_data[i] = analysis
+                    queue_total += 1
+                } catch {
+                    print("image could not be loaded.")
+                }
+            }
+        }
+        while !(queue_total >= num_pics) {}
+        print("Async took: ", NSDate().timeIntervalSince(timestamp as Date))
+        /*
+        timestamp = NSDate()
         // generate image analysis data for all of the pictures(before final categorization)
         for i in 0...num_pics-1 {
             do {
                 print("TRYING INDEX: ", i)
+                
+                let timestamp = NSDate()
+                
                 let image_retrieved = try retrievePhoto(index: i)
+                
+                print("time 1 so far: ", NSDate().timeIntervalSince(timestamp as Date))
                 
                 // metadata processing
                 let metadata = fetch_metadata(index: i)
                 print("metadata: ", metadata)
                 
+                print("time 2 so far: ", NSDate().timeIntervalSince(timestamp as Date))
+                
                 // ml model processing
                 let blurry = mobilenet_results(image: image_retrieved!)[0].1 < 0.1
+                
+                print("time 3 so far: ", NSDate().timeIntervalSince(timestamp as Date))
                 
                 // feature print processing
                 let feature_print = generate_features(image: image_retrieved!)
                 print("size in bytes: ", image_retrieved!.jpegData(compressionQuality: 1.0)!.count)
+                
+                print("time 4 so far: ", NSDate().timeIntervalSince(timestamp as Date))
                 
                 // add analysis to total array
                 let analysis = ImageAnalysis (
@@ -306,13 +370,17 @@ class PhotoAnalyzer {
                     blurry: blurry
                 )
                 image_data.append(analysis)
+                
+                print("time 5 so far: ", NSDate().timeIntervalSince(timestamp as Date))
             } catch {
                 print("An unknown error occured.  Breaking out of loop. ")
                 break
             }
         }
+        print("Normal took: ", NSDate().timeIntervalSince(timestamp as Date))
         print("Loop is finished. Printing final image_data array.")
         print(image_data)
+        */
         
         // loopthrough and decide final categorizations
         var i = 0
