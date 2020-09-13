@@ -400,9 +400,11 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let analyzer = PhotoAnalyzer()
-        analyzer.request_perms()
-        initializeRatio()
-        setUp()
+        analyzer.request_perms { (completed) in
+            initializeRatio()
+            setUp()
+        }
+
         
         
     }
