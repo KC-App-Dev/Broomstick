@@ -11,8 +11,9 @@ import Koloda
 
 class PhotoReviewViewController: UIViewController {
     
-    init(analyer: PhotoAnalyzer) {
+    init(analyer: PhotoAnalyzer, displayPhotos: [UIImage]) {
         self.analyzer = analyer
+        self.displayPhotos = displayPhotos
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -26,6 +27,7 @@ class PhotoReviewViewController: UIViewController {
     var filter = 0
     //analyzer object
     var analyzer: PhotoAnalyzer
+    var displayPhotos: [UIImage]
     //total num of photos
     var numPhotosToReview = 0
     
@@ -144,7 +146,7 @@ class PhotoReviewViewController: UIViewController {
         ssView.addGestureRecognizer(ssRecognizer)
         dupView.addGestureRecognizer(dupRecognizer)
         //swiper view
-        swiperView.center = CGPoint(x: self.view.center.x, y: self.view.center.y - 30 * screenRatio)
+        swiperView.center = CGPoint(x: self.view.center.x, y: self.view.center.y + 30 * screenRatio)
         swiperView.backgroundColor = mediumColor
         swiperView.delegate = self
         swiperView.dataSource = self
@@ -152,7 +154,7 @@ class PhotoReviewViewController: UIViewController {
     }
     
     @objc func goBack() {
-        
+        self.navigationController?.popViewController(animated: true)
     }
     
     func setFilter(index: Int) {
@@ -179,16 +181,22 @@ class PhotoReviewViewController: UIViewController {
     }
     
     @objc func blurryFilter() {
-        //display only blurry photos
+       
         setFilter(index: 1)
+         //TODO: display only blurry photos
+        //modify displayPhotos (I think)
+        
     }
     
     @objc func ssFilter() {
         setFilter(index: 2)
+        //TODO: display only screenshots
+        
     }
     
     @objc func dupFilter() {
         setFilter(index: 3)
+        //TODO: display only duplicates
     }
     
     override func viewDidLoad() {
@@ -196,16 +204,7 @@ class PhotoReviewViewController: UIViewController {
         setUp()
     }
     
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
+
     
 }
 
@@ -222,16 +221,39 @@ extension PhotoReviewViewController: KolodaViewDelegate, KolodaViewDataSource {
     func kolodaSpeedThatCardShouldDrag(_ koloda: KolodaView) -> DragSpeed {
         return .fast
     }
+    func koloda(_ koloda: KolodaView, didSwipeCardAt index: Int, in direction: SwipeResultDirection) {
+        //TODO: this is the method where you can keep track of swipe actions
+        //TODO: update currentIndex
+    }
     func koloda(_ koloda: KolodaView, viewForCardAt index: Int) -> UIView {
         let view = UIView()
         view.frame = CGRect(x: 0, y: 0, width: 300 * screenRatio, height: 300 * screenRatio)
-        view.backgroundColor = darkColor
+        view.backgroundColor = mediumColor
         view.layer.cornerRadius = 20 * screenRatio
         view.clipsToBounds = true
+        let backgroundImageView = UIImageView()
+        view.backgroundColor = .black
+        backgroundImageView.frame = view.frame
+        backgroundImageView.layer.cornerRadius = 20 * screenRatio
+        backgroundImageView.contentMode = .scaleAspectFill
+        let backgroundImage = displayPhotos[index]
+        let ciImage = CIImage(cgImage: backgroundImage.cgImage!)
+        let blurFilter = CIFilter(name: "CIGaussianBlur")
+        blurFilter?.setValue(ciImage, forKey: "inputImage")
+        let resultImage = blurFilter?.value(forKey: "outputImage") as! CIImage
+        let blurredImage = UIImage(ciImage: resultImage)
+        backgroundImageView.image = blurredImage
+        backgroundImageView.alpha = 0.25
+        view.addSubview(backgroundImageView)
+        let imageView = UIImageView()
+        imageView.frame = view.frame
+        imageView.contentMode = .scaleAspectFit
+        imageView.image = displayPhotos[index]
+        view.addSubview(imageView)
         return view
     }
     func koloda(_ koloda: KolodaView, viewForCardOverlayAt index: Int) -> OverlayView? {
-        return nil
+        return CustomOverlayView(frame: CGRect(x: 0, y: 0, width: 300 * screenRatio, height: 300 * screenRatio))
     }
 }
 

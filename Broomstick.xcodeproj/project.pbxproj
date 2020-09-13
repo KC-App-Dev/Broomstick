@@ -24,6 +24,7 @@
 		C8BB3D9C250DB36100C6B511 /* SlideUpViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BB3D9B250DB36100C6B511 /* SlideUpViewCell.swift */; };
 		C8BB3D9E250DD4B400C6B511 /* PreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BB3D9D250DD4B400C6B511 /* PreferencesViewController.swift */; };
 		C8BB3DA0250DE89400C6B511 /* PhotoReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BB3D9F250DE89400C6B511 /* PhotoReviewViewController.swift */; };
+		C8BB3DA2250E112400C6B511 /* CustomOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BB3DA1250E112400C6B511 /* CustomOverlay.swift */; };
 		F017B2C5250C89860015C4BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F017B2C4250C89860015C4BD /* AppDelegate.swift */; };
 		F017B2C7250C89860015C4BD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F017B2C6250C89860015C4BD /* SceneDelegate.swift */; };
 		F017B2C9250C89860015C4BD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F017B2C8250C89860015C4BD /* HomeViewController.swift */; };
@@ -76,6 +77,7 @@
 		C8BB3D9B250DB36100C6B511 /* SlideUpViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideUpViewCell.swift; sourceTree = "<group>"; };
 		C8BB3D9D250DD4B400C6B511 /* PreferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesViewController.swift; sourceTree = "<group>"; };
 		C8BB3D9F250DE89400C6B511 /* PhotoReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoReviewViewController.swift; sourceTree = "<group>"; };
+		C8BB3DA1250E112400C6B511 /* CustomOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomOverlay.swift; sourceTree = "<group>"; };
 		E17CA6CAB3FB8EB633EF3E01 /* Pods-BroomstickTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BroomstickTests.debug.xcconfig"; path = "Target Support Files/Pods-BroomstickTests/Pods-BroomstickTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E26E59C46147498D9F6590D7 /* Pods-Broomstick-BroomstickUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Broomstick-BroomstickUITests.release.xcconfig"; path = "Target Support Files/Pods-Broomstick-BroomstickUITests/Pods-Broomstick-BroomstickUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E634AFF8397ED1616FA68993 /* Pods-Broomstick.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Broomstick.release.xcconfig"; path = "Target Support Files/Pods-Broomstick/Pods-Broomstick.release.xcconfig"; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 				C58DF297250D972C00AB82A1 /* MobileNetV2.mlmodel */,
 				C837908C250C942500ED58B9 /* Global.swift */,
 				C58DF295250D942F00AB82A1 /* PhotoAnalyzer.swift */,
+				C8BB3DA1250E112400C6B511 /* CustomOverlay.swift */,
 			);
 			path = helpers;
 			sourceTree = "<group>";
@@ -522,6 +525,7 @@
 				C8BB3DA0250DE89400C6B511 /* PhotoReviewViewController.swift in Sources */,
 				C8BB3D9A250D95A900C6B511 /* ScanLoadingViewController.swift in Sources */,
 				F017B2C7250C89860015C4BD /* SceneDelegate.swift in Sources */,
+				C8BB3DA2250E112400C6B511 /* CustomOverlay.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
