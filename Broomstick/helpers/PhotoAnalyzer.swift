@@ -122,12 +122,17 @@ class PhotoAnalyzer {
         return requestOptions
     }
 
-    func request_perms() {
+    func request_perms(completionHandler: (Bool) -> Void) {
         print("requesting permissions...")
+        var request_status = false;
         PHPhotoLibrary.requestAuthorization{
             received_status in
             print(received_status)
+            if received_status == .authorized {
+                request_status = true
+            }
         }
+        completionHandler(request_status)
     }
     
     func retrievePhoto(index: Int) throws -> UIImage? {
