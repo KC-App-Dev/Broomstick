@@ -10,15 +10,15 @@ import Foundation
 
 class Scan: NSObject {
     var totalStorage: Double
-    var deleted: Int
-    var kept: Int
+    var deleted: Int?
+    var kept: Int?
     var incoherent: Int
     var screenshots: Int
     var duplicates: Int
     var reviewComplete: Bool
     var date: Date
     
-    init(totalStorage: Double, deleted: Int, kept: Int, incoherent: Int, screenshots: Int, duplicates: Int, reviewComplete: Bool, date: Date) {
+    init(totalStorage: Double, deleted: Int?, kept: Int?, incoherent: Int, screenshots: Int, duplicates: Int, reviewComplete: Bool, date: Date) {
         self.totalStorage = totalStorage
         self.deleted = deleted
         self.kept = kept
