@@ -11,7 +11,7 @@ import UIKit
 class HomeViewController: UIViewController {
     
     //***(TEMP)*** number of recent scans variable
-    let scans = [[30, 25, true], [45, 12, false]]
+    let scans = [[30, 25, true], [45, 12, true]]
     
     
     //button as class var
@@ -164,7 +164,7 @@ class HomeViewController: UIViewController {
             parent.addSubview(recentScan(totalPhotos: 0, deletedPhotos: 0, reviewComplete: false, upper: true, action: #selector(showDetail)))
         } else {
             parent.addSubview(recentScan(totalPhotos: 30, deletedPhotos: 20, reviewComplete: true, upper: true, action: #selector(showDetail)))
-            parent.addSubview(recentScan(totalPhotos: 45, deletedPhotos: 12, reviewComplete: false, upper: false, action: #selector(showDetail)))
+            parent.addSubview(recentScan(totalPhotos: 45, deletedPhotos: 12, reviewComplete: true, upper: false, action: #selector(showDetail)))
         }
   
         //button
@@ -380,7 +380,7 @@ class HomeViewController: UIViewController {
             //the second item is tapped
             animateButton(inputButton: detailButton2)
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.15) {
-                let vc = ScanResultViewController(scanDate: Date(), totalStorage: 0.5, deleted: 25, kept: 5, screenshots: 30, incoherant: 12, duplicates: 10, reviewFinished: false)
+                let vc = ScanResultViewController(scanDate: Date(), totalStorage: 0.5, deleted: 25, kept: 5, screenshots: 30, incoherant: 12, duplicates: 10, reviewFinished: true)
                 self.navigationController?.pushViewController(vc, animated: true)
             }
             

@@ -1,16 +1,22 @@
 PODS:
+  - NVActivityIndicatorView (5.0.1):
+    - NVActivityIndicatorView/Base (= 5.0.1)
+  - NVActivityIndicatorView/Base (5.0.1)
   - PieCharts (0.0.7)
 
 DEPENDENCIES:
+  - NVActivityIndicatorView
   - PieCharts
 
 SPEC REPOS:
   trunk:
+    - NVActivityIndicatorView
     - PieCharts
 
 SPEC CHECKSUMS:
+  NVActivityIndicatorView: 738e843cb8924e9e4fc3e559d0728031624bf860
   PieCharts: 30e50dfa7dc19e5b84e9878d32089673ef5d0453
 
-PODFILE CHECKSUM: b8f0a573d08afefd1c26b120b3cf376181f9f145
+PODFILE CHECKSUM: cbd1bd7e680ffa2363df3458f3242aa2988ff3d1
 
 COCOAPODS: 1.9.3
