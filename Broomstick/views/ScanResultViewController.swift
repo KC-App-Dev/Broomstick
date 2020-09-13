@@ -19,6 +19,7 @@ class ScanResultViewController: UIViewController {
     var incoherant: Int
     var duplicates: Int
     var reviewFinished: Bool
+    var analyzer: PhotoAnalyzer?
     
     //chart view
     var chartView = PieChart()
@@ -27,7 +28,7 @@ class ScanResultViewController: UIViewController {
     
     
     init (
-        scanDate: Date, totalStorage: Double, deleted: Int?, kept: Int?, screenshots: Int, incoherant: Int, duplicates: Int, reviewFinished: Bool
+        scanDate: Date, totalStorage: Double, deleted: Int?, kept: Int?, screenshots: Int, incoherant: Int, duplicates: Int, reviewFinished: Bool, analyzer: PhotoAnalyzer?
     ) {
         self.scanDate = scanDate
         self.totalStorage = totalStorage
@@ -37,6 +38,7 @@ class ScanResultViewController: UIViewController {
         self.incoherant = incoherant
         self.duplicates = duplicates
         self.reviewFinished = reviewFinished
+        self.analyzer = analyzer
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -145,26 +147,27 @@ class ScanResultViewController: UIViewController {
         youCleaned.heightAnchor.constraint(equalToConstant: 14 * screenRatio).isActive = true
         youCleaned.leadingAnchor.constraint(equalTo: parent.leadingAnchor, constant: 127 * screenRatio).isActive = true
         youCleaned.topAnchor.constraint(equalTo: parent.topAnchor, constant: 223 * screenRatio).isActive = true
-        //number of GB clearned
-        let numGBLabel = UILabel()
-        numGBLabel.textAlignment = .center
-        numGBLabel.frame = CGRect(x: 143 * screenRatio, y: 237 * screenRatio, width: 78 * screenRatio, height: 62 * screenRatio)
-        numGBLabel.textColor = whiteColor
-        numGBLabel.font = mediumNumber
-        numGBLabel.text = "\(totalStorage)"
-        parent.addSubview(numGBLabel)
-        let gbData = UILabel()
-        gbData.frame = CGRect(x: 0, y: 0, width: 120 * screenRatio, height: 14 * screenRatio)
-        gbData.textColor = whiteColor
-        gbData.font = smallLabel
-        gbData.text = (reviewFinished) ? "GB Data" : "GB Waste"
-        parent.addSubview(gbData)
-        gbData.translatesAutoresizingMaskIntoConstraints = false
-        gbData.textAlignment = .center
-        gbData.widthAnchor.constraint(equalToConstant: 120 * screenRatio).isActive = true
-        gbData.heightAnchor.constraint(equalToConstant: 14 * screenRatio).isActive = true
-        gbData.leadingAnchor.constraint(equalTo: parent.leadingAnchor, constant: 127 * screenRatio).isActive = true
-        gbData.topAnchor.constraint(equalTo: parent.topAnchor, constant: 295 * screenRatio).isActive = true
+        //number of Space clearned
+        let numSpaceLabel = UILabel()
+        numSpaceLabel.textAlignment = .center
+        numSpaceLabel.frame = CGRect(x: 0, y: 0, width: 120 * screenRatio, height: 62 * screenRatio)
+        numSpaceLabel.center = chartView.center
+        numSpaceLabel.textColor = whiteColor
+        numSpaceLabel.font = mediumNumber
+        numSpaceLabel.text = "\(totalStorage.rounded())"
+        parent.addSubview(numSpaceLabel)
+        let spaceData = UILabel()
+        spaceData.frame = CGRect(x: 0, y: 0, width: 120 * screenRatio, height: 14 * screenRatio)
+        spaceData.textColor = whiteColor
+        spaceData.font = smallLabel
+        spaceData.text = (reviewFinished) ? "MB Data" : "MB Waste"
+        parent.addSubview(spaceData)
+        spaceData.translatesAutoresizingMaskIntoConstraints = false
+        spaceData.textAlignment = .center
+        spaceData.widthAnchor.constraint(equalToConstant: 120 * screenRatio).isActive = true
+        spaceData.heightAnchor.constraint(equalToConstant: 14 * screenRatio).isActive = true
+        spaceData.leadingAnchor.constraint(equalTo: parent.leadingAnchor, constant: 127 * screenRatio).isActive = true
+        spaceData.topAnchor.constraint(equalTo: parent.topAnchor, constant: 295 * screenRatio).isActive = true
 
         //incoherant
         parent.addSubview(labelCard(inputText: "Incoherant", color: darkColor, centerX: 110 * screenRatio, y:  ((reviewFinished) ? 530 : 430) * screenRatio))
@@ -181,6 +184,7 @@ class ScanResultViewController: UIViewController {
         badNumLabel.center = CGPoint(x: 110 * screenRatio, y:  ((reviewFinished) ? 595 : 495) * screenRatio)
         badNumLabel.textColor = whiteColor
         badNumLabel.font = mediumNumber
+        badNumLabel.adjustsFontSizeToFitWidth = true
         badNumLabel.text = "\(incoherant)"
         badNumLabel.textAlignment = .center
         parent.addSubview(badNumLabel)
@@ -240,6 +244,10 @@ class ScanResultViewController: UIViewController {
     
     @objc func continueCleanUp() {
         animateButton(inputButton: button)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.15) {
+            let vc = PhotoReviewViewController(analyer: self.analyzer!)
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
     }
     
     
