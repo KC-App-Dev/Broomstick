@@ -276,6 +276,7 @@ class PhotoReviewViewController: UIViewController {
         animateButton(inputButton: button)
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.15) {
               //TODO: confirms deleting all the pics, invoke system method
+            self.analyzer.delete_selected_images()
         }
       
     }
