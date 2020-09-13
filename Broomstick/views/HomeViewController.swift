@@ -114,16 +114,16 @@ class HomeViewController: UIViewController {
         //Total Storage
       
         let numSpace = UILabel()
-        numSpace.frame = CGRect(x: 0, y: 0, width: 122 * screenRatio, height: 60 * screenRatio)
+        numSpace.frame = CGRect(x: 0, y: 0, width: 150 * screenRatio, height: 60 * screenRatio)
         numSpace.textColor = whiteColor
         numSpace.font = bigNumber
         numSpace.textAlignment = .center
-        numSpace.text = "\(numStorage())"
+        numSpace.text = "\(numStorage().rounded())"
         parent.addSubview(numSpace)
         numSpace.translatesAutoresizingMaskIntoConstraints = false
-        numSpace.widthAnchor.constraint(equalToConstant: 122 * screenRatio).isActive = true
+        numSpace.widthAnchor.constraint(equalToConstant: 150 * screenRatio).isActive = true
         numSpace.heightAnchor.constraint(equalToConstant: 60 * screenRatio).isActive = true
-        numSpace.leadingAnchor.constraint(equalTo: parent.leadingAnchor, constant: 131 * screenRatio).isActive = true
+        numSpace.leadingAnchor.constraint(equalTo: parent.leadingAnchor, constant: 110 * screenRatio).isActive = true
         numSpace.topAnchor.constraint(equalTo: parent.topAnchor, constant: 311 * screenRatio).isActive = true
         //Total Storage Label
         let storageLabel = UILabel()
@@ -359,7 +359,7 @@ class HomeViewController: UIViewController {
                        initialSpringVelocity: 1.0,
                        options: .curveEaseInOut, animations: {
                         self.containerView.alpha = 0.8
-                        self.slideUpView.frame = CGRect(x: 0, y: screenSize.height - self.slideUpViewHeight * screenRatio, width: screenSize.width, height: self.slideUpViewHeight)
+                        self.slideUpView.frame = CGRect(x: 0, y: screenSize.height - self.slideUpViewHeight * screenRatio + 60, width: screenSize.width, height: self.slideUpViewHeight)
         }, completion: nil)
         
     }
