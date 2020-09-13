@@ -65,6 +65,7 @@ class PhotoAnalyzer {
     var images_flagged: [Int] = []
     var current_review_arr: [Int] = []
     var current_categories: [TypeOfWaste] = []
+    var total_deleted: Int = 0
     
     // saving
     var clean_save: SavedClean = SavedClean(screenshots: -1, blurry: -1, duplicates: -1, kept: -1, size_detected: 0.0, size_cleaned: 0.0, date_cleaned: Date(), completed: true)
@@ -446,11 +447,12 @@ class PhotoAnalyzer {
         
     }
     
-    func delete_selected_images() {
+    func delete_selected_images() -> Bool{
         /*
          Deletes the images with indices included in images_to_delete.
          You must select the images to delete in images_to_delete before running this function.
          */
+        total_deleted = images_to_delete.count
         var i = 0
         var limit = images_to_delete.count
         var assets_to_delete:[PHAsset] = []
@@ -459,7 +461,13 @@ class PhotoAnalyzer {
             assets_to_delete.append(photoCollection.object(at:images_to_delete[i]))
             i += 1
         }
-        library.performChanges({PHAssetChangeRequest.deleteAssets(assets_to_delete as NSFastEnumeration)})
+        do {
+            try library.performChangesAndWait({PHAssetChangeRequest.deleteAssets(assets_to_delete as NSFastEnumeration)})
+        } catch {
+            print("something went wrong with deleting the images.")
+        }
+        
+        return true
     }
     
     func scan_results() -> ScanStats {
