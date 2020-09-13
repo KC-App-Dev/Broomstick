@@ -20,6 +20,7 @@ class ScanResultViewController: UIViewController {
     var duplicates: Int
     var reviewFinished: Bool
     var analyzer: PhotoAnalyzer?
+    var photosToDelete: [UIImage]?
     
     //chart view
     var chartView = PieChart()
@@ -28,7 +29,7 @@ class ScanResultViewController: UIViewController {
     
     
     init (
-        scanDate: Date, totalStorage: Double, deleted: Int?, kept: Int?, screenshots: Int, incoherant: Int, duplicates: Int, reviewFinished: Bool, analyzer: PhotoAnalyzer?
+        scanDate: Date, totalStorage: Double, deleted: Int?, kept: Int?, screenshots: Int, incoherant: Int, duplicates: Int, reviewFinished: Bool, analyzer: PhotoAnalyzer?, photosToDelete: [UIImage]?
     ) {
         self.scanDate = scanDate
         self.totalStorage = totalStorage
@@ -39,6 +40,7 @@ class ScanResultViewController: UIViewController {
         self.duplicates = duplicates
         self.reviewFinished = reviewFinished
         self.analyzer = analyzer
+        self.photosToDelete = photosToDelete
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -245,7 +247,7 @@ class ScanResultViewController: UIViewController {
     @objc func continueCleanUp() {
         animateButton(inputButton: button)
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.15) {
-            let vc = PhotoReviewViewController(analyer: self.analyzer!)
+            let vc = PhotoReviewViewController(analyer: self.analyzer!, displayPhotos: self.photosToDelete!)
             self.navigationController?.pushViewController(vc, animated: true)
         }
     }
