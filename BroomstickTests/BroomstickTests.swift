@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import Broomstick
+//@testable import Broomstick
 
 class BroomstickTests: XCTestCase {
 

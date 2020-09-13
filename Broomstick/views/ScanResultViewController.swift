@@ -16,7 +16,7 @@ class ScanResultViewController: UIViewController {
     var deleted: Int?
     var kept: Int?
     var screenshots: Int
-    var incoherant: Int
+    var incoherent: Int
     var duplicates: Int
     var reviewFinished: Bool
     var analyzer: PhotoAnalyzer?
@@ -29,14 +29,14 @@ class ScanResultViewController: UIViewController {
     
     
     init (
-        scanDate: Date, totalStorage: Double, deleted: Int?, kept: Int?, screenshots: Int, incoherant: Int, duplicates: Int, reviewFinished: Bool, analyzer: PhotoAnalyzer?, photosToDelete: [UIImage]?
+        scanDate: Date, totalStorage: Double, deleted: Int?, kept: Int?, screenshots: Int, incoherent: Int, duplicates: Int, reviewFinished: Bool, analyzer: PhotoAnalyzer?, photosToDelete: [UIImage]?
     ) {
         self.scanDate = scanDate
         self.totalStorage = totalStorage
         self.deleted = deleted
         self.kept = kept
         self.screenshots = screenshots
-        self.incoherant = incoherant
+        self.incoherent = incoherent
         self.duplicates = duplicates
         self.reviewFinished = reviewFinished
         self.analyzer = analyzer
@@ -134,7 +134,7 @@ class ScanResultViewController: UIViewController {
         chartView.center = CGPoint(x: 185 * screenRatio, y: ((reviewFinished) ? 264 : 270) * screenRatio)
         chartView.outerRadius = ((reviewFinished) ? 100 : 120) * screenRatio
         chartView.innerRadius = ((reviewFinished) ? 75 : 90) * screenRatio
-        chartView.models = [PieSliceModel(value: Double(incoherant), color: darkColor), PieSliceModel(value: Double(screenshots), color: lightColor), PieSliceModel(value: Double(duplicates), color: whiteColor)]
+        chartView.models = [PieSliceModel(value: Double(incoherent), color: darkColor), PieSliceModel(value: Double(screenshots), color: lightColor), PieSliceModel(value: Double(duplicates), color: whiteColor)]
         parent.addSubview(chartView)
         //you clearned
         let youCleaned = UILabel()
@@ -171,8 +171,8 @@ class ScanResultViewController: UIViewController {
         spaceData.leadingAnchor.constraint(equalTo: parent.leadingAnchor, constant: 127 * screenRatio).isActive = true
         spaceData.topAnchor.constraint(equalTo: parent.topAnchor, constant: 295 * screenRatio).isActive = true
 
-        //incoherant
-        parent.addSubview(labelCard(inputText: "Incoherant", color: darkColor, centerX: 110 * screenRatio, y:  ((reviewFinished) ? 530 : 430) * screenRatio))
+        //incoherent
+        parent.addSubview(labelCard(inputText: "Incoherent", color: darkColor, centerX: 110 * screenRatio, y:  ((reviewFinished) ? 530 : 430) * screenRatio))
         let badLabel = UILabel()
         badLabel.frame = CGRect(x: 0, y: 0, width: 60 * screenRatio, height: 14 * screenRatio)
         badLabel.center = CGPoint(x: 110 * screenRatio, y:  ((reviewFinished) ? 630 : 530) * screenRatio)
@@ -187,7 +187,7 @@ class ScanResultViewController: UIViewController {
         badNumLabel.textColor = whiteColor
         badNumLabel.font = mediumNumber
         badNumLabel.adjustsFontSizeToFitWidth = true
-        badNumLabel.text = "\(incoherant)"
+        badNumLabel.text = "\(incoherent)"
         badNumLabel.textAlignment = .center
         parent.addSubview(badNumLabel)
         //screenshots
