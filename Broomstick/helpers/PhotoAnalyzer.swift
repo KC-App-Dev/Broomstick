@@ -75,7 +75,7 @@ class PhotoAnalyzer {
         let fetchResult: PHFetchResult = PHAsset.fetchAssets(with: .image, options: fetchOptions())
         photoCollection = fetchResult
         if debug {
-            num_pics = 10
+            num_pics = 50
         } else {
             num_pics = photoCollection.count
         }
@@ -435,5 +435,13 @@ class PhotoAnalyzer {
         return images_arr
     }
     
+    func update_images_to_delete(indices: [Int]) {
+        /*
+         Delete images. The indices passed in are applied to images_flagged.
+         */
+        for index in indices {
+            images_to_delete.append(images_flagged[index])
+        }
+    }
     
 }
