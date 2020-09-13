@@ -48,6 +48,7 @@ class HomeViewController: UIViewController {
         boldLabel = UIFont(name: "ProximaNova-Bold", size: 18 * screenRatio)
         label = UIFont(name: "ProximaNova-Regular", size: 18 * screenRatio)
         smallLabel = UIFont(name: "ProximaNova-Regular", size: 14 * screenRatio)
+   
     }
     
     func setUp() {
@@ -64,6 +65,7 @@ class HomeViewController: UIViewController {
         menuButton.addTarget(self, action: #selector(showMenu), for: .touchUpInside)
         parent.addSubview(menuButton)
         //Your Photos
+ 
         let yourPhotosView = UILabel()
         yourPhotosView.frame = CGRect(x: 0, y: 0, width: 175 * screenRatio, height: 32 * screenRatio)
         yourPhotosView.textColor = whiteColor
@@ -104,6 +106,7 @@ class HomeViewController: UIViewController {
         totalPhotosLael.leadingAnchor.constraint(equalTo: parent.leadingAnchor, constant: 139 * screenRatio).isActive = true
         totalPhotosLael.topAnchor.constraint(equalTo: parent.topAnchor, constant: 256 * screenRatio).isActive = true
         //Total Storage
+      
         let numSpace = UILabel()
         numSpace.frame = CGRect(x: 0, y: 0, width: 122 * screenRatio, height: 60 * screenRatio)
         numSpace.textColor = whiteColor
@@ -140,6 +143,9 @@ class HomeViewController: UIViewController {
         recentCleanUpsView.heightAnchor.constraint(equalToConstant: 24 * screenRatio).isActive = true
         recentCleanUpsView.leadingAnchor.constraint(equalTo: parent.leadingAnchor, constant: 37 * screenRatio).isActive = true
         recentCleanUpsView.topAnchor.constraint(equalTo: parent.topAnchor, constant: 428 * screenRatio).isActive = true
+
+     
+
         
         // load scans
         let loaded_scan = loadPastCleans()
@@ -152,6 +158,7 @@ class HomeViewController: UIViewController {
             }
         }
         
+
         if scans.count == 0 {
             //Image for no scans
             let noScanImageView = UIImageView()
@@ -196,6 +203,7 @@ class HomeViewController: UIViewController {
         slideUpTableView.delegate = self
         slideUpTableView.dataSource = self
         slideUpTableView.register(SlideUpViewCell.self, forCellReuseIdentifier: "SlideUpViewCell")
+      
     }
     
     func numPhotos() -> Int {
@@ -409,9 +417,12 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         let analyzer = PhotoAnalyzer(debug_status: true)
         analyzer.request_perms { (completed) in
-            initializeRatio()
-            setUp()
+            
         }
+    
+        initializeRatio()
+        setUp()
+      
     }
     
     

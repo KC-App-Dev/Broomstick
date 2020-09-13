@@ -186,8 +186,16 @@ class PhotoAnalyzer {
                     case .notDetermined:
                         print("Permission is not determined.^2")
                         imageToReturn = nil
+                case .limited:
+                    break;
+                @unknown default:
+                    break;
                 }
-            }
+        case .limited:
+            break;
+        @unknown default:
+            break;
+        }
         if imageToReturn != nil {
             print("imageToReturn is not nil.")
         } else {
