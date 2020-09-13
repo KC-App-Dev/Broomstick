@@ -101,7 +101,7 @@ class PhotoReviewViewController: UIViewController {
         blurryView.backgroundColor = mediumColor
         blurryView.alpha = 0.5
         let blurryImage = UIImageView()
-        blurryImage.image = UIImage(named: "incoherant")
+        blurryImage.image = UIImage(named: "incoherent")
         blurryImage.frame = CGRect(x: 0, y: 0, width: 50 * screenRatio, height: 50 * screenRatio)
         blurryImage.center = CGPoint(x: 48 * screenRatio, y: 42 * screenRatio)
         blurryView.addSubview(blurryImage)
@@ -110,7 +110,7 @@ class PhotoReviewViewController: UIViewController {
         blurryLabel.font = smallLabel?.withSize(13 * screenRatio)
         blurryLabel.textAlignment = .center
         blurryLabel.textColor = .white
-        blurryLabel.text = "Incoherant"
+        blurryLabel.text = "incoherent"
         blurryView.addSubview(blurryLabel)
         parent.addSubview(blurryView)
         ssView.frame = CGRect(x: 141 * screenRatio, y: 676 * screenRatio, width: 96 * screenRatio, height: 104 * screenRatio)
@@ -190,22 +190,37 @@ class PhotoReviewViewController: UIViewController {
     }
     
     @objc func blurryFilter() {
-        
         setFilter(index: 1)
-        //TODO: display only blurry photos
-        //modify displayPhotos (I think)
-        
+        // modify displayPhotos (I think)
+        let filter_images = analyzer.category_images_to_display(category: .blurry)
+        if filter_images.count >= 0 {
+            displayPhotos = filter_images
+            swiperView.reloadData()
+        } else {
+            // TODO: UI showing no images in that category
+        }
     }
     
     @objc func ssFilter() {
         setFilter(index: 2)
-        //TODO: display only screenshots
-        
+        let filter_images = analyzer.category_images_to_display(category: .screenshot)
+        if filter_images.count >= 0 {
+            displayPhotos = filter_images
+            swiperView.reloadData()
+        } else {
+            // TODO: UI showing no images in that category
+        }
     }
     
     @objc func dupFilter() {
         setFilter(index: 3)
-        //TODO: display only duplicates
+        let filter_images = analyzer.category_images_to_display(category: .similar)
+        if filter_images.count >= 0 {
+            displayPhotos = filter_images
+            swiperView.reloadData()
+        } else {
+            // TODO: UI showing no images in that category
+        }
     }
     
     func updateTag(category: String, currentDuplicate: Int?, totalDuplicate: Int?) {
@@ -269,9 +284,6 @@ class PhotoReviewViewController: UIViewController {
         super.viewDidLoad()
         setUp()
     }
-    
-    
-    
 }
 
 extension PhotoReviewViewController: KolodaViewDelegate, KolodaViewDataSource {
@@ -282,7 +294,7 @@ extension PhotoReviewViewController: KolodaViewDelegate, KolodaViewDataSource {
         //selected card
     }
     func kolodaNumberOfCards(_ koloda: KolodaView) -> Int {
-        return numPhotosToReview
+        return displayPhotos.count
     }
     func kolodaSpeedThatCardShouldDrag(_ koloda: KolodaView) -> DragSpeed {
         return .fast
@@ -290,6 +302,11 @@ extension PhotoReviewViewController: KolodaViewDelegate, KolodaViewDataSource {
     func koloda(_ koloda: KolodaView, didSwipeCardAt index: Int, in direction: SwipeResultDirection) {
         //TODO: this is the method where you can keep track of swipe actions
         //TODO: update currentIndex
+        if direction == .left {
+            analyzer.swiped(index: index, delete: true)
+        } else if direction == .right {
+            analyzer.swiped(index: index, delete: false)
+        }
     }
     func koloda(_ koloda: KolodaView, viewForCardAt index: Int) -> UIView {
         let view = UIView()
@@ -302,6 +319,7 @@ extension PhotoReviewViewController: KolodaViewDelegate, KolodaViewDataSource {
         backgroundImageView.frame = view.frame
         backgroundImageView.layer.cornerRadius = 20 * screenRatio
         backgroundImageView.contentMode = .scaleAspectFill
+        print("index: ", index)
         let backgroundImage = displayPhotos[index]
         let ciImage = CIImage(cgImage: backgroundImage.cgImage!)
         let blurFilter = CIFilter(name: "CIGaussianBlur")
