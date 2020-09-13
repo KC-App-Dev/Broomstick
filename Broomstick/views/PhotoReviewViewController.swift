@@ -226,9 +226,9 @@ class PhotoReviewViewController: UIViewController {
     func updateTag(category: String, currentDuplicate: Int?, totalDuplicate: Int?) {
         var _color = whiteColor
         var _tagString = ""
-        if category.lowercased() == "incoherant" {
+        if category.lowercased() == "incoherent" {
             _color = darkColor
-            _tagString = "Incoherant"
+            _tagString = "Incoherent"
         } else if category.lowercased() == "screenshot" {
             _color = lightColor
             _tagString = "Screenshot"
