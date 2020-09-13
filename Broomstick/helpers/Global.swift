@@ -56,7 +56,7 @@ var headingSmall = UIFont(name: "ProximaNova-Bold", size: 24)
 var buttonText = UIFont(name: "ProximaNova-Bold", size: 24)
 var boldLabel = UIFont(name: "ProximaNova-Bold", size: 18)
 var label = UIFont(name: "ProximaNova-Regular", size: 18)
-var smallLabel = UIFont(name: "ProximaNova-Regular", size: 18)
+var smallLabel = UIFont(name: "ProximaNova-Regular", size: 14)
 
 //Auto layout
 var screenRatio = 1.0 as CGFloat

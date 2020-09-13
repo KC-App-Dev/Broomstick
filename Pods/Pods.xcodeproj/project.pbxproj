@@ -7,116 +7,218 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		07EC05367FB06380F8534C2019A4B573 /* PieChartDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C83079743143670367E4922467F5BA /* PieChartDelegate.swift */; };
-		0856B93E699B588BA71FE0CE044095E4 /* NVActivityIndicatorAnimationLineScalePulseOutRapid.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05AE1E83D01E92A894CB948A5209F13 /* NVActivityIndicatorAnimationLineScalePulseOutRapid.swift */; };
-		087426C6E0763CA9F3B49B711FCC2AD4 /* Pods-Broomstick-BroomstickUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DF4D354969494B337E849C08191A4140 /* Pods-Broomstick-BroomstickUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0C9E8BCCB172BB6150E5E700AE6DD12A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC52B314F24BC32CDA7B523FAA24A727 /* CoreGraphics.framework */; };
-		1792253FB4C2C25168FA2152DD8DF0C2 /* NVActivityIndicatorAnimationBallTrianglePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D94B6FAD124D3569721BB8B98F85E4 /* NVActivityIndicatorAnimationBallTrianglePath.swift */; };
-		18B8C262593617A927666E1B87BB1CF4 /* PieChartLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A605F8E3888E978024A9DF4B77838B38 /* PieChartLayer.swift */; };
-		22F67B17DFA4F0A721137347695646AF /* NVActivityIndicatorAnimationPacman.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DACBC56CE2DC9C5F67CE9F57DBB2BF /* NVActivityIndicatorAnimationPacman.swift */; };
-		29BF6EAB78163A7A25623E39F5D95E91 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EE48DAC4AD4FC98EC01A9CC5B34AE82 /* Foundation.framework */; };
-		2A44D897511EF2E554A26B4CE0ADF791 /* NVActivityIndicatorAnimationBallZigZag.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB22A730A98069D0FB87649671317940 /* NVActivityIndicatorAnimationBallZigZag.swift */; };
-		2F0A0F0D1EF11FF26081AB85B924BAF9 /* NVActivityIndicatorAnimationBallGridBeat.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DFE1F49F741FAC6556B348F50607AC /* NVActivityIndicatorAnimationBallGridBeat.swift */; };
-		3519EA46150EFDC342809478BB460764 /* NVActivityIndicatorAnimationBlank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5F9D40C59C5F639EEA42B423C6B016 /* NVActivityIndicatorAnimationBlank.swift */; };
-		35E05B3DDE11B0EC42452E2D956F8632 /* NVActivityIndicatorView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FBB4957C3238370DA78767B349314616 /* NVActivityIndicatorView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3727D81A8E60CB1969513D03205F4D1F /* AlphaPieViewLayerAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C6861E96B531AD6241066804CC9827 /* AlphaPieViewLayerAnimator.swift */; };
-		39F6F08BA69383C4F45C9E2DB5247AB9 /* NVActivityIndicatorAnimationBallRotateChase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CC8CC38860A918B0B9A2B06C05C9F9 /* NVActivityIndicatorAnimationBallRotateChase.swift */; };
-		46CE037FE4D8E73482B4F9062F041040 /* NVActivityIndicatorAnimationOrbit.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC97686C2A099145C9B33A085B99A97 /* NVActivityIndicatorAnimationOrbit.swift */; };
-		47D5EA35A5F04B05BF8CE8926B4561CE /* NVActivityIndicatorAnimationBallScaleRippleMultiple.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06D9EDA555EE3A5ACC61C2D43F9FB52 /* NVActivityIndicatorAnimationBallScaleRippleMultiple.swift */; };
-		4D342EA223226DB27B6A1A049F35ACE2 /* NVActivityIndicatorAnimationBallRotate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C45D7595751E01161345550193049C2 /* NVActivityIndicatorAnimationBallRotate.swift */; };
-		4F1482B381CE2F3CCC62015F22F2CD86 /* PieChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1250265549A0D1E2E4061D00153C4C19 /* PieChart.swift */; };
-		5143B2CFD406F5A2CDCF928590213ACC /* NVActivityIndicatorAnimationBallPulse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A0D97A993397BE67026AD967D13D4DF /* NVActivityIndicatorAnimationBallPulse.swift */; };
-		592338DF9D79C04FE081DE04A81E93AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EE48DAC4AD4FC98EC01A9CC5B34AE82 /* Foundation.framework */; };
-		5BA2C9718F094CF84BCF2736E355ED1F /* NVActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CD2FCC5A73DE791CC35F891C97EBF1 /* NVActivityIndicatorView.swift */; };
-		5FDBACE328D82B6557E164F4C21A7B1F /* PieCustomViewsLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D905CFDA278054C1CDA1ED89CCDF0C6C /* PieCustomViewsLayer.swift */; };
-		663C075508F804454D38C145A77F8313 /* NVActivityIndicatorAnimationLineScale.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CBC0401F9CE1128436C5FA56CCD247 /* NVActivityIndicatorAnimationLineScale.swift */; };
-		6817252EC3EEB201A9A25F15E1E2579C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71BBEAB859C48569C695B0B3FB39F6F9 /* UIKit.framework */; };
-		69076D8F9549252BE319EAE1551344F2 /* NVActivityIndicatorAnimationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBDC49F1B6B51C933AC3CC1588F8E52 /* NVActivityIndicatorAnimationDelegate.swift */; };
-		6D06A7FE1A846E4A98D65E220F106D9D /* Pods-Broomstick-BroomstickUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9B2CF622427AF9CBF52772AAF1B0E6 /* Pods-Broomstick-BroomstickUITests-dummy.m */; };
-		6D42FD4C06FBECD4D0076BA0F164E3D7 /* AlphaPieLineTextLayerAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356D86DEDC7885A50F5A1BD4BDA73390 /* AlphaPieLineTextLayerAnimator.swift */; };
-		6F833200EFC8C5B6FDC287573A7A6E80 /* NVActivityIndicatorAnimationBallScaleRipple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1EC047A744CDFC92AE1482B0B88875 /* NVActivityIndicatorAnimationBallScaleRipple.swift */; };
-		73285C4027299D1DABEAF192252D0A0A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71BBEAB859C48569C695B0B3FB39F6F9 /* UIKit.framework */; };
-		78FAD6E2B3FE9DD871270AF82D20D4DA /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C479A2ABAA2A6DB78BD712402D74BBF /* Globals.swift */; };
-		7C863C610C547CE943935738F9EB2DA9 /* NVActivityIndicatorShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A56243BB7718920A1E62092F97E05B /* NVActivityIndicatorShape.swift */; };
+		021964E9BAF9733EFCC114837F87D894 /* POPAnimator.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6DD13665449F90B6AAF7E852A7D69997 /* POPAnimator.mm */; };
+		0312604A04EB4F78F14BAE4C21054689 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9F4CBD597617AB3A804B7AD5AA50CD7 /* Foundation.framework */; };
+		0404796572F1652BEA8F0CC26EDC1743 /* POPVector.mm in Sources */ = {isa = PBXBuildFile; fileRef = 05C8F37A5BBC7926F93FED4EE5376CF2 /* POPVector.mm */; };
+		06105D982DE6566AC62E893EDC3AD4D5 /* KolodaCardStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE5B80F002C74EEC1799788B7245947 /* KolodaCardStorage.swift */; };
+		07EC05367FB06380F8534C2019A4B573 /* PieChartDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6F66168915D9CE7A36F5623CC2002B /* PieChartDelegate.swift */; };
+		0856B93E699B588BA71FE0CE044095E4 /* NVActivityIndicatorAnimationLineScalePulseOutRapid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D95366EADEE694307E7BC343DEEAC9 /* NVActivityIndicatorAnimationLineScalePulseOutRapid.swift */; };
+		0C9E8BCCB172BB6150E5E700AE6DD12A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5987232B7A6BA850D144369EE0A212B2 /* CoreGraphics.framework */; };
+		10940977638AABAA856288B8DE04D69B /* POPAnimationRuntime.mm in Sources */ = {isa = PBXBuildFile; fileRef = 49E42E7380C3517667CF676380E7C0B4 /* POPAnimationRuntime.mm */; };
+		12955C0AE23B9C1BE68CB1D529B6BA03 /* POPLayerExtras.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B1F1A9952554A175DFBA545FEFDC146 /* POPLayerExtras.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1792253FB4C2C25168FA2152DD8DF0C2 /* NVActivityIndicatorAnimationBallTrianglePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE10D2D8686D2F3EDEB2C72839B79103 /* NVActivityIndicatorAnimationBallTrianglePath.swift */; };
+		18B8C262593617A927666E1B87BB1CF4 /* PieChartLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5AF61CD0C3D77CB188C940DE1F1599 /* PieChartLayer.swift */; };
+		1C0BD407FB5FD4028ED38758BF6FECB8 /* POPAnimationExtras.h in Headers */ = {isa = PBXBuildFile; fileRef = DC5D618456C93FA67C27CB8FC4D3A99E /* POPAnimationExtras.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1E17D3A6C1ABA9505DA5D73D4EA3F1FF /* POPAnimationInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = D55754D3E3CF68D1A2CA69E5CE07BB2B /* POPAnimationInternal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1E61A08790B1F6C0E4B17F87E59CA4DA /* POPDecayAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = CF0B4016037F6B183ADD5BC6B068FA1D /* POPDecayAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1EB092CEAFE7FCA40DBB1CBD53E5EB33 /* POPPropertyAnimation.mm in Sources */ = {isa = PBXBuildFile; fileRef = DEA2EB2D6D5ECE239D860E01A1B64A2A /* POPPropertyAnimation.mm */; };
+		1FE0E6859071E9C75B0754D6531678BD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9F4CBD597617AB3A804B7AD5AA50CD7 /* Foundation.framework */; };
+		212156BD5B7F2C7A0E5AE508EDF6C589 /* POPDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = AAE857A396895A05E966CFCBB37463A4 /* POPDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		227F04ED48560D42AB49A1E82E45B9A1 /* POPLayerExtras.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4351EDB8EE32D862ED9932C14842840D /* POPLayerExtras.mm */; };
+		22F67B17DFA4F0A721137347695646AF /* NVActivityIndicatorAnimationPacman.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7B4D2096093DD2B9C56B55C47F8486 /* NVActivityIndicatorAnimationPacman.swift */; };
+		266CE494447AE939D135B89C8D8B5631 /* POPDecayAnimation.mm in Sources */ = {isa = PBXBuildFile; fileRef = EAF9B317353D1DDF4E801789E9387ED2 /* POPDecayAnimation.mm */; };
+		2696AF43086F0DF9269571E0C6235687 /* POPAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = C0E5FDE3EF5D401033BEB8E6B1A0F3E8 /* POPAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		26B3765BCCFFFDC26F5B256217702A9C /* POPCustomAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 405A4018B59096B7001DFAF6F7384E71 /* POPCustomAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2891F07FF25CCFF03C8C0293B1B418C3 /* KolodaAnimationSemaphore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D405C044729041F3A608741F0214C99 /* KolodaAnimationSemaphore.swift */; };
+		29B11364BD16C139D398E89AE4BEFBD9 /* KolodaViewAnimatior.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAD7AF5B98A1FA6C2312A60D263A7BB /* KolodaViewAnimatior.swift */; };
+		2A44D897511EF2E554A26B4CE0ADF791 /* NVActivityIndicatorAnimationBallZigZag.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DE7DFFCB1F5DCCF09F3D35676A7B23 /* NVActivityIndicatorAnimationBallZigZag.swift */; };
+		2E503C0B032B6DF258F879FD8DB59DFB /* POPAnimationPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 480A2A52CC9E97479EE71AF0CB3FEF79 /* POPAnimationPrivate.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2F0A0F0D1EF11FF26081AB85B924BAF9 /* NVActivityIndicatorAnimationBallGridBeat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6596425594F542F12F2B1A718333B8 /* NVActivityIndicatorAnimationBallGridBeat.swift */; };
+		3210D3FA9378772F8AB59EAEA809E0E6 /* KolodaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C430E270BE93358908BDD49735B35B /* KolodaView.swift */; };
+		3519EA46150EFDC342809478BB460764 /* NVActivityIndicatorAnimationBlank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B03CB3A83CE43B7938A8930522D8CBD /* NVActivityIndicatorAnimationBlank.swift */; };
+		35C19EA3409AC0FC2E87D8BE980AB3B2 /* POPCustomAnimation.mm in Sources */ = {isa = PBXBuildFile; fileRef = D59266A1D2CAE79D4AB3BBE0EB96A12C /* POPCustomAnimation.mm */; };
+		35E05B3DDE11B0EC42452E2D956F8632 /* NVActivityIndicatorView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AF7CFE0997072103ABAE1E7D49E8D5BB /* NVActivityIndicatorView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3727D81A8E60CB1969513D03205F4D1F /* AlphaPieViewLayerAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5D9729019810F231FC5FD905127151 /* AlphaPieViewLayerAnimator.swift */; };
+		386D38ED290E8FE98F74780BAFC17E9C /* pop-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E5AC6ED74371807CBDDAA37D5D4678E7 /* pop-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		39F6F08BA69383C4F45C9E2DB5247AB9 /* NVActivityIndicatorAnimationBallRotateChase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6019726BC6E406011B0F8E55B232877 /* NVActivityIndicatorAnimationBallRotateChase.swift */; };
+		3C6B744A2525BEF801FC6474FFF0F964 /* POPPropertyAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = DE3F24DEAAFA271FD4CEE8A9FBEBB39F /* POPPropertyAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3C76F59C60CA7F311E077EE03BBE8F14 /* POPAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EAC97E28410191E8F06B2B651FE2416 /* POPAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CA86CAAA1F6241C0CC582A0F2532B8A /* UnitBezier.h in Headers */ = {isa = PBXBuildFile; fileRef = C6554C32159023A696EE5320F390937C /* UnitBezier.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4342C5F159379F0FA02B01849EA7B8E2 /* POPAnimation.mm in Sources */ = {isa = PBXBuildFile; fileRef = F4A897AC3BB5C447AFAF0E6E7B48671F /* POPAnimation.mm */; };
+		46CE037FE4D8E73482B4F9062F041040 /* NVActivityIndicatorAnimationOrbit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E92AE8CC6E69754D01DFFFE67017A4 /* NVActivityIndicatorAnimationOrbit.swift */; };
+		47D5EA35A5F04B05BF8CE8926B4561CE /* NVActivityIndicatorAnimationBallScaleRippleMultiple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7FECADC6552F5AA219A76347203B33 /* NVActivityIndicatorAnimationBallScaleRippleMultiple.swift */; };
+		4D342EA223226DB27B6A1A049F35ACE2 /* NVActivityIndicatorAnimationBallRotate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C82B16A73FB9A3E259E8CAC016D663 /* NVActivityIndicatorAnimationBallRotate.swift */; };
+		4F1482B381CE2F3CCC62015F22F2CD86 /* PieChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98341A95BDB2EB384FFF525CE37356E8 /* PieChart.swift */; };
+		505BBD1C1B0346F51AE85888C3BDA277 /* POPVector.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AD2370BE0C6CAC38DBE116597E7D9FB /* POPVector.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5143B2CFD406F5A2CDCF928590213ACC /* NVActivityIndicatorAnimationBallPulse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F66DA0C8156E540C3692EAE21A9557 /* NVActivityIndicatorAnimationBallPulse.swift */; };
+		51959AB44D6CFA1E7F522A94D998B12A /* POPAnimationTracer.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F5B2E694508C9DDB1FAC899F28D08D4 /* POPAnimationTracer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		58FEE1907F26B81DE9829400FDB45183 /* POPAnimationRuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = 87F123D9BD4F96DBF991331A905862CE /* POPAnimationRuntime.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		592338DF9D79C04FE081DE04A81E93AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9F4CBD597617AB3A804B7AD5AA50CD7 /* Foundation.framework */; };
+		5B352A054CBA013BAABCEE7C574D13C4 /* Pods-Broomstick-BroomstickUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DF4D354969494B337E849C08191A4140 /* Pods-Broomstick-BroomstickUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5BA2C9718F094CF84BCF2736E355ED1F /* NVActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDCF6609DA5590DDE7D5675FAE6995A /* NVActivityIndicatorView.swift */; };
+		5E86EF436F6D69AC7CD25434902BA151 /* POPAnimatableProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4141DADC15C486CA7490B74A9C8BBB3A /* POPAnimatableProperty.mm */; };
+		5FDBACE328D82B6557E164F4C21A7B1F /* PieCustomViewsLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DFD2EB96E47D3F30E26B2DF7C52FA7 /* PieCustomViewsLayer.swift */; };
+		64E5C3F49B87858B2C03ABDB9BADC08F /* POPAction.h in Headers */ = {isa = PBXBuildFile; fileRef = A839C3BD527A2D98195D6BDEC0E38E32 /* POPAction.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		663C075508F804454D38C145A77F8313 /* NVActivityIndicatorAnimationLineScale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7455F86E9D9C05B192374143EC286EA8 /* NVActivityIndicatorAnimationLineScale.swift */; };
+		66D4747439315BF78AF26A93BD318A51 /* POPMath.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F32D44421F5A89F307556FFA661D989 /* POPMath.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6817252EC3EEB201A9A25F15E1E2579C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDF4BC45EE06E790F42B3089EFCCE85E /* UIKit.framework */; };
+		68DA21801DD6C5236CE325416CE369D2 /* POP.h in Headers */ = {isa = PBXBuildFile; fileRef = 78749E3D7710D8395D5EEF1E0F940D6D /* POP.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		69076D8F9549252BE319EAE1551344F2 /* NVActivityIndicatorAnimationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE05E1B57D3A9AC934000B5BF666895E /* NVActivityIndicatorAnimationDelegate.swift */; };
+		6D42FD4C06FBECD4D0076BA0F164E3D7 /* AlphaPieLineTextLayerAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7828123EB47ECBDA1B44185F5984EFBA /* AlphaPieLineTextLayerAnimator.swift */; };
+		6F833200EFC8C5B6FDC287573A7A6E80 /* NVActivityIndicatorAnimationBallScaleRipple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1254ECFD5CBA9E9ADE6608D5DB5D91 /* NVActivityIndicatorAnimationBallScaleRipple.swift */; };
+		73285C4027299D1DABEAF192252D0A0A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDF4BC45EE06E790F42B3089EFCCE85E /* UIKit.framework */; };
+		78FAD6E2B3FE9DD871270AF82D20D4DA /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC60F9EC6073131475BCB41A941A6884 /* Globals.swift */; };
+		7C863C610C547CE943935738F9EB2DA9 /* NVActivityIndicatorShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D50C0F9745F93366AA25EDAB27B63D /* NVActivityIndicatorShape.swift */; };
+		7CE3367FC3E2272808BC970170DA04B5 /* POPAnimationExtras.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1CD07BBFF617B1AA790AEA3F79B11152 /* POPAnimationExtras.mm */; };
+		80958A890EB0F05602CAF64B30E75BA8 /* pop-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 765B861BCEFA41435ABD19030233D440 /* pop-dummy.m */; };
+		82A0245454B142B3892145A59D38D1DD /* POPSpringAnimation.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0425B829754001F48DE5C6693427C2EF /* POPSpringAnimation.mm */; };
+		8460E33C63DC896297116AE9D00D7D37 /* POPSpringAnimationInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = ACC71E3670A14F54B9AF3F11079C0929 /* POPSpringAnimationInternal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8AE0D6EE7D76DC0557484AF65AC1AF8F /* pop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B46C97AAFCB75FFA6C9142918B21329D /* pop.framework */; };
 		8C809B8D6EA15674DD23A0C29EA4C2B3 /* Pods-BroomstickTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 43849E99E9EDAD53E65CDFCE8CD31682 /* Pods-BroomstickTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8EF1CB45ED6FC85ECC3D163CFFC599C4 /* NVActivityIndicatorAnimationLineScaleParty.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3B433B01C20155487CD3CC7E59248F /* NVActivityIndicatorAnimationLineScaleParty.swift */; };
-		913AF8577C52A01F3C0DCAF27FDE9AA5 /* PieSlice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628DF69E0652CE3A56B27779D124C65A /* PieSlice.swift */; };
-		945F66CC57EB589300296B053DE94D2C /* PieSliceLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE36F2CFD4C7B082D1A63F4DF427B3FE /* PieSliceLayer.swift */; };
-		963602F41BAC27D5DC81FEBD6986BA39 /* NVActivityIndicatorAnimationBallSpinFadeLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B17A24782D1919DE4C9C67873B91A3 /* NVActivityIndicatorAnimationBallSpinFadeLoader.swift */; };
-		9750808FCEAC99C25DE17DA51F113A49 /* NVActivityIndicatorAnimationCircleStrokeSpin.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74CE136BF7C3F042D2F5CBF53324CD0 /* NVActivityIndicatorAnimationCircleStrokeSpin.swift */; };
-		9BA412D0119CAD1C5A535880E81BB29B /* NVActivityIndicatorAnimationTriangleSkewSpin.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E98163F51116D85E75F60562CE3E3E /* NVActivityIndicatorAnimationTriangleSkewSpin.swift */; };
-		9D42D95CF916C54F70AB417E50ABCFD2 /* PieLineTextLayerAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D998436F919A7F2C1F71BE74E1AB6F /* PieLineTextLayerAnimator.swift */; };
-		9F4487601DE06B744662316A639E7090 /* NVActivityIndicatorAnimationBallClipRotate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96B8FD07845D00A9AC75059FE375379 /* NVActivityIndicatorAnimationBallClipRotate.swift */; };
-		A885151A6F1300266EDE677E27EA8CF7 /* PieSliceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E182235206B43DB731E2C05806AE98F /* PieSliceModel.swift */; };
-		ABBB689F5CDB33B2F8A4ADBC131AED8B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EE48DAC4AD4FC98EC01A9CC5B34AE82 /* Foundation.framework */; };
-		AE10ADA994336195F3DF62DC0BBDFFF6 /* NVActivityIndicatorAnimationBallDoubleBounce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF39A11DCC92822F0945B355519685D /* NVActivityIndicatorAnimationBallDoubleBounce.swift */; };
-		AE97C4E3169C923A3BA958DE546E502B /* NVActivityIndicatorAnimationBallPulseSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C8AFE1F067F2EB8B8214EE990E68C8 /* NVActivityIndicatorAnimationBallPulseSync.swift */; };
-		AF63525C26B16ECA99775FEEB5D9DAFB /* CGPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0464EC4C65F323EC89DA8E1320C9450 /* CGPoint.swift */; };
-		B00F98BA3B01E335F9C80C30EBF1B4B4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 009A3CF530BDED85FCFB71F2D51670CA /* QuartzCore.framework */; };
-		B03E8E2F62190B19257A70EAABA5B97C /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976A039B37738FC48CAA69A130A30A04 /* Int.swift */; };
-		B0B09FEE937FB48C19FF419E42AC2A99 /* NVActivityIndicatorAnimationBallClipRotatePulse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193460D77F43CC25B0EB93E641B78AD3 /* NVActivityIndicatorAnimationBallClipRotatePulse.swift */; };
-		B134C0718B093D382DFA0A018EF1E28F /* NVActivityIndicatorAnimationBallBeat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963127C889E98C6DA07B20774740EF4C /* NVActivityIndicatorAnimationBallBeat.swift */; };
-		B2AC85E53FA4319F6FF7D0CC6BBFB40D /* PieViewLayerAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956F0C87800EB6B965EEAA67560D89B4 /* PieViewLayerAnimator.swift */; };
-		B6FA683B14B58E9D859BF1C9DEF8A27C /* NVActivityIndicatorAnimationLineScalePulseOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = E306A8E9ACEFF8021A6DA8C066C65ED6 /* NVActivityIndicatorAnimationLineScalePulseOut.swift */; };
-		BBAF931620A2C7B622EC073B2FA16F89 /* PieCharts-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FE986C5414823E58F2D9F7709213758 /* PieCharts-dummy.m */; };
-		BCD6AA5DAAC2C1EF829F74DEC81D9308 /* CGRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BFDD2CE089C189DEA93F013C895208 /* CGRect.swift */; };
-		BECF0A35A0012D1292BD73577E987B79 /* NVActivityIndicatorAnimationBallGridPulse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448E74FF1076A54E7BC18E3F79582120 /* NVActivityIndicatorAnimationBallGridPulse.swift */; };
-		BF0B84E58E3DEEB09EF1767AF5F62467 /* NVActivityIndicatorAnimationBallClipRotateMultiple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0277B7310EAE150E2A723E45D4410F /* NVActivityIndicatorAnimationBallClipRotateMultiple.swift */; };
-		C76BF61E4968CD16E92EC3F5A47A4F64 /* PieSliceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE8E5D0C256495D1DFF0B156991A3F0 /* PieSliceDelegate.swift */; };
-		C8E0D25B4B31731E2D9AE57508C5458C /* CGSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97302224C1AF3F5B164E256B84050E8 /* CGSize.swift */; };
-		CB4F715622B5FDC9AC73CE162FC8AFE4 /* NVActivityIndicatorView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F9C36A3FF6F79009523D769426456CD0 /* NVActivityIndicatorView-dummy.m */; };
-		CD683A40B68E215866CEE0ED609C5EFD /* PieLineTextLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AECEF70BF5F54E9FCB605308C2B0CC6 /* PieLineTextLayer.swift */; };
-		CFED1D8E117462229AD408C055556D88 /* PieSliceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF53773CBCDFCE882BCD09EA26523431 /* PieSliceData.swift */; };
-		D073639EFB1D5504F6AFBDAA4676BA18 /* NVActivityIndicatorAnimationAudioEqualizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DD244B333B69BB1AF8BC73798DD854 /* NVActivityIndicatorAnimationAudioEqualizer.swift */; };
-		D63E22038D157AA162B92B8FD0AE3232 /* FloatingPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3631663E86CDCEE639EF359B3DDDF384 /* FloatingPoint.swift */; };
-		D77483E153D9327C337288531B48D3E6 /* PieChartLabelSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7332645C249B06A44EF59B7B4EFD6C2A /* PieChartLabelSettings.swift */; };
-		D86E23A9CC96F9ED57FB2A5D36643554 /* NVActivityIndicatorAnimationCubeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3F3B9EAB6A034A125B4CF7A1083E1C /* NVActivityIndicatorAnimationCubeTransition.swift */; };
-		D908C3602CA4905AD9F1AC0FF447CE9F /* NVActivityIndicatorAnimationBallZigZagDeflect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064EDBE29BF31B7D748092580C0E7BB0 /* NVActivityIndicatorAnimationBallZigZagDeflect.swift */; };
-		DF54D32B832B65C6BA766DA277C31071 /* NVActivityIndicatorAnimationBallPulseRise.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFA8DB440B23E26C3486E953B304871 /* NVActivityIndicatorAnimationBallPulseRise.swift */; };
-		E4EBFADC8B2C90F5310907FF21A45B54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EE48DAC4AD4FC98EC01A9CC5B34AE82 /* Foundation.framework */; };
-		E607C60452E2A0A34DD84848E2E0267E /* NVActivityIndicatorAnimationSemiCircleSpin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594EDA423D2048FB60C797610CB5A018 /* NVActivityIndicatorAnimationSemiCircleSpin.swift */; };
-		E7BC269660A431F5EC0ADCC5E14577AB /* NVActivityIndicatorAnimationLineSpinFadeLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844F25C29D87EFF062F2FE734FFFC3B5 /* NVActivityIndicatorAnimationLineSpinFadeLoader.swift */; };
-		EC975F7502419A2CBAAEE9C4F98184EA /* PieCharts-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B8739DDA323A2E9DB77B930EF5E9762A /* PieCharts-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EE4C44DB9A3E067C7660FAA862EE11B1 /* NVActivityIndicatorAnimationBallScale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5778789515DA3B693AC94E4CEC62EC /* NVActivityIndicatorAnimationBallScale.swift */; };
-		F416418C794FCA137962287221D2B15B /* PiePlainTextLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E784B8DF5AEC21873EA281ED3158E85F /* PiePlainTextLayer.swift */; };
-		F47E4E5707EB746E39CBA999CDF4DAA0 /* NVActivityIndicatorAnimationSquareSpin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874F64EB4F0311CA41204F8E55C6FE87 /* NVActivityIndicatorAnimationSquareSpin.swift */; };
+		8EF1CB45ED6FC85ECC3D163CFFC599C4 /* NVActivityIndicatorAnimationLineScaleParty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE5CAF1054CDCEB9C0B3E2F46148A78 /* NVActivityIndicatorAnimationLineScaleParty.swift */; };
+		8F37AF8C05B5B6751C5C8ACD3BC97175 /* Pods-Broomstick-BroomstickUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9B2CF622427AF9CBF52772AAF1B0E6 /* Pods-Broomstick-BroomstickUITests-dummy.m */; };
+		913AF8577C52A01F3C0DCAF27FDE9AA5 /* PieSlice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996AF17F7F023637B1E1AD994B5078A2 /* PieSlice.swift */; };
+		92C8C2279C0F027ED8F3184E6689B000 /* POPAnimatablePropertyTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 000315520A26E7EE49D451B5B9B21354 /* POPAnimatablePropertyTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		934FE03EB2862BE75A6D9C79A0F0D0F9 /* POPAnimationEvent.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1D5D6F42DA71FDB9A765F8846436471C /* POPAnimationEvent.mm */; };
+		945F66CC57EB589300296B053DE94D2C /* PieSliceLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669C75246BD4F4569967607EE157FB23 /* PieSliceLayer.swift */; };
+		963602F41BAC27D5DC81FEBD6986BA39 /* NVActivityIndicatorAnimationBallSpinFadeLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B20E78BA5989E1903AA73E48DEB223 /* NVActivityIndicatorAnimationBallSpinFadeLoader.swift */; };
+		9750808FCEAC99C25DE17DA51F113A49 /* NVActivityIndicatorAnimationCircleStrokeSpin.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE54F21A8FE3F92A2C95BAB0EC7D727E /* NVActivityIndicatorAnimationCircleStrokeSpin.swift */; };
+		9ABAD54A6F8699077541034BE0BCB87F /* Pods-Broomstick-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 891BE78844E2A789BEC0D82559BFD564 /* Pods-Broomstick-dummy.m */; };
+		9B802E602696AFE174BF6C901FEF9C75 /* POPCGUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = B304BEC37CEDC47EDF004C143990A6AE /* POPCGUtils.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9BA412D0119CAD1C5A535880E81BB29B /* NVActivityIndicatorAnimationTriangleSkewSpin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C964A48DA3A985330287D15ADEC93E /* NVActivityIndicatorAnimationTriangleSkewSpin.swift */; };
+		9D42D95CF916C54F70AB417E50ABCFD2 /* PieLineTextLayerAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4175880F06DD2CE0558318AEBCF3FF6 /* PieLineTextLayerAnimator.swift */; };
+		9F4487601DE06B744662316A639E7090 /* NVActivityIndicatorAnimationBallClipRotate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F768440911A128F245CBB4056617F87 /* NVActivityIndicatorAnimationBallClipRotate.swift */; };
+		A885151A6F1300266EDE677E27EA8CF7 /* PieSliceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A362BF333757B11CA0DCDD4C2AF52E /* PieSliceModel.swift */; };
+		AD5E053879DB42CD099465FE10891FD5 /* Koloda-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 105333963FE23BC00F3C7FAD32DB8CF6 /* Koloda-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AE10ADA994336195F3DF62DC0BBDFFF6 /* NVActivityIndicatorAnimationBallDoubleBounce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297DBEA5F43717C6227CC91CF1B52FC5 /* NVActivityIndicatorAnimationBallDoubleBounce.swift */; };
+		AE97C4E3169C923A3BA958DE546E502B /* NVActivityIndicatorAnimationBallPulseSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437EFFACF48A037DAD75D667E9E8E8AC /* NVActivityIndicatorAnimationBallPulseSync.swift */; };
+		AF63525C26B16ECA99775FEEB5D9DAFB /* CGPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75137F20AE5F15355629BB9531FBF7F6 /* CGPoint.swift */; };
+		AFE08FC448B83B7D5AB0EF44F158678C /* POPMath.mm in Sources */ = {isa = PBXBuildFile; fileRef = 33895E0F8DA3F6DF7C1C64EC0714C983 /* POPMath.mm */; };
+		B00F98BA3B01E335F9C80C30EBF1B4B4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1511E1B76B16ACEDD05AB7DE24480632 /* QuartzCore.framework */; };
+		B03E8E2F62190B19257A70EAABA5B97C /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2FBC2FA20CE21057328C206D63834E /* Int.swift */; };
+		B0B09FEE937FB48C19FF419E42AC2A99 /* NVActivityIndicatorAnimationBallClipRotatePulse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2393403954DE70B5689CF537AB48C873 /* NVActivityIndicatorAnimationBallClipRotatePulse.swift */; };
+		B134C0718B093D382DFA0A018EF1E28F /* NVActivityIndicatorAnimationBallBeat.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB386C6E630F8D8A6097924670CFC157 /* NVActivityIndicatorAnimationBallBeat.swift */; };
+		B2AC85E53FA4319F6FF7D0CC6BBFB40D /* PieViewLayerAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A79E819F3CB835E9E72BC03E6B0F8AD /* PieViewLayerAnimator.swift */; };
+		B3FE43DB65E7D04E9FF8D839CC82CE98 /* POPAnimatableProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C6B47A800CD11C6594A4142283D734A /* POPAnimatableProperty.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6FA683B14B58E9D859BF1C9DEF8A27C /* NVActivityIndicatorAnimationLineScalePulseOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48871AF3F284FD0772CBD667429572A6 /* NVActivityIndicatorAnimationLineScalePulseOut.swift */; };
+		B7CB04FCB0A240537FBC99DF6B79CBC7 /* POPAnimationEventInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 854C0EF7AC135E9DB3F82DD070FC77FF /* POPAnimationEventInternal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B8694D1ED7AE0F262215F333C2C4A8E0 /* Koloda-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C82549F2431ED3E1A991DDCF2DA789F5 /* Koloda-dummy.m */; };
+		BBAF931620A2C7B622EC073B2FA16F89 /* PieCharts-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F115C20594E57EC2CF56F83150A366D /* PieCharts-dummy.m */; };
+		BCD6AA5DAAC2C1EF829F74DEC81D9308 /* CGRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C23766211B352CC97281F3106B804F /* CGRect.swift */; };
+		BECF0A35A0012D1292BD73577E987B79 /* NVActivityIndicatorAnimationBallGridPulse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B6629E20286EE6C5AA0FD73220803B /* NVActivityIndicatorAnimationBallGridPulse.swift */; };
+		BF0B84E58E3DEEB09EF1767AF5F62467 /* NVActivityIndicatorAnimationBallClipRotateMultiple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257AD2B00438872455827CD24D683798 /* NVActivityIndicatorAnimationBallClipRotateMultiple.swift */; };
+		C22EC653A5EE8466E386AC79E78C27C4 /* POPPropertyAnimationInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 17CFFAA5C9DAF8FF9BB1A12F80B8ED96 /* POPPropertyAnimationInternal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C4A6913FB2B3A1A11A045A9404254DE4 /* POPSpringAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 02F6DBE5659351848A5DD6CFA2972258 /* POPSpringAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C76BF61E4968CD16E92EC3F5A47A4F64 /* PieSliceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578F9884E818B076B839B1009550EC5D /* PieSliceDelegate.swift */; };
+		C86D36961F9F6CB9A4D4A4E5AEEF83B8 /* Pods-Broomstick-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 404FD1B38D7FD53AEDA3A44566834BBD /* Pods-Broomstick-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C8E0D25B4B31731E2D9AE57508C5458C /* CGSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757FD86C97055CC9AF3BE0473C22C996 /* CGSize.swift */; };
+		CB4F715622B5FDC9AC73CE162FC8AFE4 /* NVActivityIndicatorView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C9E751C03A57038FF025B0660356C4 /* NVActivityIndicatorView-dummy.m */; };
+		CBDB135EEBCF7BE6566CC1E440F9ABE8 /* POPBasicAnimation.mm in Sources */ = {isa = PBXBuildFile; fileRef = 66316B5FE0EEC602D3EE822BB5C86974 /* POPBasicAnimation.mm */; };
+		CC44F7A6DBE5E0B39E7E4D63732417F7 /* TransformationMatrix.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EF9E7E01CB47ADFDFF948FF242E0B4E /* TransformationMatrix.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CCE0923BC9AF55EDF36D01CA8173B3FD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9F4CBD597617AB3A804B7AD5AA50CD7 /* Foundation.framework */; };
+		CD683A40B68E215866CEE0ED609C5EFD /* PieLineTextLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601A67D48ADA2679ACDBE1342A5E3559 /* PieLineTextLayer.swift */; };
+		CF8056315777506E2E81E2CDA4E6E666 /* SwipeResultDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88628708DE7EAFD78EE624F1200735E1 /* SwipeResultDirection.swift */; };
+		CFED1D8E117462229AD408C055556D88 /* PieSliceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6468588DAD9B1EBC75EC43C5652CF2B /* PieSliceData.swift */; };
+		D058645806841387CBE73876D3B5224E /* FloatConversion.h in Headers */ = {isa = PBXBuildFile; fileRef = DC31BA731599B944D4381DA95F72C04A /* FloatConversion.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D073639EFB1D5504F6AFBDAA4676BA18 /* NVActivityIndicatorAnimationAudioEqualizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01D21A8AFB2F58B11007C4955AAE08C /* NVActivityIndicatorAnimationAudioEqualizer.swift */; };
+		D45FDB7377DADDE6272D0E5A9EC9DFB7 /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46954188A7F9AF42D165B2478F4A31B9 /* OverlayView.swift */; };
+		D63E22038D157AA162B92B8FD0AE3232 /* FloatingPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7611CB0F88AED07D8B9E181C047C2EA7 /* FloatingPoint.swift */; };
+		D77483E153D9327C337288531B48D3E6 /* PieChartLabelSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1234BACBD1D306B12E46ED623801E0 /* PieChartLabelSettings.swift */; };
+		D829D1737E0FF16C65D435E2D8B005A5 /* POPBasicAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EB5C8C5A86FA479D651ED2603737F01 /* POPBasicAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D86E23A9CC96F9ED57FB2A5D36643554 /* NVActivityIndicatorAnimationCubeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD851CE5470998CF6573999C8EC17C5 /* NVActivityIndicatorAnimationCubeTransition.swift */; };
+		D908C3602CA4905AD9F1AC0FF447CE9F /* NVActivityIndicatorAnimationBallZigZagDeflect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639D9E901CB8B972AE9BA5840276AC12 /* NVActivityIndicatorAnimationBallZigZagDeflect.swift */; };
+		DE37E43D89C8017A6D898BD9AE863EF0 /* DraggableCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4FB9B55528F315EB09F2B12252595A /* DraggableCardView.swift */; };
+		DF2A02BED023FD3AB475331395941B3B /* POPAnimatorPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = EECDC59853F53991FFB1711C4CF44011 /* POPAnimatorPrivate.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DF54D32B832B65C6BA766DA277C31071 /* NVActivityIndicatorAnimationBallPulseRise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC811E04FD51D53DDDA7B9A22A534C6 /* NVActivityIndicatorAnimationBallPulseRise.swift */; };
+		DF91BBBAFF18FC97995F7EC7F80DEC27 /* POPGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 0004A05F035C1AF63429168EB92CE613 /* POPGeometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E1BC80377EC89FD4837DF0BAD0C7CEF3 /* POPDecayAnimationInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F0F12ADCB79B58E6FF3B393422F8AA7 /* POPDecayAnimationInternal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E2283AD7275742784BD5DCF0CCF13591 /* POPAnimationTracer.mm in Sources */ = {isa = PBXBuildFile; fileRef = FF72FD09626A17B0C9860578498FEFD1 /* POPAnimationTracer.mm */; };
+		E2C62E29968856FF618574D45DCC7481 /* POPSpringSolver.h in Headers */ = {isa = PBXBuildFile; fileRef = 3427450D15DED455C7145292EFFB663D /* POPSpringSolver.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E4EBFADC8B2C90F5310907FF21A45B54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9F4CBD597617AB3A804B7AD5AA50CD7 /* Foundation.framework */; };
+		E607C60452E2A0A34DD84848E2E0267E /* NVActivityIndicatorAnimationSemiCircleSpin.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A5EC62A3E35F326994214C54C11B45 /* NVActivityIndicatorAnimationSemiCircleSpin.swift */; };
+		E7BC269660A431F5EC0ADCC5E14577AB /* NVActivityIndicatorAnimationLineSpinFadeLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A7108E5941459BBAC9FBE9918C6341 /* NVActivityIndicatorAnimationLineSpinFadeLoader.swift */; };
+		E895EFDD5831389B6C1EF3BBBAD50DA4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9F4CBD597617AB3A804B7AD5AA50CD7 /* Foundation.framework */; };
+		EC975F7502419A2CBAAEE9C4F98184EA /* PieCharts-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AF198FE0D16BD4CD6E73F593421A44A1 /* PieCharts-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE4C44DB9A3E067C7660FAA862EE11B1 /* NVActivityIndicatorAnimationBallScale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B453899BF9443345824BF0446DA0BC2 /* NVActivityIndicatorAnimationBallScale.swift */; };
+		F1BBE90D18446CCD3802E187A68D868A /* POPAnimationEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = A0DC50D2927CC17F8C8F3FF65EE9FBFC /* POPAnimationEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F416418C794FCA137962287221D2B15B /* PiePlainTextLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40ADDB0C3AAEBB956C3891C595636F8 /* PiePlainTextLayer.swift */; };
+		F45E2A140C507EE9BE21AB3914AB452A /* POPBasicAnimationInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 664847F9631B5380E6EE5F27E1844534 /* POPBasicAnimationInternal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F47E4E5707EB746E39CBA999CDF4DAA0 /* NVActivityIndicatorAnimationSquareSpin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FE3DE2DD3B1F7D56C705FB578EC5AD /* NVActivityIndicatorAnimationSquareSpin.swift */; };
+		F49DF059345BE01D095163A629EABD47 /* POPCGUtils.mm in Sources */ = {isa = PBXBuildFile; fileRef = 98496A50888692331BC42E267B803601 /* POPCGUtils.mm */; };
 		F4FFBD3B286B5903EFEC2A9391944428 /* Pods-BroomstickTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BF48B3505116294C556455BBDF2A2B7B /* Pods-BroomstickTests-dummy.m */; };
-		F616D133446433EDF3CC65D4D61E91AD /* NVActivityIndicatorAnimationBallScaleMultiple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B530ACC414A3D65633380E791F49E0 /* NVActivityIndicatorAnimationBallScaleMultiple.swift */; };
-		FA0CF31BA34DD5842B9149BDB17B7A0F /* Pods-Broomstick-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 891BE78844E2A789BEC0D82559BFD564 /* Pods-Broomstick-dummy.m */; };
-		FA7BBA161351DF7866E4B7ABFA21578E /* Pods-Broomstick-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 404FD1B38D7FD53AEDA3A44566834BBD /* Pods-Broomstick-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FE472F104EC98B0F3B991A55E1E5DD39 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EE48DAC4AD4FC98EC01A9CC5B34AE82 /* Foundation.framework */; };
+		F5482272A13044739461D42C408F4B2C /* TransformationMatrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0E6BC2ED5CAE097290F96CDB67FCF510 /* TransformationMatrix.cpp */; };
+		F616D133446433EDF3CC65D4D61E91AD /* NVActivityIndicatorAnimationBallScaleMultiple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA6CF9416757F3206EF155743AA602C /* NVActivityIndicatorAnimationBallScaleMultiple.swift */; };
+		FACA872008F69372CFACE14BEF52C21E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDF4BC45EE06E790F42B3089EFCCE85E /* UIKit.framework */; };
+		FE472F104EC98B0F3B991A55E1E5DD39 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9F4CBD597617AB3A804B7AD5AA50CD7 /* Foundation.framework */; };
+		FF48C283366301E17F2C06EA9CB2696F /* POPAnimationTracerInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 9835574D09881FA5FAF7813EF7401E83 /* POPAnimationTracerInternal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FFC84FF194066FE8ED092DB7C1E10140 /* POPGeometry.mm in Sources */ = {isa = PBXBuildFile; fileRef = 73493E4BA975E6E9D72580234A947B23 /* POPGeometry.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0F6B9896B3A30DC9184279952036D242 /* PBXContainerItemProxy */ = {
+		0BAEE16761F2E8C759D80E11C05D11E8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 5352E9F7E2BA40B729D6F4355D629ED5;
-			remoteInfo = PieCharts;
+			remoteGlobalIDString = 0483D7F620C992E5C4BD62A7266EABB4;
+			remoteInfo = pop;
 		};
-		308D8F5D0C557ABF79791DE8351135B5 /* PBXContainerItemProxy */ = {
+		2A40EE88B9F82C561A0003FA1B30EC44 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 5352E9F7E2BA40B729D6F4355D629ED5;
-			remoteInfo = PieCharts;
+			remoteGlobalIDString = 0483D7F620C992E5C4BD62A7266EABB4;
+			remoteInfo = pop;
 		};
-		612B118175ED6F07E555DA315CA3B376 /* PBXContainerItemProxy */ = {
+		33A7BDB77770B250474D17BFD8AF8C06 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = AF8A82876C43F4DFD625D1823E680EAC;
-			remoteInfo = NVActivityIndicatorView;
+			remoteGlobalIDString = 0483D7F620C992E5C4BD62A7266EABB4;
+			remoteInfo = pop;
 		};
-		815C035A39043A9A548BFB201997D406 /* PBXContainerItemProxy */ = {
+		36B2A7201C233FDE1E62EE7C4CF2D80F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BEFF020077BA4696EE8AB4BA60B2D275;
+			remoteInfo = Koloda;
+		};
+		48B85DDC2C922BC997621BD23AA29320 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = F1EA7CEEEEF981610C9686430DF5B8A5;
 			remoteInfo = "Pods-Broomstick";
 		};
-		D6026E5DC72F3BB8BD216CAC399DD64C /* PBXContainerItemProxy */ = {
+		72A0222F963B1851C99EB7C0BD154431 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BEFF020077BA4696EE8AB4BA60B2D275;
+			remoteInfo = Koloda;
+		};
+		CABA6F950391C010C8288E2600C67C49 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5352E9F7E2BA40B729D6F4355D629ED5;
+			remoteInfo = PieCharts;
+		};
+		EB37D0AE9FB031241C4C7EFCB6495E68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5352E9F7E2BA40B729D6F4355D629ED5;
+			remoteInfo = PieCharts;
+		};
+		EE216BD1F9C9C531983977EA23B9D76D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF8A82876C43F4DFD625D1823E680EAC;
+			remoteInfo = NVActivityIndicatorView;
+		};
+		F1249F81C06C79203A2D8F64637F4BB3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -126,123 +228,225 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		009A3CF530BDED85FCFB71F2D51670CA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		000315520A26E7EE49D451B5B9B21354 /* POPAnimatablePropertyTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimatablePropertyTypes.h; path = pop/POPAnimatablePropertyTypes.h; sourceTree = "<group>"; };
+		0004A05F035C1AF63429168EB92CE613 /* POPGeometry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPGeometry.h; path = pop/POPGeometry.h; sourceTree = "<group>"; };
 		00A877AE0A8650A051D9ACB2E2837485 /* Pods-Broomstick-BroomstickUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Broomstick-BroomstickUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		02F6DBE5659351848A5DD6CFA2972258 /* POPSpringAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPSpringAnimation.h; path = pop/POPSpringAnimation.h; sourceTree = "<group>"; };
+		03C82B16A73FB9A3E259E8CAC016D663 /* NVActivityIndicatorAnimationBallRotate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallRotate.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationBallRotate.swift; sourceTree = "<group>"; };
 		04121C8AD2BCD733EE463B1A4B48349D /* Pods-Broomstick.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Broomstick.modulemap"; sourceTree = "<group>"; };
-		064EDBE29BF31B7D748092580C0E7BB0 /* NVActivityIndicatorAnimationBallZigZagDeflect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallZigZagDeflect.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationBallZigZagDeflect.swift; sourceTree = "<group>"; };
-		09ACC5DAD05BDB2F3B3DCF3FE1659204 /* PieCharts-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PieCharts-prefix.pch"; sourceTree = "<group>"; };
-		1250265549A0D1E2E4061D00153C4C19 /* PieChart.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PieChart.swift; path = PieCharts/Core/Chart/PieChart.swift; sourceTree = "<group>"; };
+		0425B829754001F48DE5C6693427C2EF /* POPSpringAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPSpringAnimation.mm; path = pop/POPSpringAnimation.mm; sourceTree = "<group>"; };
+		05C8F37A5BBC7926F93FED4EE5376CF2 /* POPVector.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPVector.mm; path = pop/POPVector.mm; sourceTree = "<group>"; };
+		06D95366EADEE694307E7BC343DEEAC9 /* NVActivityIndicatorAnimationLineScalePulseOutRapid.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationLineScalePulseOutRapid.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationLineScalePulseOutRapid.swift; sourceTree = "<group>"; };
+		0B03CB3A83CE43B7938A8930522D8CBD /* NVActivityIndicatorAnimationBlank.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBlank.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationBlank.swift; sourceTree = "<group>"; };
+		0B453899BF9443345824BF0446DA0BC2 /* NVActivityIndicatorAnimationBallScale.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallScale.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationBallScale.swift; sourceTree = "<group>"; };
+		0E6BC2ED5CAE097290F96CDB67FCF510 /* TransformationMatrix.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = TransformationMatrix.cpp; path = pop/WebCore/TransformationMatrix.cpp; sourceTree = "<group>"; };
+		105333963FE23BC00F3C7FAD32DB8CF6 /* Koloda-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Koloda-umbrella.h"; sourceTree = "<group>"; };
+		12C964A48DA3A985330287D15ADEC93E /* NVActivityIndicatorAnimationTriangleSkewSpin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationTriangleSkewSpin.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationTriangleSkewSpin.swift; sourceTree = "<group>"; };
 		141C771D00B32327501B56425523D398 /* PieCharts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PieCharts.framework; path = PieCharts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		193460D77F43CC25B0EB93E641B78AD3 /* NVActivityIndicatorAnimationBallClipRotatePulse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallClipRotatePulse.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationBallClipRotatePulse.swift; sourceTree = "<group>"; };
-		1DF39A11DCC92822F0945B355519685D /* NVActivityIndicatorAnimationBallDoubleBounce.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallDoubleBounce.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationBallDoubleBounce.swift; sourceTree = "<group>"; };
-		1E5778789515DA3B693AC94E4CEC62EC /* NVActivityIndicatorAnimationBallScale.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallScale.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationBallScale.swift; sourceTree = "<group>"; };
-		1EE48DAC4AD4FC98EC01A9CC5B34AE82 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		20038E60D3E500C6C72024DA59FB9619 /* PieCharts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PieCharts.debug.xcconfig; sourceTree = "<group>"; };
+		1511E1B76B16ACEDD05AB7DE24480632 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		17CFFAA5C9DAF8FF9BB1A12F80B8ED96 /* POPPropertyAnimationInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPPropertyAnimationInternal.h; path = pop/POPPropertyAnimationInternal.h; sourceTree = "<group>"; };
+		1827A3F8AA4AC67C878D9725DE99ED5D /* Koloda.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Koloda.framework; path = Koloda.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A8DF4F0C1D3490E3DD545D3E351CDC7 /* PieCharts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PieCharts.release.xcconfig; sourceTree = "<group>"; };
+		1CD07BBFF617B1AA790AEA3F79B11152 /* POPAnimationExtras.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPAnimationExtras.mm; path = pop/POPAnimationExtras.mm; sourceTree = "<group>"; };
+		1D5D6F42DA71FDB9A765F8846436471C /* POPAnimationEvent.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPAnimationEvent.mm; path = pop/POPAnimationEvent.mm; sourceTree = "<group>"; };
+		1EE5B80F002C74EEC1799788B7245947 /* KolodaCardStorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KolodaCardStorage.swift; path = Pod/Classes/KolodaView/KolodaCardStorage.swift; sourceTree = "<group>"; };
 		20787798431938B21BB55D7A6161A5F4 /* Pods-BroomstickTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BroomstickTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		23CC8CC38860A918B0B9A2B06C05C9F9 /* NVActivityIndicatorAnimationBallRotateChase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallRotateChase.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationBallRotateChase.swift; sourceTree = "<group>"; };
+		2393403954DE70B5689CF537AB48C873 /* NVActivityIndicatorAnimationBallClipRotatePulse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallClipRotatePulse.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationBallClipRotatePulse.swift; sourceTree = "<group>"; };
+		257AD2B00438872455827CD24D683798 /* NVActivityIndicatorAnimationBallClipRotateMultiple.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallClipRotateMultiple.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationBallClipRotateMultiple.swift; sourceTree = "<group>"; };
+		258D87DE53C0CB178EF39F2F65F6865F /* pop.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = pop.modulemap; sourceTree = "<group>"; };
 		281E403313CEA8D06A128FB8DB1BCA01 /* Pods-Broomstick-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Broomstick-frameworks.sh"; sourceTree = "<group>"; };
-		356D86DEDC7885A50F5A1BD4BDA73390 /* AlphaPieLineTextLayerAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlphaPieLineTextLayerAnimator.swift; path = PieCharts/Layer/Impl/LineText/Anim/AlphaPieLineTextLayerAnimator.swift; sourceTree = "<group>"; };
-		35B530ACC414A3D65633380E791F49E0 /* NVActivityIndicatorAnimationBallScaleMultiple.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallScaleMultiple.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationBallScaleMultiple.swift; sourceTree = "<group>"; };
-		3631663E86CDCEE639EF359B3DDDF384 /* FloatingPoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FloatingPoint.swift; path = PieCharts/Extensions/FloatingPoint.swift; sourceTree = "<group>"; };
-		3C45D7595751E01161345550193049C2 /* NVActivityIndicatorAnimationBallRotate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallRotate.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationBallRotate.swift; sourceTree = "<group>"; };
-		3C76D4E281351C0FCEC93D826CBD0F29 /* NVActivityIndicatorView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "NVActivityIndicatorView-Info.plist"; sourceTree = "<group>"; };
-		3DE8E5D0C256495D1DFF0B156991A3F0 /* PieSliceDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PieSliceDelegate.swift; path = PieCharts/Core/Slice/PieSliceDelegate.swift; sourceTree = "<group>"; };
+		297DBEA5F43717C6227CC91CF1B52FC5 /* NVActivityIndicatorAnimationBallDoubleBounce.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallDoubleBounce.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationBallDoubleBounce.swift; sourceTree = "<group>"; };
+		2AD2370BE0C6CAC38DBE116597E7D9FB /* POPVector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPVector.h; path = pop/POPVector.h; sourceTree = "<group>"; };
+		2B1254ECFD5CBA9E9ADE6608D5DB5D91 /* NVActivityIndicatorAnimationBallScaleRipple.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallScaleRipple.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationBallScaleRipple.swift; sourceTree = "<group>"; };
+		2C6B47A800CD11C6594A4142283D734A /* POPAnimatableProperty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimatableProperty.h; path = pop/POPAnimatableProperty.h; sourceTree = "<group>"; };
+		2F5B2E694508C9DDB1FAC899F28D08D4 /* POPAnimationTracer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationTracer.h; path = pop/POPAnimationTracer.h; sourceTree = "<group>"; };
+		33895E0F8DA3F6DF7C1C64EC0714C983 /* POPMath.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPMath.mm; path = pop/POPMath.mm; sourceTree = "<group>"; };
+		33E6EF79EA73155AB283513D67AFFF88 /* Koloda-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Koloda-Info.plist"; sourceTree = "<group>"; };
+		3427450D15DED455C7145292EFFB663D /* POPSpringSolver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPSpringSolver.h; path = pop/POPSpringSolver.h; sourceTree = "<group>"; };
+		35FE3DE2DD3B1F7D56C705FB578EC5AD /* NVActivityIndicatorAnimationSquareSpin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationSquareSpin.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationSquareSpin.swift; sourceTree = "<group>"; };
+		3840B0DFE15CAC2722C4285A52F52C65 /* Koloda.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Koloda.release.xcconfig; sourceTree = "<group>"; };
 		3F009DFB8551BD11AD96CD1D0B470613 /* Pods-BroomstickTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BroomstickTests.debug.xcconfig"; sourceTree = "<group>"; };
-		3F5F9D40C59C5F639EEA42B423C6B016 /* NVActivityIndicatorAnimationBlank.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBlank.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationBlank.swift; sourceTree = "<group>"; };
-		3FE986C5414823E58F2D9F7709213758 /* PieCharts-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PieCharts-dummy.m"; sourceTree = "<group>"; };
+		3F0F12ADCB79B58E6FF3B393422F8AA7 /* POPDecayAnimationInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPDecayAnimationInternal.h; path = pop/POPDecayAnimationInternal.h; sourceTree = "<group>"; };
 		404FD1B38D7FD53AEDA3A44566834BBD /* Pods-Broomstick-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Broomstick-umbrella.h"; sourceTree = "<group>"; };
+		405A4018B59096B7001DFAF6F7384E71 /* POPCustomAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPCustomAnimation.h; path = pop/POPCustomAnimation.h; sourceTree = "<group>"; };
+		4141DADC15C486CA7490B74A9C8BBB3A /* POPAnimatableProperty.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPAnimatableProperty.mm; path = pop/POPAnimatableProperty.mm; sourceTree = "<group>"; };
+		4351EDB8EE32D862ED9932C14842840D /* POPLayerExtras.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPLayerExtras.mm; path = pop/POPLayerExtras.mm; sourceTree = "<group>"; };
+		437EFFACF48A037DAD75D667E9E8E8AC /* NVActivityIndicatorAnimationBallPulseSync.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallPulseSync.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationBallPulseSync.swift; sourceTree = "<group>"; };
 		43849E99E9EDAD53E65CDFCE8CD31682 /* Pods-BroomstickTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BroomstickTests-umbrella.h"; sourceTree = "<group>"; };
-		448E74FF1076A54E7BC18E3F79582120 /* NVActivityIndicatorAnimationBallGridPulse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallGridPulse.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationBallGridPulse.swift; sourceTree = "<group>"; };
+		46954188A7F9AF42D165B2478F4A31B9 /* OverlayView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OverlayView.swift; path = Pod/Classes/KolodaView/OverlayView/OverlayView.swift; sourceTree = "<group>"; };
+		480A2A52CC9E97479EE71AF0CB3FEF79 /* POPAnimationPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationPrivate.h; path = pop/POPAnimationPrivate.h; sourceTree = "<group>"; };
 		484CC63E11A3ABED14C3B6187BB200BB /* Pods-Broomstick-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Broomstick-acknowledgements.markdown"; sourceTree = "<group>"; };
-		49BFDD2CE089C189DEA93F013C895208 /* CGRect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CGRect.swift; path = PieCharts/Extensions/CGRect.swift; sourceTree = "<group>"; };
-		594EDA423D2048FB60C797610CB5A018 /* NVActivityIndicatorAnimationSemiCircleSpin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationSemiCircleSpin.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationSemiCircleSpin.swift; sourceTree = "<group>"; };
-		5AECEF70BF5F54E9FCB605308C2B0CC6 /* PieLineTextLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PieLineTextLayer.swift; path = PieCharts/Layer/Impl/LineText/PieLineTextLayer.swift; sourceTree = "<group>"; };
+		48871AF3F284FD0772CBD667429572A6 /* NVActivityIndicatorAnimationLineScalePulseOut.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationLineScalePulseOut.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationLineScalePulseOut.swift; sourceTree = "<group>"; };
+		48F75FCF2F65F9BA88673B4615C01D3D /* NVActivityIndicatorView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "NVActivityIndicatorView-Info.plist"; sourceTree = "<group>"; };
+		49E42E7380C3517667CF676380E7C0B4 /* POPAnimationRuntime.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPAnimationRuntime.mm; path = pop/POPAnimationRuntime.mm; sourceTree = "<group>"; };
+		50D37D8157C04D0BE558859829AB51E0 /* NVActivityIndicatorView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = NVActivityIndicatorView.modulemap; sourceTree = "<group>"; };
+		51305B2D9D8DA36D89CC277D729083D2 /* pop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = pop.framework; path = pop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		51A362BF333757B11CA0DCDD4C2AF52E /* PieSliceModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PieSliceModel.swift; path = PieCharts/Model/PieSliceModel.swift; sourceTree = "<group>"; };
+		538989E6CE967D75CD300ACC8D5AC7FC /* pop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = pop.debug.xcconfig; sourceTree = "<group>"; };
+		578F9884E818B076B839B1009550EC5D /* PieSliceDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PieSliceDelegate.swift; path = PieCharts/Core/Slice/PieSliceDelegate.swift; sourceTree = "<group>"; };
+		5987232B7A6BA850D144369EE0A212B2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		5D405C044729041F3A608741F0214C99 /* KolodaAnimationSemaphore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KolodaAnimationSemaphore.swift; path = Pod/Classes/KolodaView/KolodaAnimationSemaphore.swift; sourceTree = "<group>"; };
+		5E896ED2A1A8B911185D39D743AB2BB1 /* PieCharts.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PieCharts.modulemap; sourceTree = "<group>"; };
+		5F32D44421F5A89F307556FFA661D989 /* POPMath.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPMath.h; path = pop/POPMath.h; sourceTree = "<group>"; };
+		5F7FECADC6552F5AA219A76347203B33 /* NVActivityIndicatorAnimationBallScaleRippleMultiple.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallScaleRippleMultiple.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationBallScaleRippleMultiple.swift; sourceTree = "<group>"; };
+		601A67D48ADA2679ACDBE1342A5E3559 /* PieLineTextLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PieLineTextLayer.swift; path = PieCharts/Layer/Impl/LineText/PieLineTextLayer.swift; sourceTree = "<group>"; };
 		61C6037FD3443A2A03E06B9034350CD2 /* Pods-Broomstick.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Broomstick.debug.xcconfig"; sourceTree = "<group>"; };
-		628DF69E0652CE3A56B27779D124C65A /* PieSlice.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PieSlice.swift; path = PieCharts/Core/Slice/PieSlice.swift; sourceTree = "<group>"; };
-		64D998436F919A7F2C1F71BE74E1AB6F /* PieLineTextLayerAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PieLineTextLayerAnimator.swift; path = PieCharts/Layer/Impl/LineText/Anim/PieLineTextLayerAnimator.swift; sourceTree = "<group>"; };
-		65A56243BB7718920A1E62092F97E05B /* NVActivityIndicatorShape.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorShape.swift; path = Sources/Base/NVActivityIndicatorShape.swift; sourceTree = "<group>"; };
+		639D9E901CB8B972AE9BA5840276AC12 /* NVActivityIndicatorAnimationBallZigZagDeflect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallZigZagDeflect.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationBallZigZagDeflect.swift; sourceTree = "<group>"; };
+		65C23766211B352CC97281F3106B804F /* CGRect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CGRect.swift; path = PieCharts/Extensions/CGRect.swift; sourceTree = "<group>"; };
+		66316B5FE0EEC602D3EE822BB5C86974 /* POPBasicAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPBasicAnimation.mm; path = pop/POPBasicAnimation.mm; sourceTree = "<group>"; };
+		664847F9631B5380E6EE5F27E1844534 /* POPBasicAnimationInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPBasicAnimationInternal.h; path = pop/POPBasicAnimationInternal.h; sourceTree = "<group>"; };
+		669C75246BD4F4569967607EE157FB23 /* PieSliceLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PieSliceLayer.swift; path = PieCharts/Core/Slice/PieSliceLayer.swift; sourceTree = "<group>"; };
 		66EA50C7AE650C3C7C1A8974525F33A3 /* Pods-BroomstickTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BroomstickTests-Info.plist"; sourceTree = "<group>"; };
-		68C6861E96B531AD6241066804CC9827 /* AlphaPieViewLayerAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlphaPieViewLayerAnimator.swift; path = PieCharts/Layer/Impl/View/Anim/AlphaPieViewLayerAnimator.swift; sourceTree = "<group>"; };
+		67B6629E20286EE6C5AA0FD73220803B /* NVActivityIndicatorAnimationBallGridPulse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallGridPulse.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationBallGridPulse.swift; sourceTree = "<group>"; };
+		6925180062A66FD2AF8FA2E1518E83E1 /* PieCharts-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PieCharts-prefix.pch"; sourceTree = "<group>"; };
 		69BFC472D8F745B040C3D3EEE896CAA6 /* Pods-BroomstickTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BroomstickTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		69DACBC56CE2DC9C5F67CE9F57DBB2BF /* NVActivityIndicatorAnimationPacman.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationPacman.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationPacman.swift; sourceTree = "<group>"; };
-		6A0D97A993397BE67026AD967D13D4DF /* NVActivityIndicatorAnimationBallPulse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallPulse.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationBallPulse.swift; sourceTree = "<group>"; };
-		6E1EC047A744CDFC92AE1482B0B88875 /* NVActivityIndicatorAnimationBallScaleRipple.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallScaleRipple.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationBallScaleRipple.swift; sourceTree = "<group>"; };
+		6A0030EDBE0F2DE30B3B715165BC39D4 /* PieCharts-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PieCharts-Info.plist"; sourceTree = "<group>"; };
+		6B555C889D431AF7FE0CE13A9A18F862 /* pop-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "pop-Info.plist"; sourceTree = "<group>"; };
+		6BE5CAF1054CDCEB9C0B3E2F46148A78 /* NVActivityIndicatorAnimationLineScaleParty.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationLineScaleParty.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationLineScaleParty.swift; sourceTree = "<group>"; };
+		6DD13665449F90B6AAF7E852A7D69997 /* POPAnimator.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPAnimator.mm; path = pop/POPAnimator.mm; sourceTree = "<group>"; };
+		6E110DF3FA3933269B6CEE07D2140EEC /* NVActivityIndicatorView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NVActivityIndicatorView.release.xcconfig; sourceTree = "<group>"; };
+		6EB5C8C5A86FA479D651ED2603737F01 /* POPBasicAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPBasicAnimation.h; path = pop/POPBasicAnimation.h; sourceTree = "<group>"; };
+		6EF9E7E01CB47ADFDFF948FF242E0B4E /* TransformationMatrix.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TransformationMatrix.h; path = pop/WebCore/TransformationMatrix.h; sourceTree = "<group>"; };
+		6F115C20594E57EC2CF56F83150A366D /* PieCharts-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PieCharts-dummy.m"; sourceTree = "<group>"; };
 		6F441976B0E48AD4BA4D3F0F91FCD8DC /* Pods-Broomstick-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Broomstick-acknowledgements.plist"; sourceTree = "<group>"; };
-		71BBEAB859C48569C695B0B3FB39F6F9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		7332645C249B06A44EF59B7B4EFD6C2A /* PieChartLabelSettings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PieChartLabelSettings.swift; path = PieCharts/Layer/Impl/Common/PieChartLabelSettings.swift; sourceTree = "<group>"; };
-		7C0277B7310EAE150E2A723E45D4410F /* NVActivityIndicatorAnimationBallClipRotateMultiple.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallClipRotateMultiple.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationBallClipRotateMultiple.swift; sourceTree = "<group>"; };
-		7FD96AA5D6963FC919CBB406C2FC7534 /* NVActivityIndicatorView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = NVActivityIndicatorView.modulemap; sourceTree = "<group>"; };
-		844F25C29D87EFF062F2FE734FFFC3B5 /* NVActivityIndicatorAnimationLineSpinFadeLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationLineSpinFadeLoader.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationLineSpinFadeLoader.swift; sourceTree = "<group>"; };
+		73493E4BA975E6E9D72580234A947B23 /* POPGeometry.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPGeometry.mm; path = pop/POPGeometry.mm; sourceTree = "<group>"; };
+		7418B4BA656FFA23FA8400590BCADD23 /* Koloda-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Koloda-prefix.pch"; sourceTree = "<group>"; };
+		7455F86E9D9C05B192374143EC286EA8 /* NVActivityIndicatorAnimationLineScale.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationLineScale.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationLineScale.swift; sourceTree = "<group>"; };
+		75137F20AE5F15355629BB9531FBF7F6 /* CGPoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CGPoint.swift; path = PieCharts/Extensions/CGPoint.swift; sourceTree = "<group>"; };
+		757FD86C97055CC9AF3BE0473C22C996 /* CGSize.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CGSize.swift; path = PieCharts/Extensions/CGSize.swift; sourceTree = "<group>"; };
+		7611CB0F88AED07D8B9E181C047C2EA7 /* FloatingPoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FloatingPoint.swift; path = PieCharts/Extensions/FloatingPoint.swift; sourceTree = "<group>"; };
+		765B861BCEFA41435ABD19030233D440 /* pop-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "pop-dummy.m"; sourceTree = "<group>"; };
+		76C430E270BE93358908BDD49735B35B /* KolodaView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KolodaView.swift; path = Pod/Classes/KolodaView/KolodaView.swift; sourceTree = "<group>"; };
+		7828123EB47ECBDA1B44185F5984EFBA /* AlphaPieLineTextLayerAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlphaPieLineTextLayerAnimator.swift; path = PieCharts/Layer/Impl/LineText/Anim/AlphaPieLineTextLayerAnimator.swift; sourceTree = "<group>"; };
+		78749E3D7710D8395D5EEF1E0F940D6D /* POP.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POP.h; path = pop/POP.h; sourceTree = "<group>"; };
+		791B18D6550D9BF47BAE29A81D2A04AD /* NVActivityIndicatorView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NVActivityIndicatorView.debug.xcconfig; sourceTree = "<group>"; };
+		7E6F66168915D9CE7A36F5623CC2002B /* PieChartDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PieChartDelegate.swift; path = PieCharts/Core/Chart/PieChartDelegate.swift; sourceTree = "<group>"; };
+		81F23C0BA00119BADBC766DF0F315698 /* pop-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "pop-prefix.pch"; sourceTree = "<group>"; };
 		845B3BC4BC3FECC3C8BB63C50A80CC1A /* Pods-Broomstick-BroomstickUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Broomstick-BroomstickUITests.release.xcconfig"; sourceTree = "<group>"; };
 		85348B67844F1EE97C729E399E6B49F8 /* Pods-BroomstickTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BroomstickTests.modulemap"; sourceTree = "<group>"; };
-		874F64EB4F0311CA41204F8E55C6FE87 /* NVActivityIndicatorAnimationSquareSpin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationSquareSpin.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationSquareSpin.swift; sourceTree = "<group>"; };
-		8815B19FB1689658EF3D57BEFD14E408 /* PieCharts-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PieCharts-Info.plist"; sourceTree = "<group>"; };
+		854C0EF7AC135E9DB3F82DD070FC77FF /* POPAnimationEventInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationEventInternal.h; path = pop/POPAnimationEventInternal.h; sourceTree = "<group>"; };
+		87EEAED6DA312B5B4950A6CF65E6DF46 /* NVActivityIndicatorView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NVActivityIndicatorView-prefix.pch"; sourceTree = "<group>"; };
+		87F123D9BD4F96DBF991331A905862CE /* POPAnimationRuntime.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationRuntime.h; path = pop/POPAnimationRuntime.h; sourceTree = "<group>"; };
+		88628708DE7EAFD78EE624F1200735E1 /* SwipeResultDirection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeResultDirection.swift; path = Pod/Classes/KolodaView/SwipeResultDirection.swift; sourceTree = "<group>"; };
 		88C8BA00B58D3845A38C3E22627FDE0C /* Pods-Broomstick-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Broomstick-Info.plist"; sourceTree = "<group>"; };
+		88E92AE8CC6E69754D01DFFFE67017A4 /* NVActivityIndicatorAnimationOrbit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationOrbit.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationOrbit.swift; sourceTree = "<group>"; };
 		891BE78844E2A789BEC0D82559BFD564 /* Pods-Broomstick-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Broomstick-dummy.m"; sourceTree = "<group>"; };
-		8E182235206B43DB731E2C05806AE98F /* PieSliceModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PieSliceModel.swift; path = PieCharts/Model/PieSliceModel.swift; sourceTree = "<group>"; };
-		956F0C87800EB6B965EEAA67560D89B4 /* PieViewLayerAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PieViewLayerAnimator.swift; path = PieCharts/Layer/Impl/View/Anim/PieViewLayerAnimator.swift; sourceTree = "<group>"; };
-		95CD2FCC5A73DE791CC35F891C97EBF1 /* NVActivityIndicatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorView.swift; path = Sources/Base/NVActivityIndicatorView.swift; sourceTree = "<group>"; };
-		963127C889E98C6DA07B20774740EF4C /* NVActivityIndicatorAnimationBallBeat.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallBeat.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationBallBeat.swift; sourceTree = "<group>"; };
-		976A039B37738FC48CAA69A130A30A04 /* Int.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Int.swift; path = PieCharts/Extensions/Int.swift; sourceTree = "<group>"; };
-		98C83079743143670367E4922467F5BA /* PieChartDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PieChartDelegate.swift; path = PieCharts/Core/Chart/PieChartDelegate.swift; sourceTree = "<group>"; };
-		99A4726E5E55846602269ECBD5D17A4E /* PieCharts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PieCharts.release.xcconfig; sourceTree = "<group>"; };
+		8B1F1A9952554A175DFBA545FEFDC146 /* POPLayerExtras.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPLayerExtras.h; path = pop/POPLayerExtras.h; sourceTree = "<group>"; };
+		8BDCF6609DA5590DDE7D5675FAE6995A /* NVActivityIndicatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorView.swift; path = Sources/Base/NVActivityIndicatorView.swift; sourceTree = "<group>"; };
+		8FA6CF9416757F3206EF155743AA602C /* NVActivityIndicatorAnimationBallScaleMultiple.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallScaleMultiple.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationBallScaleMultiple.swift; sourceTree = "<group>"; };
+		93D50C0F9745F93366AA25EDAB27B63D /* NVActivityIndicatorShape.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorShape.swift; path = Sources/Base/NVActivityIndicatorShape.swift; sourceTree = "<group>"; };
+		98341A95BDB2EB384FFF525CE37356E8 /* PieChart.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PieChart.swift; path = PieCharts/Core/Chart/PieChart.swift; sourceTree = "<group>"; };
+		9835574D09881FA5FAF7813EF7401E83 /* POPAnimationTracerInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationTracerInternal.h; path = pop/POPAnimationTracerInternal.h; sourceTree = "<group>"; };
+		98496A50888692331BC42E267B803601 /* POPCGUtils.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPCGUtils.mm; path = pop/POPCGUtils.mm; sourceTree = "<group>"; };
+		996AF17F7F023637B1E1AD994B5078A2 /* PieSlice.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PieSlice.swift; path = PieCharts/Core/Slice/PieSlice.swift; sourceTree = "<group>"; };
+		9A0F013A27AC27D35F2C482BC1159484 /* Koloda.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Koloda.debug.xcconfig; sourceTree = "<group>"; };
 		9A1D0DA12D7D1C7ABE395DBF6A949EE3 /* Pods_Broomstick_BroomstickUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Broomstick_BroomstickUITests.framework; path = "Pods-Broomstick-BroomstickUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9C479A2ABAA2A6DB78BD712402D74BBF /* Globals.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Globals.swift; path = PieCharts/Util/Globals.swift; sourceTree = "<group>"; };
+		9A79E819F3CB835E9E72BC03E6B0F8AD /* PieViewLayerAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PieViewLayerAnimator.swift; path = PieCharts/Layer/Impl/View/Anim/PieViewLayerAnimator.swift; sourceTree = "<group>"; };
+		9B6596425594F542F12F2B1A718333B8 /* NVActivityIndicatorAnimationBallGridBeat.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallGridBeat.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationBallGridBeat.swift; sourceTree = "<group>"; };
+		9D5D9729019810F231FC5FD905127151 /* AlphaPieViewLayerAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlphaPieViewLayerAnimator.swift; path = PieCharts/Layer/Impl/View/Anim/AlphaPieViewLayerAnimator.swift; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A0464EC4C65F323EC89DA8E1320C9450 /* CGPoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CGPoint.swift; path = PieCharts/Extensions/CGPoint.swift; sourceTree = "<group>"; };
+		9EAC97E28410191E8F06B2B651FE2416 /* POPAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimator.h; path = pop/POPAnimator.h; sourceTree = "<group>"; };
+		9EC811E04FD51D53DDDA7B9A22A534C6 /* NVActivityIndicatorAnimationBallPulseRise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallPulseRise.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationBallPulseRise.swift; sourceTree = "<group>"; };
+		9F768440911A128F245CBB4056617F87 /* NVActivityIndicatorAnimationBallClipRotate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallClipRotate.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationBallClipRotate.swift; sourceTree = "<group>"; };
+		A0DC50D2927CC17F8C8F3FF65EE9FBFC /* POPAnimationEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationEvent.h; path = pop/POPAnimationEvent.h; sourceTree = "<group>"; };
 		A1B9F27862201CD82B398E0B35B14128 /* NVActivityIndicatorView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NVActivityIndicatorView.framework; path = NVActivityIndicatorView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A545F12C74197AA80B76E5B58B9E7391 /* NVActivityIndicatorView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NVActivityIndicatorView-prefix.pch"; sourceTree = "<group>"; };
-		A605F8E3888E978024A9DF4B77838B38 /* PieChartLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PieChartLayer.swift; path = PieCharts/Layer/PieChartLayer.swift; sourceTree = "<group>"; };
-		A96B8FD07845D00A9AC75059FE375379 /* NVActivityIndicatorAnimationBallClipRotate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallClipRotate.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationBallClipRotate.swift; sourceTree = "<group>"; };
-		AA3F3B9EAB6A034A125B4CF7A1083E1C /* NVActivityIndicatorAnimationCubeTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationCubeTransition.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationCubeTransition.swift; sourceTree = "<group>"; };
-		AAFA8DB440B23E26C3486E953B304871 /* NVActivityIndicatorAnimationBallPulseRise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallPulseRise.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationBallPulseRise.swift; sourceTree = "<group>"; };
-		AD3B433B01C20155487CD3CC7E59248F /* NVActivityIndicatorAnimationLineScaleParty.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationLineScaleParty.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationLineScaleParty.swift; sourceTree = "<group>"; };
-		ADC97686C2A099145C9B33A085B99A97 /* NVActivityIndicatorAnimationOrbit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationOrbit.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationOrbit.swift; sourceTree = "<group>"; };
-		AF53773CBCDFCE882BCD09EA26523431 /* PieSliceData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PieSliceData.swift; path = PieCharts/Model/PieSliceData.swift; sourceTree = "<group>"; };
+		A4FA2D905121DA6A920C2794CA2393DB /* pop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = pop.release.xcconfig; sourceTree = "<group>"; };
+		A6468588DAD9B1EBC75EC43C5652CF2B /* PieSliceData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PieSliceData.swift; path = PieCharts/Model/PieSliceData.swift; sourceTree = "<group>"; };
+		A839C3BD527A2D98195D6BDEC0E38E32 /* POPAction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAction.h; path = pop/POPAction.h; sourceTree = "<group>"; };
+		AAE857A396895A05E966CFCBB37463A4 /* POPDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPDefines.h; path = pop/POPDefines.h; sourceTree = "<group>"; };
+		ACC71E3670A14F54B9AF3F11079C0929 /* POPSpringAnimationInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPSpringAnimationInternal.h; path = pop/POPSpringAnimationInternal.h; sourceTree = "<group>"; };
+		AF198FE0D16BD4CD6E73F593421A44A1 /* PieCharts-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PieCharts-umbrella.h"; sourceTree = "<group>"; };
+		AF7CFE0997072103ABAE1E7D49E8D5BB /* NVActivityIndicatorView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NVActivityIndicatorView-umbrella.h"; sourceTree = "<group>"; };
 		B10AD982D9B3B4F455BAB9C07A0146C4 /* Pods-Broomstick-BroomstickUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Broomstick-BroomstickUITests-frameworks.sh"; sourceTree = "<group>"; };
 		B1F8249BF6C1EEEF8067497558BCB208 /* Pods_Broomstick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Broomstick.framework; path = "Pods-Broomstick.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B4D94B6FAD124D3569721BB8B98F85E4 /* NVActivityIndicatorAnimationBallTrianglePath.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallTrianglePath.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationBallTrianglePath.swift; sourceTree = "<group>"; };
-		B8739DDA323A2E9DB77B930EF5E9762A /* PieCharts-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PieCharts-umbrella.h"; sourceTree = "<group>"; };
-		B8B8FFB9AA1182A064657E9C0A3C6F72 /* PieCharts.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PieCharts.modulemap; sourceTree = "<group>"; };
+		B304BEC37CEDC47EDF004C143990A6AE /* POPCGUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPCGUtils.h; path = pop/POPCGUtils.h; sourceTree = "<group>"; };
+		B46C97AAFCB75FFA6C9142918B21329D /* pop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = pop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4A5EC62A3E35F326994214C54C11B45 /* NVActivityIndicatorAnimationSemiCircleSpin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationSemiCircleSpin.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationSemiCircleSpin.swift; sourceTree = "<group>"; };
 		BC4032E5B2CE0DA72E59BBA293B38FB0 /* Pods-BroomstickTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BroomstickTests.release.xcconfig"; sourceTree = "<group>"; };
-		BD50720A92C566085692F6865C3DA4B3 /* NVActivityIndicatorView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NVActivityIndicatorView.debug.xcconfig; sourceTree = "<group>"; };
-		BE36F2CFD4C7B082D1A63F4DF427B3FE /* PieSliceLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PieSliceLayer.swift; path = PieCharts/Core/Slice/PieSliceLayer.swift; sourceTree = "<group>"; };
+		BE10D2D8686D2F3EDEB2C72839B79103 /* NVActivityIndicatorAnimationBallTrianglePath.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallTrianglePath.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationBallTrianglePath.swift; sourceTree = "<group>"; };
+		BE2FBC2FA20CE21057328C206D63834E /* Int.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Int.swift; path = PieCharts/Extensions/Int.swift; sourceTree = "<group>"; };
+		BE54F21A8FE3F92A2C95BAB0EC7D727E /* NVActivityIndicatorAnimationCircleStrokeSpin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationCircleStrokeSpin.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationCircleStrokeSpin.swift; sourceTree = "<group>"; };
 		BEFB031C590BF65F7FED33908EC96886 /* Pods-Broomstick-BroomstickUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Broomstick-BroomstickUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		BF48B3505116294C556455BBDF2A2B7B /* Pods-BroomstickTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BroomstickTests-dummy.m"; sourceTree = "<group>"; };
+		C0E5FDE3EF5D401033BEB8E6B1A0F3E8 /* POPAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimation.h; path = pop/POPAnimation.h; sourceTree = "<group>"; };
 		C130158D09015EAC3150BBE793AB94A0 /* Pods_BroomstickTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BroomstickTests.framework; path = "Pods-BroomstickTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C40ADDB0C3AAEBB956C3891C595636F8 /* PiePlainTextLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PiePlainTextLayer.swift; path = PieCharts/Layer/Impl/PlainText/PiePlainTextLayer.swift; sourceTree = "<group>"; };
 		C586F53AD0D3C2924D0C1256E49477BE /* Pods-Broomstick-BroomstickUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Broomstick-BroomstickUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		C74CE136BF7C3F042D2F5CBF53324CD0 /* NVActivityIndicatorAnimationCircleStrokeSpin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationCircleStrokeSpin.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationCircleStrokeSpin.swift; sourceTree = "<group>"; };
+		C6019726BC6E406011B0F8E55B232877 /* NVActivityIndicatorAnimationBallRotateChase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallRotateChase.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationBallRotateChase.swift; sourceTree = "<group>"; };
+		C6554C32159023A696EE5320F390937C /* UnitBezier.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UnitBezier.h; path = pop/WebCore/UnitBezier.h; sourceTree = "<group>"; };
+		C7B20E78BA5989E1903AA73E48DEB223 /* NVActivityIndicatorAnimationBallSpinFadeLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallSpinFadeLoader.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationBallSpinFadeLoader.swift; sourceTree = "<group>"; };
+		C82549F2431ED3E1A991DDCF2DA789F5 /* Koloda-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Koloda-dummy.m"; sourceTree = "<group>"; };
+		C9F66DA0C8156E540C3692EAE21A9557 /* NVActivityIndicatorAnimationBallPulse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallPulse.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationBallPulse.swift; sourceTree = "<group>"; };
+		CC60F9EC6073131475BCB41A941A6884 /* Globals.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Globals.swift; path = PieCharts/Util/Globals.swift; sourceTree = "<group>"; };
+		CE1BAEDE522A290DB49FD4A474FC0E5D /* Koloda.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Koloda.modulemap; sourceTree = "<group>"; };
+		CF0B4016037F6B183ADD5BC6B068FA1D /* POPDecayAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPDecayAnimation.h; path = pop/POPDecayAnimation.h; sourceTree = "<group>"; };
+		CF4FB9B55528F315EB09F2B12252595A /* DraggableCardView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DraggableCardView.swift; path = Pod/Classes/KolodaView/DraggableCardView/DraggableCardView.swift; sourceTree = "<group>"; };
+		D4175880F06DD2CE0558318AEBCF3FF6 /* PieLineTextLayerAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PieLineTextLayerAnimator.swift; path = PieCharts/Layer/Impl/LineText/Anim/PieLineTextLayerAnimator.swift; sourceTree = "<group>"; };
 		D4DDE4CC4ABF2076DAF7BDBCC043E846 /* Pods-Broomstick.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Broomstick.release.xcconfig"; sourceTree = "<group>"; };
-		D905CFDA278054C1CDA1ED89CCDF0C6C /* PieCustomViewsLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PieCustomViewsLayer.swift; path = PieCharts/Layer/Impl/View/PieCustomViewsLayer.swift; sourceTree = "<group>"; };
-		D9E98163F51116D85E75F60562CE3E3E /* NVActivityIndicatorAnimationTriangleSkewSpin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationTriangleSkewSpin.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationTriangleSkewSpin.swift; sourceTree = "<group>"; };
-		DDC31F1CE8475F7FF4D35265C841527C /* NVActivityIndicatorView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NVActivityIndicatorView.release.xcconfig; sourceTree = "<group>"; };
+		D55754D3E3CF68D1A2CA69E5CE07BB2B /* POPAnimationInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationInternal.h; path = pop/POPAnimationInternal.h; sourceTree = "<group>"; };
+		D59266A1D2CAE79D4AB3BBE0EB96A12C /* POPCustomAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPCustomAnimation.mm; path = pop/POPCustomAnimation.mm; sourceTree = "<group>"; };
+		D6A7108E5941459BBAC9FBE9918C6341 /* NVActivityIndicatorAnimationLineSpinFadeLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationLineSpinFadeLoader.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationLineSpinFadeLoader.swift; sourceTree = "<group>"; };
+		D75FB24B5F3A62D6115D9FC20CF1EC11 /* PieCharts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PieCharts.debug.xcconfig; sourceTree = "<group>"; };
+		DC31BA731599B944D4381DA95F72C04A /* FloatConversion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FloatConversion.h; path = pop/WebCore/FloatConversion.h; sourceTree = "<group>"; };
+		DC5D618456C93FA67C27CB8FC4D3A99E /* POPAnimationExtras.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationExtras.h; path = pop/POPAnimationExtras.h; sourceTree = "<group>"; };
+		DE3F24DEAAFA271FD4CEE8A9FBEBB39F /* POPPropertyAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPPropertyAnimation.h; path = pop/POPPropertyAnimation.h; sourceTree = "<group>"; };
+		DEA2EB2D6D5ECE239D860E01A1B64A2A /* POPPropertyAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPPropertyAnimation.mm; path = pop/POPPropertyAnimation.mm; sourceTree = "<group>"; };
 		DF4D354969494B337E849C08191A4140 /* Pods-Broomstick-BroomstickUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Broomstick-BroomstickUITests-umbrella.h"; sourceTree = "<group>"; };
-		E05AE1E83D01E92A894CB948A5209F13 /* NVActivityIndicatorAnimationLineScalePulseOutRapid.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationLineScalePulseOutRapid.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationLineScalePulseOutRapid.swift; sourceTree = "<group>"; };
 		E298B2926E2444272E57ACC89339FC3B /* Pods-Broomstick-BroomstickUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Broomstick-BroomstickUITests-Info.plist"; sourceTree = "<group>"; };
-		E306A8E9ACEFF8021A6DA8C066C65ED6 /* NVActivityIndicatorAnimationLineScalePulseOut.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationLineScalePulseOut.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationLineScalePulseOut.swift; sourceTree = "<group>"; };
-		E4DFE1F49F741FAC6556B348F50607AC /* NVActivityIndicatorAnimationBallGridBeat.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallGridBeat.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationBallGridBeat.swift; sourceTree = "<group>"; };
-		E784B8DF5AEC21873EA281ED3158E85F /* PiePlainTextLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PiePlainTextLayer.swift; path = PieCharts/Layer/Impl/PlainText/PiePlainTextLayer.swift; sourceTree = "<group>"; };
-		E8B17A24782D1919DE4C9C67873B91A3 /* NVActivityIndicatorAnimationBallSpinFadeLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallSpinFadeLoader.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationBallSpinFadeLoader.swift; sourceTree = "<group>"; };
-		E97302224C1AF3F5B164E256B84050E8 /* CGSize.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CGSize.swift; path = PieCharts/Extensions/CGSize.swift; sourceTree = "<group>"; };
-		EB22A730A98069D0FB87649671317940 /* NVActivityIndicatorAnimationBallZigZag.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallZigZag.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationBallZigZag.swift; sourceTree = "<group>"; };
-		EC52B314F24BC32CDA7B523FAA24A727 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
-		F06D9EDA555EE3A5ACC61C2D43F9FB52 /* NVActivityIndicatorAnimationBallScaleRippleMultiple.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallScaleRippleMultiple.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationBallScaleRippleMultiple.swift; sourceTree = "<group>"; };
-		F1CBC0401F9CE1128436C5FA56CCD247 /* NVActivityIndicatorAnimationLineScale.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationLineScale.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationLineScale.swift; sourceTree = "<group>"; };
-		F2C8AFE1F067F2EB8B8214EE990E68C8 /* NVActivityIndicatorAnimationBallPulseSync.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallPulseSync.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationBallPulseSync.swift; sourceTree = "<group>"; };
+		E5AC6ED74371807CBDDAA37D5D4678E7 /* pop-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "pop-umbrella.h"; sourceTree = "<group>"; };
+		E5DFD2EB96E47D3F30E26B2DF7C52FA7 /* PieCustomViewsLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PieCustomViewsLayer.swift; path = PieCharts/Layer/Impl/View/PieCustomViewsLayer.swift; sourceTree = "<group>"; };
+		E9C9E751C03A57038FF025B0660356C4 /* NVActivityIndicatorView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NVActivityIndicatorView-dummy.m"; sourceTree = "<group>"; };
+		EA1234BACBD1D306B12E46ED623801E0 /* PieChartLabelSettings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PieChartLabelSettings.swift; path = PieCharts/Layer/Impl/Common/PieChartLabelSettings.swift; sourceTree = "<group>"; };
+		EAF9B317353D1DDF4E801789E9387ED2 /* POPDecayAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPDecayAnimation.mm; path = pop/POPDecayAnimation.mm; sourceTree = "<group>"; };
+		EB386C6E630F8D8A6097924670CFC157 /* NVActivityIndicatorAnimationBallBeat.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallBeat.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationBallBeat.swift; sourceTree = "<group>"; };
+		EB5AF61CD0C3D77CB188C940DE1F1599 /* PieChartLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PieChartLayer.swift; path = PieCharts/Layer/PieChartLayer.swift; sourceTree = "<group>"; };
+		ECD851CE5470998CF6573999C8EC17C5 /* NVActivityIndicatorAnimationCubeTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationCubeTransition.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationCubeTransition.swift; sourceTree = "<group>"; };
+		EDAD7AF5B98A1FA6C2312A60D263A7BB /* KolodaViewAnimatior.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KolodaViewAnimatior.swift; path = Pod/Classes/KolodaView/KolodaViewAnimatior.swift; sourceTree = "<group>"; };
+		EECDC59853F53991FFB1711C4CF44011 /* POPAnimatorPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimatorPrivate.h; path = pop/POPAnimatorPrivate.h; sourceTree = "<group>"; };
+		F01D21A8AFB2F58B11007C4955AAE08C /* NVActivityIndicatorAnimationAudioEqualizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationAudioEqualizer.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationAudioEqualizer.swift; sourceTree = "<group>"; };
+		F0DE7DFFCB1F5DCCF09F3D35676A7B23 /* NVActivityIndicatorAnimationBallZigZag.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallZigZag.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationBallZigZag.swift; sourceTree = "<group>"; };
+		F4A897AC3BB5C447AFAF0E6E7B48671F /* POPAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPAnimation.mm; path = pop/POPAnimation.mm; sourceTree = "<group>"; };
 		F51F5E1F1AC268D9E22CE11968776077 /* Pods-Broomstick-BroomstickUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Broomstick-BroomstickUITests.modulemap"; sourceTree = "<group>"; };
-		F9C36A3FF6F79009523D769426456CD0 /* NVActivityIndicatorView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NVActivityIndicatorView-dummy.m"; sourceTree = "<group>"; };
-		F9DD244B333B69BB1AF8BC73798DD854 /* NVActivityIndicatorAnimationAudioEqualizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationAudioEqualizer.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationAudioEqualizer.swift; sourceTree = "<group>"; };
+		F9F4CBD597617AB3A804B7AD5AA50CD7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		FB9B2CF622427AF9CBF52772AAF1B0E6 /* Pods-Broomstick-BroomstickUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Broomstick-BroomstickUITests-dummy.m"; sourceTree = "<group>"; };
-		FBB4957C3238370DA78767B349314616 /* NVActivityIndicatorView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NVActivityIndicatorView-umbrella.h"; sourceTree = "<group>"; };
-		FDBDC49F1B6B51C933AC3CC1588F8E52 /* NVActivityIndicatorAnimationDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationDelegate.swift; path = Sources/Base/NVActivityIndicatorAnimationDelegate.swift; sourceTree = "<group>"; };
+		FC7B4D2096093DD2B9C56B55C47F8486 /* NVActivityIndicatorAnimationPacman.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationPacman.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationPacman.swift; sourceTree = "<group>"; };
+		FDF4BC45EE06E790F42B3089EFCCE85E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		FE05E1B57D3A9AC934000B5BF666895E /* NVActivityIndicatorAnimationDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationDelegate.swift; path = Sources/Base/NVActivityIndicatorAnimationDelegate.swift; sourceTree = "<group>"; };
+		FF72FD09626A17B0C9860578498FEFD1 /* POPAnimationTracer.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPAnimationTracer.mm; path = pop/POPAnimationTracer.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		07EF9C27CD9BDC05599A8DC6D8166CF0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCE0923BC9AF55EDF36D01CA8173B3FD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1D4B2F98600ECE980731A6953B8B2817 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				592338DF9D79C04FE081DE04A81E93AE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3AD9D6DD08F8989CFA9F32320F7EE253 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FE0E6859071E9C75B0754D6531678BD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		520D693FE4168FE22CC10E9F09C00FAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0312604A04EB4F78F14BAE4C21054689 /* Foundation.framework in Frameworks */,
+				8AE0D6EE7D76DC0557484AF65AC1AF8F /* pop.framework in Frameworks */,
+				FACA872008F69372CFACE14BEF52C21E /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,22 +460,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9E389EEDE7F7283EDF8437FFC83BEBB6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				ABBB689F5CDB33B2F8A4ADBC131AED8B /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9FEDBA333ED1A2FCAD13F01EEB7CC89F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				29BF6EAB78163A7A25623E39F5D95E91 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		F4587802A9E6EC1DA0596665E3E11F18 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -282,64 +470,116 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FAF6A4A1F2AD996220D4CED0B3F63739 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E895EFDD5831389B6C1EF3BBBAD50DA4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1392D6857A44D3453F28181918F307C8 /* iOS */ = {
+		04558927BB3698A89AAF8A8E591C2417 /* Koloda */ = {
 			isa = PBXGroup;
 			children = (
-				EC52B314F24BC32CDA7B523FAA24A727 /* CoreGraphics.framework */,
-				1EE48DAC4AD4FC98EC01A9CC5B34AE82 /* Foundation.framework */,
-				009A3CF530BDED85FCFB71F2D51670CA /* QuartzCore.framework */,
-				71BBEAB859C48569C695B0B3FB39F6F9 /* UIKit.framework */,
+				CF4FB9B55528F315EB09F2B12252595A /* DraggableCardView.swift */,
+				5D405C044729041F3A608741F0214C99 /* KolodaAnimationSemaphore.swift */,
+				1EE5B80F002C74EEC1799788B7245947 /* KolodaCardStorage.swift */,
+				76C430E270BE93358908BDD49735B35B /* KolodaView.swift */,
+				EDAD7AF5B98A1FA6C2312A60D263A7BB /* KolodaViewAnimatior.swift */,
+				46954188A7F9AF42D165B2478F4A31B9 /* OverlayView.swift */,
+				88628708DE7EAFD78EE624F1200735E1 /* SwipeResultDirection.swift */,
+				2AF027F8359AD70D237207D9E8476199 /* Support Files */,
 			);
-			name = iOS;
+			name = Koloda;
+			path = Koloda;
 			sourceTree = "<group>";
 		};
-		236831814E124FFA41243BBBA59FCBEA /* Support Files */ = {
+		0FEEC014D4A834285D92697319057C8C /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				B8B8FFB9AA1182A064657E9C0A3C6F72 /* PieCharts.modulemap */,
-				3FE986C5414823E58F2D9F7709213758 /* PieCharts-dummy.m */,
-				8815B19FB1689658EF3D57BEFD14E408 /* PieCharts-Info.plist */,
-				09ACC5DAD05BDB2F3B3DCF3FE1659204 /* PieCharts-prefix.pch */,
-				B8739DDA323A2E9DB77B930EF5E9762A /* PieCharts-umbrella.h */,
-				20038E60D3E500C6C72024DA59FB9619 /* PieCharts.debug.xcconfig */,
-				99A4726E5E55846602269ECBD5D17A4E /* PieCharts.release.xcconfig */,
+				5E896ED2A1A8B911185D39D743AB2BB1 /* PieCharts.modulemap */,
+				6F115C20594E57EC2CF56F83150A366D /* PieCharts-dummy.m */,
+				6A0030EDBE0F2DE30B3B715165BC39D4 /* PieCharts-Info.plist */,
+				6925180062A66FD2AF8FA2E1518E83E1 /* PieCharts-prefix.pch */,
+				AF198FE0D16BD4CD6E73F593421A44A1 /* PieCharts-umbrella.h */,
+				D75FB24B5F3A62D6115D9FC20CF1EC11 /* PieCharts.debug.xcconfig */,
+				1A8DF4F0C1D3490E3DD545D3E351CDC7 /* PieCharts.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/PieCharts";
 			sourceTree = "<group>";
 		};
-		27F574AEE145F56A70E2D39217639056 /* PieCharts */ = {
+		147F08CB7DD6D9410CBEDB2EEB82A55C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				356D86DEDC7885A50F5A1BD4BDA73390 /* AlphaPieLineTextLayerAnimator.swift */,
-				68C6861E96B531AD6241066804CC9827 /* AlphaPieViewLayerAnimator.swift */,
-				A0464EC4C65F323EC89DA8E1320C9450 /* CGPoint.swift */,
-				49BFDD2CE089C189DEA93F013C895208 /* CGRect.swift */,
-				E97302224C1AF3F5B164E256B84050E8 /* CGSize.swift */,
-				3631663E86CDCEE639EF359B3DDDF384 /* FloatingPoint.swift */,
-				9C479A2ABAA2A6DB78BD712402D74BBF /* Globals.swift */,
-				976A039B37738FC48CAA69A130A30A04 /* Int.swift */,
-				1250265549A0D1E2E4061D00153C4C19 /* PieChart.swift */,
-				98C83079743143670367E4922467F5BA /* PieChartDelegate.swift */,
-				7332645C249B06A44EF59B7B4EFD6C2A /* PieChartLabelSettings.swift */,
-				A605F8E3888E978024A9DF4B77838B38 /* PieChartLayer.swift */,
-				D905CFDA278054C1CDA1ED89CCDF0C6C /* PieCustomViewsLayer.swift */,
-				5AECEF70BF5F54E9FCB605308C2B0CC6 /* PieLineTextLayer.swift */,
-				64D998436F919A7F2C1F71BE74E1AB6F /* PieLineTextLayerAnimator.swift */,
-				E784B8DF5AEC21873EA281ED3158E85F /* PiePlainTextLayer.swift */,
-				628DF69E0652CE3A56B27779D124C65A /* PieSlice.swift */,
-				AF53773CBCDFCE882BCD09EA26523431 /* PieSliceData.swift */,
-				3DE8E5D0C256495D1DFF0B156991A3F0 /* PieSliceDelegate.swift */,
-				BE36F2CFD4C7B082D1A63F4DF427B3FE /* PieSliceLayer.swift */,
-				8E182235206B43DB731E2C05806AE98F /* PieSliceModel.swift */,
-				956F0C87800EB6B965EEAA67560D89B4 /* PieViewLayerAnimator.swift */,
-				236831814E124FFA41243BBBA59FCBEA /* Support Files */,
+				04558927BB3698A89AAF8A8E591C2417 /* Koloda */,
+				90BE38FD0C830D69EEA4878FB7CAEBB6 /* NVActivityIndicatorView */,
+				64007B769B2AE332D6C0B0A86D25CD0E /* PieCharts */,
+				48919DFC7E254B4C1B5C73BE1ECD7048 /* pop */,
 			);
-			name = PieCharts;
-			path = PieCharts;
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		297BFEEAFD50A1AADA4143806C418592 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				F01D21A8AFB2F58B11007C4955AAE08C /* NVActivityIndicatorAnimationAudioEqualizer.swift */,
+				EB386C6E630F8D8A6097924670CFC157 /* NVActivityIndicatorAnimationBallBeat.swift */,
+				9F768440911A128F245CBB4056617F87 /* NVActivityIndicatorAnimationBallClipRotate.swift */,
+				257AD2B00438872455827CD24D683798 /* NVActivityIndicatorAnimationBallClipRotateMultiple.swift */,
+				2393403954DE70B5689CF537AB48C873 /* NVActivityIndicatorAnimationBallClipRotatePulse.swift */,
+				297DBEA5F43717C6227CC91CF1B52FC5 /* NVActivityIndicatorAnimationBallDoubleBounce.swift */,
+				9B6596425594F542F12F2B1A718333B8 /* NVActivityIndicatorAnimationBallGridBeat.swift */,
+				67B6629E20286EE6C5AA0FD73220803B /* NVActivityIndicatorAnimationBallGridPulse.swift */,
+				C9F66DA0C8156E540C3692EAE21A9557 /* NVActivityIndicatorAnimationBallPulse.swift */,
+				9EC811E04FD51D53DDDA7B9A22A534C6 /* NVActivityIndicatorAnimationBallPulseRise.swift */,
+				437EFFACF48A037DAD75D667E9E8E8AC /* NVActivityIndicatorAnimationBallPulseSync.swift */,
+				03C82B16A73FB9A3E259E8CAC016D663 /* NVActivityIndicatorAnimationBallRotate.swift */,
+				C6019726BC6E406011B0F8E55B232877 /* NVActivityIndicatorAnimationBallRotateChase.swift */,
+				0B453899BF9443345824BF0446DA0BC2 /* NVActivityIndicatorAnimationBallScale.swift */,
+				8FA6CF9416757F3206EF155743AA602C /* NVActivityIndicatorAnimationBallScaleMultiple.swift */,
+				2B1254ECFD5CBA9E9ADE6608D5DB5D91 /* NVActivityIndicatorAnimationBallScaleRipple.swift */,
+				5F7FECADC6552F5AA219A76347203B33 /* NVActivityIndicatorAnimationBallScaleRippleMultiple.swift */,
+				C7B20E78BA5989E1903AA73E48DEB223 /* NVActivityIndicatorAnimationBallSpinFadeLoader.swift */,
+				BE10D2D8686D2F3EDEB2C72839B79103 /* NVActivityIndicatorAnimationBallTrianglePath.swift */,
+				F0DE7DFFCB1F5DCCF09F3D35676A7B23 /* NVActivityIndicatorAnimationBallZigZag.swift */,
+				639D9E901CB8B972AE9BA5840276AC12 /* NVActivityIndicatorAnimationBallZigZagDeflect.swift */,
+				0B03CB3A83CE43B7938A8930522D8CBD /* NVActivityIndicatorAnimationBlank.swift */,
+				BE54F21A8FE3F92A2C95BAB0EC7D727E /* NVActivityIndicatorAnimationCircleStrokeSpin.swift */,
+				ECD851CE5470998CF6573999C8EC17C5 /* NVActivityIndicatorAnimationCubeTransition.swift */,
+				FE05E1B57D3A9AC934000B5BF666895E /* NVActivityIndicatorAnimationDelegate.swift */,
+				7455F86E9D9C05B192374143EC286EA8 /* NVActivityIndicatorAnimationLineScale.swift */,
+				6BE5CAF1054CDCEB9C0B3E2F46148A78 /* NVActivityIndicatorAnimationLineScaleParty.swift */,
+				48871AF3F284FD0772CBD667429572A6 /* NVActivityIndicatorAnimationLineScalePulseOut.swift */,
+				06D95366EADEE694307E7BC343DEEAC9 /* NVActivityIndicatorAnimationLineScalePulseOutRapid.swift */,
+				D6A7108E5941459BBAC9FBE9918C6341 /* NVActivityIndicatorAnimationLineSpinFadeLoader.swift */,
+				88E92AE8CC6E69754D01DFFFE67017A4 /* NVActivityIndicatorAnimationOrbit.swift */,
+				FC7B4D2096093DD2B9C56B55C47F8486 /* NVActivityIndicatorAnimationPacman.swift */,
+				B4A5EC62A3E35F326994214C54C11B45 /* NVActivityIndicatorAnimationSemiCircleSpin.swift */,
+				35FE3DE2DD3B1F7D56C705FB578EC5AD /* NVActivityIndicatorAnimationSquareSpin.swift */,
+				12C964A48DA3A985330287D15ADEC93E /* NVActivityIndicatorAnimationTriangleSkewSpin.swift */,
+				93D50C0F9745F93366AA25EDAB27B63D /* NVActivityIndicatorShape.swift */,
+				8BDCF6609DA5590DDE7D5675FAE6995A /* NVActivityIndicatorView.swift */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		2AF027F8359AD70D237207D9E8476199 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CE1BAEDE522A290DB49FD4A474FC0E5D /* Koloda.modulemap */,
+				C82549F2431ED3E1A991DDCF2DA789F5 /* Koloda-dummy.m */,
+				33E6EF79EA73155AB283513D67AFFF88 /* Koloda-Info.plist */,
+				7418B4BA656FFA23FA8400590BCADD23 /* Koloda-prefix.pch */,
+				105333963FE23BC00F3C7FAD32DB8CF6 /* Koloda-umbrella.h */,
+				9A0F013A27AC27D35F2C482BC1159484 /* Koloda.debug.xcconfig */,
+				3840B0DFE15CAC2722C4285A52F52C65 /* Koloda.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Koloda";
 			sourceTree = "<group>";
 		};
 		324E973FE71CAEDE3ECAF30C645A6A68 /* Targets Support Files */ = {
@@ -352,60 +592,126 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		3B3763B896A680BC4E3774F09734C7B5 /* Base */ = {
+		48919DFC7E254B4C1B5C73BE1ECD7048 /* pop */ = {
 			isa = PBXGroup;
 			children = (
-				F9DD244B333B69BB1AF8BC73798DD854 /* NVActivityIndicatorAnimationAudioEqualizer.swift */,
-				963127C889E98C6DA07B20774740EF4C /* NVActivityIndicatorAnimationBallBeat.swift */,
-				A96B8FD07845D00A9AC75059FE375379 /* NVActivityIndicatorAnimationBallClipRotate.swift */,
-				7C0277B7310EAE150E2A723E45D4410F /* NVActivityIndicatorAnimationBallClipRotateMultiple.swift */,
-				193460D77F43CC25B0EB93E641B78AD3 /* NVActivityIndicatorAnimationBallClipRotatePulse.swift */,
-				1DF39A11DCC92822F0945B355519685D /* NVActivityIndicatorAnimationBallDoubleBounce.swift */,
-				E4DFE1F49F741FAC6556B348F50607AC /* NVActivityIndicatorAnimationBallGridBeat.swift */,
-				448E74FF1076A54E7BC18E3F79582120 /* NVActivityIndicatorAnimationBallGridPulse.swift */,
-				6A0D97A993397BE67026AD967D13D4DF /* NVActivityIndicatorAnimationBallPulse.swift */,
-				AAFA8DB440B23E26C3486E953B304871 /* NVActivityIndicatorAnimationBallPulseRise.swift */,
-				F2C8AFE1F067F2EB8B8214EE990E68C8 /* NVActivityIndicatorAnimationBallPulseSync.swift */,
-				3C45D7595751E01161345550193049C2 /* NVActivityIndicatorAnimationBallRotate.swift */,
-				23CC8CC38860A918B0B9A2B06C05C9F9 /* NVActivityIndicatorAnimationBallRotateChase.swift */,
-				1E5778789515DA3B693AC94E4CEC62EC /* NVActivityIndicatorAnimationBallScale.swift */,
-				35B530ACC414A3D65633380E791F49E0 /* NVActivityIndicatorAnimationBallScaleMultiple.swift */,
-				6E1EC047A744CDFC92AE1482B0B88875 /* NVActivityIndicatorAnimationBallScaleRipple.swift */,
-				F06D9EDA555EE3A5ACC61C2D43F9FB52 /* NVActivityIndicatorAnimationBallScaleRippleMultiple.swift */,
-				E8B17A24782D1919DE4C9C67873B91A3 /* NVActivityIndicatorAnimationBallSpinFadeLoader.swift */,
-				B4D94B6FAD124D3569721BB8B98F85E4 /* NVActivityIndicatorAnimationBallTrianglePath.swift */,
-				EB22A730A98069D0FB87649671317940 /* NVActivityIndicatorAnimationBallZigZag.swift */,
-				064EDBE29BF31B7D748092580C0E7BB0 /* NVActivityIndicatorAnimationBallZigZagDeflect.swift */,
-				3F5F9D40C59C5F639EEA42B423C6B016 /* NVActivityIndicatorAnimationBlank.swift */,
-				C74CE136BF7C3F042D2F5CBF53324CD0 /* NVActivityIndicatorAnimationCircleStrokeSpin.swift */,
-				AA3F3B9EAB6A034A125B4CF7A1083E1C /* NVActivityIndicatorAnimationCubeTransition.swift */,
-				FDBDC49F1B6B51C933AC3CC1588F8E52 /* NVActivityIndicatorAnimationDelegate.swift */,
-				F1CBC0401F9CE1128436C5FA56CCD247 /* NVActivityIndicatorAnimationLineScale.swift */,
-				AD3B433B01C20155487CD3CC7E59248F /* NVActivityIndicatorAnimationLineScaleParty.swift */,
-				E306A8E9ACEFF8021A6DA8C066C65ED6 /* NVActivityIndicatorAnimationLineScalePulseOut.swift */,
-				E05AE1E83D01E92A894CB948A5209F13 /* NVActivityIndicatorAnimationLineScalePulseOutRapid.swift */,
-				844F25C29D87EFF062F2FE734FFFC3B5 /* NVActivityIndicatorAnimationLineSpinFadeLoader.swift */,
-				ADC97686C2A099145C9B33A085B99A97 /* NVActivityIndicatorAnimationOrbit.swift */,
-				69DACBC56CE2DC9C5F67CE9F57DBB2BF /* NVActivityIndicatorAnimationPacman.swift */,
-				594EDA423D2048FB60C797610CB5A018 /* NVActivityIndicatorAnimationSemiCircleSpin.swift */,
-				874F64EB4F0311CA41204F8E55C6FE87 /* NVActivityIndicatorAnimationSquareSpin.swift */,
-				D9E98163F51116D85E75F60562CE3E3E /* NVActivityIndicatorAnimationTriangleSkewSpin.swift */,
-				65A56243BB7718920A1E62092F97E05B /* NVActivityIndicatorShape.swift */,
-				95CD2FCC5A73DE791CC35F891C97EBF1 /* NVActivityIndicatorView.swift */,
+				DC31BA731599B944D4381DA95F72C04A /* FloatConversion.h */,
+				78749E3D7710D8395D5EEF1E0F940D6D /* POP.h */,
+				A839C3BD527A2D98195D6BDEC0E38E32 /* POPAction.h */,
+				2C6B47A800CD11C6594A4142283D734A /* POPAnimatableProperty.h */,
+				4141DADC15C486CA7490B74A9C8BBB3A /* POPAnimatableProperty.mm */,
+				000315520A26E7EE49D451B5B9B21354 /* POPAnimatablePropertyTypes.h */,
+				C0E5FDE3EF5D401033BEB8E6B1A0F3E8 /* POPAnimation.h */,
+				F4A897AC3BB5C447AFAF0E6E7B48671F /* POPAnimation.mm */,
+				A0DC50D2927CC17F8C8F3FF65EE9FBFC /* POPAnimationEvent.h */,
+				1D5D6F42DA71FDB9A765F8846436471C /* POPAnimationEvent.mm */,
+				854C0EF7AC135E9DB3F82DD070FC77FF /* POPAnimationEventInternal.h */,
+				DC5D618456C93FA67C27CB8FC4D3A99E /* POPAnimationExtras.h */,
+				1CD07BBFF617B1AA790AEA3F79B11152 /* POPAnimationExtras.mm */,
+				D55754D3E3CF68D1A2CA69E5CE07BB2B /* POPAnimationInternal.h */,
+				480A2A52CC9E97479EE71AF0CB3FEF79 /* POPAnimationPrivate.h */,
+				87F123D9BD4F96DBF991331A905862CE /* POPAnimationRuntime.h */,
+				49E42E7380C3517667CF676380E7C0B4 /* POPAnimationRuntime.mm */,
+				2F5B2E694508C9DDB1FAC899F28D08D4 /* POPAnimationTracer.h */,
+				FF72FD09626A17B0C9860578498FEFD1 /* POPAnimationTracer.mm */,
+				9835574D09881FA5FAF7813EF7401E83 /* POPAnimationTracerInternal.h */,
+				9EAC97E28410191E8F06B2B651FE2416 /* POPAnimator.h */,
+				6DD13665449F90B6AAF7E852A7D69997 /* POPAnimator.mm */,
+				EECDC59853F53991FFB1711C4CF44011 /* POPAnimatorPrivate.h */,
+				6EB5C8C5A86FA479D651ED2603737F01 /* POPBasicAnimation.h */,
+				66316B5FE0EEC602D3EE822BB5C86974 /* POPBasicAnimation.mm */,
+				664847F9631B5380E6EE5F27E1844534 /* POPBasicAnimationInternal.h */,
+				B304BEC37CEDC47EDF004C143990A6AE /* POPCGUtils.h */,
+				98496A50888692331BC42E267B803601 /* POPCGUtils.mm */,
+				405A4018B59096B7001DFAF6F7384E71 /* POPCustomAnimation.h */,
+				D59266A1D2CAE79D4AB3BBE0EB96A12C /* POPCustomAnimation.mm */,
+				CF0B4016037F6B183ADD5BC6B068FA1D /* POPDecayAnimation.h */,
+				EAF9B317353D1DDF4E801789E9387ED2 /* POPDecayAnimation.mm */,
+				3F0F12ADCB79B58E6FF3B393422F8AA7 /* POPDecayAnimationInternal.h */,
+				AAE857A396895A05E966CFCBB37463A4 /* POPDefines.h */,
+				0004A05F035C1AF63429168EB92CE613 /* POPGeometry.h */,
+				73493E4BA975E6E9D72580234A947B23 /* POPGeometry.mm */,
+				8B1F1A9952554A175DFBA545FEFDC146 /* POPLayerExtras.h */,
+				4351EDB8EE32D862ED9932C14842840D /* POPLayerExtras.mm */,
+				5F32D44421F5A89F307556FFA661D989 /* POPMath.h */,
+				33895E0F8DA3F6DF7C1C64EC0714C983 /* POPMath.mm */,
+				DE3F24DEAAFA271FD4CEE8A9FBEBB39F /* POPPropertyAnimation.h */,
+				DEA2EB2D6D5ECE239D860E01A1B64A2A /* POPPropertyAnimation.mm */,
+				17CFFAA5C9DAF8FF9BB1A12F80B8ED96 /* POPPropertyAnimationInternal.h */,
+				02F6DBE5659351848A5DD6CFA2972258 /* POPSpringAnimation.h */,
+				0425B829754001F48DE5C6693427C2EF /* POPSpringAnimation.mm */,
+				ACC71E3670A14F54B9AF3F11079C0929 /* POPSpringAnimationInternal.h */,
+				3427450D15DED455C7145292EFFB663D /* POPSpringSolver.h */,
+				2AD2370BE0C6CAC38DBE116597E7D9FB /* POPVector.h */,
+				05C8F37A5BBC7926F93FED4EE5376CF2 /* POPVector.mm */,
+				0E6BC2ED5CAE097290F96CDB67FCF510 /* TransformationMatrix.cpp */,
+				6EF9E7E01CB47ADFDFF948FF242E0B4E /* TransformationMatrix.h */,
+				C6554C32159023A696EE5320F390937C /* UnitBezier.h */,
+				733A488963E4BE051C343B7D6C8535DD /* Support Files */,
 			);
-			name = Base;
+			name = pop;
+			path = pop;
 			sourceTree = "<group>";
 		};
-		7DA252C544E1BE9E4DB73DF609E74BC4 /* Products */ = {
+		4CE8350F450A553D9D63FD3A4E808B26 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				A1B9F27862201CD82B398E0B35B14128 /* NVActivityIndicatorView.framework */,
-				141C771D00B32327501B56425523D398 /* PieCharts.framework */,
-				B1F8249BF6C1EEEF8067497558BCB208 /* Pods_Broomstick.framework */,
-				9A1D0DA12D7D1C7ABE395DBF6A949EE3 /* Pods_Broomstick_BroomstickUITests.framework */,
-				C130158D09015EAC3150BBE793AB94A0 /* Pods_BroomstickTests.framework */,
+				50D37D8157C04D0BE558859829AB51E0 /* NVActivityIndicatorView.modulemap */,
+				E9C9E751C03A57038FF025B0660356C4 /* NVActivityIndicatorView-dummy.m */,
+				48F75FCF2F65F9BA88673B4615C01D3D /* NVActivityIndicatorView-Info.plist */,
+				87EEAED6DA312B5B4950A6CF65E6DF46 /* NVActivityIndicatorView-prefix.pch */,
+				AF7CFE0997072103ABAE1E7D49E8D5BB /* NVActivityIndicatorView-umbrella.h */,
+				791B18D6550D9BF47BAE29A81D2A04AD /* NVActivityIndicatorView.debug.xcconfig */,
+				6E110DF3FA3933269B6CEE07D2140EEC /* NVActivityIndicatorView.release.xcconfig */,
 			);
-			name = Products;
+			name = "Support Files";
+			path = "../Target Support Files/NVActivityIndicatorView";
+			sourceTree = "<group>";
+		};
+		64007B769B2AE332D6C0B0A86D25CD0E /* PieCharts */ = {
+			isa = PBXGroup;
+			children = (
+				7828123EB47ECBDA1B44185F5984EFBA /* AlphaPieLineTextLayerAnimator.swift */,
+				9D5D9729019810F231FC5FD905127151 /* AlphaPieViewLayerAnimator.swift */,
+				75137F20AE5F15355629BB9531FBF7F6 /* CGPoint.swift */,
+				65C23766211B352CC97281F3106B804F /* CGRect.swift */,
+				757FD86C97055CC9AF3BE0473C22C996 /* CGSize.swift */,
+				7611CB0F88AED07D8B9E181C047C2EA7 /* FloatingPoint.swift */,
+				CC60F9EC6073131475BCB41A941A6884 /* Globals.swift */,
+				BE2FBC2FA20CE21057328C206D63834E /* Int.swift */,
+				98341A95BDB2EB384FFF525CE37356E8 /* PieChart.swift */,
+				7E6F66168915D9CE7A36F5623CC2002B /* PieChartDelegate.swift */,
+				EA1234BACBD1D306B12E46ED623801E0 /* PieChartLabelSettings.swift */,
+				EB5AF61CD0C3D77CB188C940DE1F1599 /* PieChartLayer.swift */,
+				E5DFD2EB96E47D3F30E26B2DF7C52FA7 /* PieCustomViewsLayer.swift */,
+				601A67D48ADA2679ACDBE1342A5E3559 /* PieLineTextLayer.swift */,
+				D4175880F06DD2CE0558318AEBCF3FF6 /* PieLineTextLayerAnimator.swift */,
+				C40ADDB0C3AAEBB956C3891C595636F8 /* PiePlainTextLayer.swift */,
+				996AF17F7F023637B1E1AD994B5078A2 /* PieSlice.swift */,
+				A6468588DAD9B1EBC75EC43C5652CF2B /* PieSliceData.swift */,
+				578F9884E818B076B839B1009550EC5D /* PieSliceDelegate.swift */,
+				669C75246BD4F4569967607EE157FB23 /* PieSliceLayer.swift */,
+				51A362BF333757B11CA0DCDD4C2AF52E /* PieSliceModel.swift */,
+				9A79E819F3CB835E9E72BC03E6B0F8AD /* PieViewLayerAnimator.swift */,
+				0FEEC014D4A834285D92697319057C8C /* Support Files */,
+			);
+			name = PieCharts;
+			path = PieCharts;
+			sourceTree = "<group>";
+		};
+		733A488963E4BE051C343B7D6C8535DD /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				258D87DE53C0CB178EF39F2F65F6865F /* pop.modulemap */,
+				765B861BCEFA41435ABD19030233D440 /* pop-dummy.m */,
+				6B555C889D431AF7FE0CE13A9A18F862 /* pop-Info.plist */,
+				81F23C0BA00119BADBC766DF0F315698 /* pop-prefix.pch */,
+				E5AC6ED74371807CBDDAA37D5D4678E7 /* pop-umbrella.h */,
+				538989E6CE967D75CD300ACC8D5AC7FC /* pop.debug.xcconfig */,
+				A4FA2D905121DA6A920C2794CA2393DB /* pop.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/pop";
 			sourceTree = "<group>";
 		};
 		8CD6420C5F40E3585FC707581DD4E248 /* Pods-Broomstick */ = {
@@ -425,31 +731,25 @@
 			path = "Target Support Files/Pods-Broomstick";
 			sourceTree = "<group>";
 		};
-		984334707AE673CECAE68BA50380C56D /* Pods */ = {
+		90BE38FD0C830D69EEA4878FB7CAEBB6 /* NVActivityIndicatorView */ = {
 			isa = PBXGroup;
 			children = (
-				98E1E0C1DCD480B67EE261BE8C28DB7D /* NVActivityIndicatorView */,
-				27F574AEE145F56A70E2D39217639056 /* PieCharts */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		98E1E0C1DCD480B67EE261BE8C28DB7D /* NVActivityIndicatorView */ = {
-			isa = PBXGroup;
-			children = (
-				3B3763B896A680BC4E3774F09734C7B5 /* Base */,
-				C11A65A596B38A1CC02E9098AE7BC739 /* Support Files */,
+				297BFEEAFD50A1AADA4143806C418592 /* Base */,
+				4CE8350F450A553D9D63FD3A4E808B26 /* Support Files */,
 			);
 			name = NVActivityIndicatorView;
 			path = NVActivityIndicatorView;
 			sourceTree = "<group>";
 		};
-		BA4F31F07263C99FC76E66D632A59F09 /* Frameworks */ = {
+		A16CDEC610F75AA3FF2B779B8C0D0BE8 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				1392D6857A44D3453F28181918F307C8 /* iOS */,
+				5987232B7A6BA850D144369EE0A212B2 /* CoreGraphics.framework */,
+				F9F4CBD597617AB3A804B7AD5AA50CD7 /* Foundation.framework */,
+				1511E1B76B16ACEDD05AB7DE24480632 /* QuartzCore.framework */,
+				FDF4BC45EE06E790F42B3089EFCCE85E /* UIKit.framework */,
 			);
-			name = Frameworks;
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		BF9978F06FE70803A315817EE1FC5342 /* Pods-Broomstick-BroomstickUITests */ = {
@@ -469,30 +769,38 @@
 			path = "Target Support Files/Pods-Broomstick-BroomstickUITests";
 			sourceTree = "<group>";
 		};
-		C11A65A596B38A1CC02E9098AE7BC739 /* Support Files */ = {
+		C77054D18AB1ADF63180CE9D9126358F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7FD96AA5D6963FC919CBB406C2FC7534 /* NVActivityIndicatorView.modulemap */,
-				F9C36A3FF6F79009523D769426456CD0 /* NVActivityIndicatorView-dummy.m */,
-				3C76D4E281351C0FCEC93D826CBD0F29 /* NVActivityIndicatorView-Info.plist */,
-				A545F12C74197AA80B76E5B58B9E7391 /* NVActivityIndicatorView-prefix.pch */,
-				FBB4957C3238370DA78767B349314616 /* NVActivityIndicatorView-umbrella.h */,
-				BD50720A92C566085692F6865C3DA4B3 /* NVActivityIndicatorView.debug.xcconfig */,
-				DDC31F1CE8475F7FF4D35265C841527C /* NVActivityIndicatorView.release.xcconfig */,
+				B46C97AAFCB75FFA6C9142918B21329D /* pop.framework */,
+				A16CDEC610F75AA3FF2B779B8C0D0BE8 /* iOS */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/NVActivityIndicatorView";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				BA4F31F07263C99FC76E66D632A59F09 /* Frameworks */,
-				984334707AE673CECAE68BA50380C56D /* Pods */,
-				7DA252C544E1BE9E4DB73DF609E74BC4 /* Products */,
+				C77054D18AB1ADF63180CE9D9126358F /* Frameworks */,
+				147F08CB7DD6D9410CBEDB2EEB82A55C /* Pods */,
+				F65397904B873B032102C7C1B89578A1 /* Products */,
 				324E973FE71CAEDE3ECAF30C645A6A68 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		F65397904B873B032102C7C1B89578A1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1827A3F8AA4AC67C878D9725DE99ED5D /* Koloda.framework */,
+				A1B9F27862201CD82B398E0B35B14128 /* NVActivityIndicatorView.framework */,
+				141C771D00B32327501B56425523D398 /* PieCharts.framework */,
+				B1F8249BF6C1EEEF8067497558BCB208 /* Pods_Broomstick.framework */,
+				9A1D0DA12D7D1C7ABE395DBF6A949EE3 /* Pods_Broomstick_BroomstickUITests.framework */,
+				C130158D09015EAC3150BBE793AB94A0 /* Pods_BroomstickTests.framework */,
+				51305B2D9D8DA36D89CC277D729083D2 /* pop.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		FC7C75C319F2D3007D300B89906E2B33 /* Pods-BroomstickTests */ = {
@@ -514,11 +822,53 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		74BC9A99F07D062673A876110090FEAF /* Headers */ = {
+		1CDC650DFD0DA965795D3BE1CED6147A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA7BBA161351DF7866E4B7ABFA21578E /* Pods-Broomstick-umbrella.h in Headers */,
+				AD5E053879DB42CD099465FE10891FD5 /* Koloda-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32ABF304DB7D8FC7ECF321FA219C0512 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D058645806841387CBE73876D3B5224E /* FloatConversion.h in Headers */,
+				386D38ED290E8FE98F74780BAFC17E9C /* pop-umbrella.h in Headers */,
+				68DA21801DD6C5236CE325416CE369D2 /* POP.h in Headers */,
+				64E5C3F49B87858B2C03ABDB9BADC08F /* POPAction.h in Headers */,
+				B3FE43DB65E7D04E9FF8D839CC82CE98 /* POPAnimatableProperty.h in Headers */,
+				92C8C2279C0F027ED8F3184E6689B000 /* POPAnimatablePropertyTypes.h in Headers */,
+				2696AF43086F0DF9269571E0C6235687 /* POPAnimation.h in Headers */,
+				F1BBE90D18446CCD3802E187A68D868A /* POPAnimationEvent.h in Headers */,
+				B7CB04FCB0A240537FBC99DF6B79CBC7 /* POPAnimationEventInternal.h in Headers */,
+				1C0BD407FB5FD4028ED38758BF6FECB8 /* POPAnimationExtras.h in Headers */,
+				1E17D3A6C1ABA9505DA5D73D4EA3F1FF /* POPAnimationInternal.h in Headers */,
+				2E503C0B032B6DF258F879FD8DB59DFB /* POPAnimationPrivate.h in Headers */,
+				58FEE1907F26B81DE9829400FDB45183 /* POPAnimationRuntime.h in Headers */,
+				51959AB44D6CFA1E7F522A94D998B12A /* POPAnimationTracer.h in Headers */,
+				FF48C283366301E17F2C06EA9CB2696F /* POPAnimationTracerInternal.h in Headers */,
+				3C76F59C60CA7F311E077EE03BBE8F14 /* POPAnimator.h in Headers */,
+				DF2A02BED023FD3AB475331395941B3B /* POPAnimatorPrivate.h in Headers */,
+				D829D1737E0FF16C65D435E2D8B005A5 /* POPBasicAnimation.h in Headers */,
+				F45E2A140C507EE9BE21AB3914AB452A /* POPBasicAnimationInternal.h in Headers */,
+				9B802E602696AFE174BF6C901FEF9C75 /* POPCGUtils.h in Headers */,
+				26B3765BCCFFFDC26F5B256217702A9C /* POPCustomAnimation.h in Headers */,
+				1E61A08790B1F6C0E4B17F87E59CA4DA /* POPDecayAnimation.h in Headers */,
+				E1BC80377EC89FD4837DF0BAD0C7CEF3 /* POPDecayAnimationInternal.h in Headers */,
+				212156BD5B7F2C7A0E5AE508EDF6C589 /* POPDefines.h in Headers */,
+				DF91BBBAFF18FC97995F7EC7F80DEC27 /* POPGeometry.h in Headers */,
+				12955C0AE23B9C1BE68CB1D529B6BA03 /* POPLayerExtras.h in Headers */,
+				66D4747439315BF78AF26A93BD318A51 /* POPMath.h in Headers */,
+				3C6B744A2525BEF801FC6474FFF0F964 /* POPPropertyAnimation.h in Headers */,
+				C22EC653A5EE8466E386AC79E78C27C4 /* POPPropertyAnimationInternal.h in Headers */,
+				C4A6913FB2B3A1A11A045A9404254DE4 /* POPSpringAnimation.h in Headers */,
+				8460E33C63DC896297116AE9D00D7D37 /* POPSpringAnimationInternal.h in Headers */,
+				E2C62E29968856FF618574D45DCC7481 /* POPSpringSolver.h in Headers */,
+				505BBD1C1B0346F51AE85888C3BDA277 /* POPVector.h in Headers */,
+				CC44F7A6DBE5E0B39E7E4D63732417F7 /* TransformationMatrix.h in Headers */,
+				3CA86CAAA1F6241C0CC582A0F2532B8A /* UnitBezier.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -538,14 +888,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EE70BA6583B6E72F8299CF121E16C382 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				087426C6E0763CA9F3B49B711FCC2AD4 /* Pods-Broomstick-BroomstickUITests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		F15EAF85C124A4F3537985C41149C87C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -554,9 +896,43 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F3C3F06012B790EA8130C4F554044B8F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B352A054CBA013BAABCEE7C574D13C4 /* Pods-Broomstick-BroomstickUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF64CB03340DFAC92491404C21D0EA30 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C86D36961F9F6CB9A4D4A4E5AEEF83B8 /* Pods-Broomstick-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		0483D7F620C992E5C4BD62A7266EABB4 /* pop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C1C4CACCC7FEE0B0733010F91DB1AB7 /* Build configuration list for PBXNativeTarget "pop" */;
+			buildPhases = (
+				32ABF304DB7D8FC7ECF321FA219C0512 /* Headers */,
+				E62C85B55A4935FDC4655EA466434301 /* Sources */,
+				FAF6A4A1F2AD996220D4CED0B3F63739 /* Frameworks */,
+				4FA0028E5CE7A0EF01C07EB4818EE076 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = pop;
+			productName = pop;
+			productReference = 51305B2D9D8DA36D89CC277D729083D2 /* pop.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		5352E9F7E2BA40B729D6F4355D629ED5 /* PieCharts */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8DA41CBA4B931F1A9E7DE3E4D1E69EC9 /* Build configuration list for PBXNativeTarget "PieCharts" */;
@@ -577,18 +953,20 @@
 		};
 		947E56738E94B66C4E18CED9738D419E /* Pods-Broomstick-BroomstickUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9730225449EFD5BAEE0FA04D8EEE967F /* Build configuration list for PBXNativeTarget "Pods-Broomstick-BroomstickUITests" */;
+			buildConfigurationList = C748B48CA1283CB1DAA88199E354A6D5 /* Build configuration list for PBXNativeTarget "Pods-Broomstick-BroomstickUITests" */;
 			buildPhases = (
-				EE70BA6583B6E72F8299CF121E16C382 /* Headers */,
-				E26DB6CD7723C2589493B7C2B9B62BA4 /* Sources */,
-				9E389EEDE7F7283EDF8437FFC83BEBB6 /* Frameworks */,
-				410B8BE8C8D280C1EDB333153C79C2C9 /* Resources */,
+				F3C3F06012B790EA8130C4F554044B8F /* Headers */,
+				8A3BC83E802041DDD8DACE5CE07F35E6 /* Sources */,
+				07EF9C27CD9BDC05599A8DC6D8166CF0 /* Frameworks */,
+				70DCF85A75C6E2E362A976A3CD280BD4 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				F18DA3066EADCE642ED00464155842AE /* PBXTargetDependency */,
-				F51A0F86AD8D7B1C8DE9B4D72A6B4369 /* PBXTargetDependency */,
+				09C5AE75AD43AB7B11CF53C08AE53AEE /* PBXTargetDependency */,
+				32562D5F9EAD8F773A80234D54F0146C /* PBXTargetDependency */,
+				84C3AB161436B0D4C8B04FC4CE45F5DC /* PBXTargetDependency */,
+				5C8DFD9A0EC38DC0E9DACC60E3A7D881 /* PBXTargetDependency */,
 			);
 			name = "Pods-Broomstick-BroomstickUITests";
 			productName = "Pods-Broomstick-BroomstickUITests";
@@ -613,20 +991,41 @@
 			productReference = A1B9F27862201CD82B398E0B35B14128 /* NVActivityIndicatorView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		F1EA7CEEEEF981610C9686430DF5B8A5 /* Pods-Broomstick */ = {
+		BEFF020077BA4696EE8AB4BA60B2D275 /* Koloda */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7803D7AF3DD7AE6A8CE4AAE14326763C /* Build configuration list for PBXNativeTarget "Pods-Broomstick" */;
+			buildConfigurationList = 91864B5FBD0E23BC821DB40EECAD8451 /* Build configuration list for PBXNativeTarget "Koloda" */;
 			buildPhases = (
-				74BC9A99F07D062673A876110090FEAF /* Headers */,
-				6CE4BA24287E18854C32E3191E4A9F0C /* Sources */,
-				9FEDBA333ED1A2FCAD13F01EEB7CC89F /* Frameworks */,
-				5A8FD62931E03E402A5B8984FF12D07C /* Resources */,
+				1CDC650DFD0DA965795D3BE1CED6147A /* Headers */,
+				8078949E5D0A2569B8166EFCC41B6627 /* Sources */,
+				520D693FE4168FE22CC10E9F09C00FAE /* Frameworks */,
+				FA35582F08E18E5730FFB989336F904D /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				4BF28DB591125415F6E2DB383F0FDDCE /* PBXTargetDependency */,
-				FBF88A6C3BE2C0FB7904389035B7C988 /* PBXTargetDependency */,
+				3DDF7506A0259D164E6FBD7FB3C1C43B /* PBXTargetDependency */,
+			);
+			name = Koloda;
+			productName = Koloda;
+			productReference = 1827A3F8AA4AC67C878D9725DE99ED5D /* Koloda.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F1EA7CEEEEF981610C9686430DF5B8A5 /* Pods-Broomstick */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D3EDC8C72869E3AA5E94E9EB3181BAC /* Build configuration list for PBXNativeTarget "Pods-Broomstick" */;
+			buildPhases = (
+				FF64CB03340DFAC92491404C21D0EA30 /* Headers */,
+				5A334745B79C178422587D93C6114483 /* Sources */,
+				3AD9D6DD08F8989CFA9F32320F7EE253 /* Frameworks */,
+				C9DDBD1D4BCC5721575D8BF20C819D7C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F33BA67F20B298CA5C75E3137E405F00 /* PBXTargetDependency */,
+				DB94FCF11AC330289817D6C967F371BE /* PBXTargetDependency */,
+				599F15B5E572A4E50CD359E561050EFC /* PBXTargetDependency */,
+				0157C39C71B482586E3EF7F27049D895 /* PBXTargetDependency */,
 			);
 			name = "Pods-Broomstick";
 			productName = "Pods-Broomstick";
@@ -645,7 +1044,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				2B2F19ED18D9F07C042B37425BD94280 /* PBXTargetDependency */,
+				2B14629E21A78A1AFE02728C1F562C5C /* PBXTargetDependency */,
 			);
 			name = "Pods-BroomstickTests";
 			productName = "Pods-BroomstickTests";
@@ -670,28 +1069,30 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 7DA252C544E1BE9E4DB73DF609E74BC4 /* Products */;
+			productRefGroup = F65397904B873B032102C7C1B89578A1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				BEFF020077BA4696EE8AB4BA60B2D275 /* Koloda */,
 				AF8A82876C43F4DFD625D1823E680EAC /* NVActivityIndicatorView */,
 				5352E9F7E2BA40B729D6F4355D629ED5 /* PieCharts */,
 				F1EA7CEEEEF981610C9686430DF5B8A5 /* Pods-Broomstick */,
 				947E56738E94B66C4E18CED9738D419E /* Pods-Broomstick-BroomstickUITests */,
 				FC7055C97A585A5A44CEFC4BC843E6A9 /* Pods-BroomstickTests */,
+				0483D7F620C992E5C4BD62A7266EABB4 /* pop */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		410B8BE8C8D280C1EDB333153C79C2C9 /* Resources */ = {
+		4FA0028E5CE7A0EF01C07EB4818EE076 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5A8FD62931E03E402A5B8984FF12D07C /* Resources */ = {
+		70DCF85A75C6E2E362A976A3CD280BD4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -713,6 +1114,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		B65E9697E72271FC784338F079E1D6E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9DDBD1D4BCC5721575D8BF20C819D7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA35582F08E18E5730FFB989336F904D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -805,58 +1220,168 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6CE4BA24287E18854C32E3191E4A9F0C /* Sources */ = {
+		5A334745B79C178422587D93C6114483 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA0CF31BA34DD5842B9149BDB17B7A0F /* Pods-Broomstick-dummy.m in Sources */,
+				9ABAD54A6F8699077541034BE0BCB87F /* Pods-Broomstick-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E26DB6CD7723C2589493B7C2B9B62BA4 /* Sources */ = {
+		8078949E5D0A2569B8166EFCC41B6627 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D06A7FE1A846E4A98D65E220F106D9D /* Pods-Broomstick-BroomstickUITests-dummy.m in Sources */,
+				DE37E43D89C8017A6D898BD9AE863EF0 /* DraggableCardView.swift in Sources */,
+				B8694D1ED7AE0F262215F333C2C4A8E0 /* Koloda-dummy.m in Sources */,
+				2891F07FF25CCFF03C8C0293B1B418C3 /* KolodaAnimationSemaphore.swift in Sources */,
+				06105D982DE6566AC62E893EDC3AD4D5 /* KolodaCardStorage.swift in Sources */,
+				3210D3FA9378772F8AB59EAEA809E0E6 /* KolodaView.swift in Sources */,
+				29B11364BD16C139D398E89AE4BEFBD9 /* KolodaViewAnimatior.swift in Sources */,
+				D45FDB7377DADDE6272D0E5A9EC9DFB7 /* OverlayView.swift in Sources */,
+				CF8056315777506E2E81E2CDA4E6E666 /* SwipeResultDirection.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A3BC83E802041DDD8DACE5CE07F35E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F37AF8C05B5B6751C5C8ACD3BC97175 /* Pods-Broomstick-BroomstickUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E62C85B55A4935FDC4655EA466434301 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80958A890EB0F05602CAF64B30E75BA8 /* pop-dummy.m in Sources */,
+				5E86EF436F6D69AC7CD25434902BA151 /* POPAnimatableProperty.mm in Sources */,
+				4342C5F159379F0FA02B01849EA7B8E2 /* POPAnimation.mm in Sources */,
+				934FE03EB2862BE75A6D9C79A0F0D0F9 /* POPAnimationEvent.mm in Sources */,
+				7CE3367FC3E2272808BC970170DA04B5 /* POPAnimationExtras.mm in Sources */,
+				10940977638AABAA856288B8DE04D69B /* POPAnimationRuntime.mm in Sources */,
+				E2283AD7275742784BD5DCF0CCF13591 /* POPAnimationTracer.mm in Sources */,
+				021964E9BAF9733EFCC114837F87D894 /* POPAnimator.mm in Sources */,
+				CBDB135EEBCF7BE6566CC1E440F9ABE8 /* POPBasicAnimation.mm in Sources */,
+				F49DF059345BE01D095163A629EABD47 /* POPCGUtils.mm in Sources */,
+				35C19EA3409AC0FC2E87D8BE980AB3B2 /* POPCustomAnimation.mm in Sources */,
+				266CE494447AE939D135B89C8D8B5631 /* POPDecayAnimation.mm in Sources */,
+				FFC84FF194066FE8ED092DB7C1E10140 /* POPGeometry.mm in Sources */,
+				227F04ED48560D42AB49A1E82E45B9A1 /* POPLayerExtras.mm in Sources */,
+				AFE08FC448B83B7D5AB0EF44F158678C /* POPMath.mm in Sources */,
+				1EB092CEAFE7FCA40DBB1CBD53E5EB33 /* POPPropertyAnimation.mm in Sources */,
+				82A0245454B142B3892145A59D38D1DD /* POPSpringAnimation.mm in Sources */,
+				0404796572F1652BEA8F0CC26EDC1743 /* POPVector.mm in Sources */,
+				F5482272A13044739461D42C408F4B2C /* TransformationMatrix.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2B2F19ED18D9F07C042B37425BD94280 /* PBXTargetDependency */ = {
+		0157C39C71B482586E3EF7F27049D895 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = pop;
+			target = 0483D7F620C992E5C4BD62A7266EABB4 /* pop */;
+			targetProxy = 0BAEE16761F2E8C759D80E11C05D11E8 /* PBXContainerItemProxy */;
+		};
+		09C5AE75AD43AB7B11CF53C08AE53AEE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Koloda;
+			target = BEFF020077BA4696EE8AB4BA60B2D275 /* Koloda */;
+			targetProxy = 72A0222F963B1851C99EB7C0BD154431 /* PBXContainerItemProxy */;
+		};
+		2B14629E21A78A1AFE02728C1F562C5C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-Broomstick";
 			target = F1EA7CEEEEF981610C9686430DF5B8A5 /* Pods-Broomstick */;
-			targetProxy = 815C035A39043A9A548BFB201997D406 /* PBXContainerItemProxy */;
+			targetProxy = 48B85DDC2C922BC997621BD23AA29320 /* PBXContainerItemProxy */;
 		};
-		4BF28DB591125415F6E2DB383F0FDDCE /* PBXTargetDependency */ = {
+		32562D5F9EAD8F773A80234D54F0146C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = NVActivityIndicatorView;
 			target = AF8A82876C43F4DFD625D1823E680EAC /* NVActivityIndicatorView */;
-			targetProxy = D6026E5DC72F3BB8BD216CAC399DD64C /* PBXContainerItemProxy */;
+			targetProxy = EE216BD1F9C9C531983977EA23B9D76D /* PBXContainerItemProxy */;
 		};
-		F18DA3066EADCE642ED00464155842AE /* PBXTargetDependency */ = {
+		3DDF7506A0259D164E6FBD7FB3C1C43B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = pop;
+			target = 0483D7F620C992E5C4BD62A7266EABB4 /* pop */;
+			targetProxy = 2A40EE88B9F82C561A0003FA1B30EC44 /* PBXContainerItemProxy */;
+		};
+		599F15B5E572A4E50CD359E561050EFC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PieCharts;
+			target = 5352E9F7E2BA40B729D6F4355D629ED5 /* PieCharts */;
+			targetProxy = CABA6F950391C010C8288E2600C67C49 /* PBXContainerItemProxy */;
+		};
+		5C8DFD9A0EC38DC0E9DACC60E3A7D881 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = pop;
+			target = 0483D7F620C992E5C4BD62A7266EABB4 /* pop */;
+			targetProxy = 33A7BDB77770B250474D17BFD8AF8C06 /* PBXContainerItemProxy */;
+		};
+		84C3AB161436B0D4C8B04FC4CE45F5DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PieCharts;
+			target = 5352E9F7E2BA40B729D6F4355D629ED5 /* PieCharts */;
+			targetProxy = EB37D0AE9FB031241C4C7EFCB6495E68 /* PBXContainerItemProxy */;
+		};
+		DB94FCF11AC330289817D6C967F371BE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = NVActivityIndicatorView;
 			target = AF8A82876C43F4DFD625D1823E680EAC /* NVActivityIndicatorView */;
-			targetProxy = 612B118175ED6F07E555DA315CA3B376 /* PBXContainerItemProxy */;
+			targetProxy = F1249F81C06C79203A2D8F64637F4BB3 /* PBXContainerItemProxy */;
 		};
-		F51A0F86AD8D7B1C8DE9B4D72A6B4369 /* PBXTargetDependency */ = {
+		F33BA67F20B298CA5C75E3137E405F00 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = PieCharts;
-			target = 5352E9F7E2BA40B729D6F4355D629ED5 /* PieCharts */;
-			targetProxy = 308D8F5D0C557ABF79791DE8351135B5 /* PBXContainerItemProxy */;
-		};
-		FBF88A6C3BE2C0FB7904389035B7C988 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = PieCharts;
-			target = 5352E9F7E2BA40B729D6F4355D629ED5 /* PieCharts */;
-			targetProxy = 0F6B9896B3A30DC9184279952036D242 /* PBXContainerItemProxy */;
+			name = Koloda;
+			target = BEFF020077BA4696EE8AB4BA60B2D275 /* Koloda */;
+			targetProxy = 36B2A7201C233FDE1E62EE7C4CF2D80F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		080D5E9B2E7115EA380007FA1567FF41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 845B3BC4BC3FECC3C8BB63C50A80CC1A /* Pods-Broomstick-BroomstickUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Broomstick-BroomstickUITests/Pods-Broomstick-BroomstickUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Broomstick-BroomstickUITests/Pods-Broomstick-BroomstickUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		1422B121EAEAEA11307496903FA623C6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -919,7 +1444,7 @@
 		};
 		254F46A5A4FB7B1D4453561317E421AA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BD50720A92C566085692F6865C3DA4B3 /* NVActivityIndicatorView.debug.xcconfig */;
+			baseConfigurationReference = 791B18D6550D9BF47BAE29A81D2A04AD /* NVActivityIndicatorView.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -952,12 +1477,10 @@
 			};
 			name = Debug;
 		};
-		2835903A670234F1726AB2ECF27A8243 /* Release */ = {
+		445BAE809CE561C24E902F15EA2FBBE1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D4DDE4CC4ABF2076DAF7BDBCC043E846 /* Pods-Broomstick.release.xcconfig */;
+			baseConfigurationReference = A4FA2D905121DA6A920C2794CA2393DB /* pop.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -967,23 +1490,22 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Broomstick/Pods-Broomstick-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/pop/pop-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/pop/pop-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Broomstick/Pods-Broomstick.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/pop/pop.modulemap";
+				PRODUCT_MODULE_NAME = pop;
+				PRODUCT_NAME = pop;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -991,12 +1513,10 @@
 			};
 			name = Release;
 		};
-		4A27CA7EE9C9ECEA2690417F54EB567A /* Debug */ = {
+		60ECAAB5D8802D66AB24B414A38B0BF1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C586F53AD0D3C2924D0C1256E49477BE /* Pods-Broomstick-BroomstickUITests.debug.xcconfig */;
+			baseConfigurationReference = 9A0F013A27AC27D35F2C482BC1159484 /* Koloda.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1006,30 +1526,65 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Broomstick-BroomstickUITests/Pods-Broomstick-BroomstickUITests-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Koloda/Koloda-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Koloda/Koloda-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Broomstick-BroomstickUITests/Pods-Broomstick-BroomstickUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/Koloda/Koloda.modulemap";
+				PRODUCT_MODULE_NAME = Koloda;
+				PRODUCT_NAME = Koloda;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		61D83384FD69F1DB14FF055B5ECBC069 /* Debug */ = {
+		6B69046C126E9024F7720F29FF3FCAD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A8DF4F0C1D3490E3DD545D3E351CDC7 /* PieCharts.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PieCharts/PieCharts-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PieCharts/PieCharts-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/PieCharts/PieCharts.modulemap";
+				PRODUCT_MODULE_NAME = PieCharts;
+				PRODUCT_NAME = PieCharts;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6F6E7701D50FDEBE8B72520A37052294 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 61C6037FD3443A2A03E06B9034350CD2 /* Pods-Broomstick.debug.xcconfig */;
 			buildSettings = {
@@ -1067,9 +1622,9 @@
 			};
 			name = Debug;
 		};
-		6B69046C126E9024F7720F29FF3FCAD6 /* Release */ = {
+		71B014757785637E3C53F278C3B00B13 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 99A4726E5E55846602269ECBD5D17A4E /* PieCharts.release.xcconfig */;
+			baseConfigurationReference = 538989E6CE967D75CD300ACC8D5AC7FC /* pop.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1080,8 +1635,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/PieCharts/PieCharts-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PieCharts/PieCharts-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/pop/pop-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/pop/pop-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1089,13 +1644,51 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/PieCharts/PieCharts.modulemap";
-				PRODUCT_MODULE_NAME = PieCharts;
-				PRODUCT_NAME = PieCharts;
+				MODULEMAP_FILE = "Target Support Files/pop/pop.modulemap";
+				PRODUCT_MODULE_NAME = pop;
+				PRODUCT_NAME = pop;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		79F83A22A309E0403EECE3CDD2A289E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4DDE4CC4ABF2076DAF7BDBCC043E846 /* Pods-Broomstick.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Broomstick/Pods-Broomstick-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Broomstick/Pods-Broomstick.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1141,9 +1734,9 @@
 			};
 			name = Debug;
 		};
-		C245C80576B7473B30365F1768AFAF3C /* Release */ = {
+		A2636335A57C7E1346999B963993C7CD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 845B3BC4BC3FECC3C8BB63C50A80CC1A /* Pods-Broomstick-BroomstickUITests.release.xcconfig */;
+			baseConfigurationReference = C586F53AD0D3C2924D0C1256E49477BE /* Pods-Broomstick-BroomstickUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1174,15 +1767,14 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		C5A984A3BA2E80D228A5CEE569900643 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 20038E60D3E500C6C72024DA59FB9619 /* PieCharts.debug.xcconfig */;
+			baseConfigurationReference = D75FB24B5F3A62D6115D9FC20CF1EC11 /* PieCharts.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1217,7 +1809,7 @@
 		};
 		D41E525FAEB85F8DDCCCC058770B07CA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DDC31F1CE8475F7FF4D35265C841527C /* NVActivityIndicatorView.release.xcconfig */;
+			baseConfigurationReference = 6E110DF3FA3933269B6CEE07D2140EEC /* NVActivityIndicatorView.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1283,6 +1875,42 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DF7A19662BA44BB5C4D9D993E3DE9B3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3840B0DFE15CAC2722C4285A52F52C65 /* Koloda.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Koloda/Koloda-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Koloda/Koloda-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Koloda/Koloda.modulemap";
+				PRODUCT_MODULE_NAME = Koloda;
+				PRODUCT_NAME = Koloda;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1375,6 +2003,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		4D3EDC8C72869E3AA5E94E9EB3181BAC /* Build configuration list for PBXNativeTarget "Pods-Broomstick" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F6E7701D50FDEBE8B72520A37052294 /* Debug */,
+				79F83A22A309E0403EECE3CDD2A289E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		6C2F29596E14561A060E8A2810958844 /* Build configuration list for PBXNativeTarget "NVActivityIndicatorView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1384,11 +2021,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7803D7AF3DD7AE6A8CE4AAE14326763C /* Build configuration list for PBXNativeTarget "Pods-Broomstick" */ = {
+		8C1C4CACCC7FEE0B0733010F91DB1AB7 /* Build configuration list for PBXNativeTarget "pop" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				61D83384FD69F1DB14FF055B5ECBC069 /* Debug */,
-				2835903A670234F1726AB2ECF27A8243 /* Release */,
+				71B014757785637E3C53F278C3B00B13 /* Debug */,
+				445BAE809CE561C24E902F15EA2FBBE1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1402,11 +2039,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9730225449EFD5BAEE0FA04D8EEE967F /* Build configuration list for PBXNativeTarget "Pods-Broomstick-BroomstickUITests" */ = {
+		91864B5FBD0E23BC821DB40EECAD8451 /* Build configuration list for PBXNativeTarget "Koloda" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4A27CA7EE9C9ECEA2690417F54EB567A /* Debug */,
-				C245C80576B7473B30365F1768AFAF3C /* Release */,
+				60ECAAB5D8802D66AB24B414A38B0BF1 /* Debug */,
+				DF7A19662BA44BB5C4D9D993E3DE9B3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C748B48CA1283CB1DAA88199E354A6D5 /* Build configuration list for PBXNativeTarget "Pods-Broomstick-BroomstickUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2636335A57C7E1346999B963993C7CD /* Debug */,
+				080D5E9B2E7115EA380007FA1567FF41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -47,7 +47,7 @@ class HomeViewController: UIViewController {
         buttonText = UIFont(name: "ProximaNova-Bold", size: 24 * screenRatio)
         boldLabel = UIFont(name: "ProximaNova-Bold", size: 18 * screenRatio)
         label = UIFont(name: "ProximaNova-Regular", size: 18 * screenRatio)
-        smallLabel = UIFont(name: "ProximaNova-Regular", size: 18 * screenRatio)
+        smallLabel = UIFont(name: "ProximaNova-Regular", size: 14 * screenRatio)
     }
     
     func setUp() {
@@ -104,30 +104,29 @@ class HomeViewController: UIViewController {
         totalPhotosLael.leadingAnchor.constraint(equalTo: parent.leadingAnchor, constant: 139 * screenRatio).isActive = true
         totalPhotosLael.topAnchor.constraint(equalTo: parent.topAnchor, constant: 256 * screenRatio).isActive = true
         //Total Storage
-        let numGB = UILabel()
-        numGB.frame = CGRect(x: 0, y: 0, width: 122 * screenRatio, height: 60 * screenRatio)
-        numGB.textColor = whiteColor
-        numGB.font = bigNumber
-        numGB.textAlignment = .center
-        numGB.text = "\(numStorage())"
-        parent.addSubview(numGB)
-        numGB.translatesAutoresizingMaskIntoConstraints = false
-        numGB.widthAnchor.constraint(equalToConstant: 122 * screenRatio).isActive = true
-        numGB.heightAnchor.constraint(equalToConstant: 60 * screenRatio).isActive = true
-        numGB.leadingAnchor.constraint(equalTo: parent.leadingAnchor, constant: 131 * screenRatio).isActive = true
-        numGB.topAnchor.constraint(equalTo: parent.topAnchor, constant: 311 * screenRatio).isActive = true
+        let numSpace = UILabel()
+        numSpace.frame = CGRect(x: 0, y: 0, width: 122 * screenRatio, height: 60 * screenRatio)
+        numSpace.textColor = whiteColor
+        numSpace.font = bigNumber
+        numSpace.textAlignment = .center
+        numSpace.text = "\(numStorage())"
+        parent.addSubview(numSpace)
+        numSpace.translatesAutoresizingMaskIntoConstraints = false
+        numSpace.widthAnchor.constraint(equalToConstant: 122 * screenRatio).isActive = true
+        numSpace.heightAnchor.constraint(equalToConstant: 60 * screenRatio).isActive = true
+        numSpace.leadingAnchor.constraint(equalTo: parent.leadingAnchor, constant: 131 * screenRatio).isActive = true
+        numSpace.topAnchor.constraint(equalTo: parent.topAnchor, constant: 311 * screenRatio).isActive = true
         //Total Storage Label
         let storageLabel = UILabel()
-        storageLabel.frame = CGRect(x: 0, y: 0, width: 137 * screenRatio, height: 18 * screenRatio)
+        storageLabel.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: 18 * screenRatio)
         storageLabel.textColor = whiteColor
         storageLabel.font = label
         storageLabel.textAlignment = .center
-        storageLabel.text = "GB Storage Used"
+        storageLabel.text = "MB Storage Used"
         parent.addSubview(storageLabel)
         storageLabel.translatesAutoresizingMaskIntoConstraints = false
-        storageLabel.widthAnchor.constraint(equalToConstant: 137 * screenRatio).isActive = true
+        storageLabel.widthAnchor.constraint(equalToConstant: self.view.frame.width).isActive = true
         storageLabel.heightAnchor.constraint(equalToConstant: 18 * screenRatio).isActive = true
-        storageLabel.leadingAnchor.constraint(equalTo: parent.leadingAnchor, constant: 123 * screenRatio).isActive = true
         storageLabel.topAnchor.constraint(equalTo: parent.topAnchor, constant: 368 * screenRatio).isActive = true
         //Recent Clean Ups
         let recentCleanUpsView = UILabel()
@@ -197,12 +196,12 @@ class HomeViewController: UIViewController {
     }
     
     func numStorage() -> Double {
-        //returns the total GB of storage taken up by photos
+        //returns the total Space of storage taken up by photos
         let cutoff = 0.01
         let analyzer = PhotoAnalyzer()
         analyzer.setup()
         let size = analyzer.load_total_size()
-        return size - size.truncatingRemainder(dividingBy: cutoff)
+        return (size - size.truncatingRemainder(dividingBy: cutoff)).rounded()
     }
     
     func loadPastCleans() -> [SavedClean]? {
@@ -372,7 +371,7 @@ class HomeViewController: UIViewController {
             //the first item is tapped
             animateButton(inputButton: detailButton1)
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.15) {
-                let vc = ScanResultViewController(scanDate: Date(), totalStorage: 0.5, deleted: 25, kept: 5, screenshots: 30, incoherant: 12, duplicates: 10, reviewFinished: true)
+                let vc = ScanResultViewController(scanDate: Date(), totalStorage: 0.5, deleted: 25, kept: 5, screenshots: 30, incoherant: 12, duplicates: 10, reviewFinished: true, analyzer: nil)
                 self.navigationController?.pushViewController(vc, animated: true)
             }
             
@@ -380,7 +379,7 @@ class HomeViewController: UIViewController {
             //the second item is tapped
             animateButton(inputButton: detailButton2)
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.15) {
-                let vc = ScanResultViewController(scanDate: Date(), totalStorage: 0.5, deleted: 25, kept: 5, screenshots: 30, incoherant: 12, duplicates: 10, reviewFinished: true)
+                let vc = ScanResultViewController(scanDate: Date(), totalStorage: 0.5, deleted: 25, kept: 5, screenshots: 30, incoherant: 12, duplicates: 10, reviewFinished: true, analyzer: nil)
                 self.navigationController?.pushViewController(vc, animated: true)
             }
             
