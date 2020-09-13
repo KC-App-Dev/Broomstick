@@ -41,7 +41,7 @@ class PhotoReviewViewController: UIViewController {
     
     //category tag
     var categoryTag = UIView()
-    
+    let currentPhotoLabel = UILabel()
     
     
     //swiper view
@@ -73,7 +73,7 @@ class PhotoReviewViewController: UIViewController {
         scanResultLabel.leadingAnchor.constraint(equalTo: parent.leadingAnchor, constant: 31 * screenRatio).isActive = true
         scanResultLabel.topAnchor.constraint(equalTo: parent.topAnchor, constant: 102 * screenRatio).isActive = true
         //photo progress counter
-        let currentPhotoLabel = UILabel()
+    
         currentPhotoLabel.frame = CGRect(x: 260 * screenRatio, y: 100 * screenRatio, width: 64 * screenRatio, height: 36 * screenRatio)
         currentPhotoLabel.text = "\(currentIndex + 1)"
         currentPhotoLabel.font = UIFont(name: "ProximaNova-Regular", size: 42 * screenRatio)
@@ -224,6 +224,7 @@ class PhotoReviewViewController: UIViewController {
     }
     
     func updateTag(category: String, currentDuplicate: Int?, totalDuplicate: Int?) {
+        categoryTag.removeFromSuperview()
         var _color = whiteColor
         var _tagString = ""
         if category.lowercased() == "incoherent" {
@@ -237,13 +238,12 @@ class PhotoReviewViewController: UIViewController {
             _tagString = "Duplicate \(currentDuplicate!)/\(totalDuplicate!)"
         }
         categoryTag = labelCard(inputText: _tagString, color: _color, centerX: self.view.center.x, y: 200 * screenRatio)
-        if (self.view.subviews.contains(categoryTag)) {
-            categoryTag.removeFromSuperview()
-        }
+        
         self.view.addSubview(categoryTag)
     }
     
     func promptDelete() {
+        categoryTag.removeFromSuperview()
         let desc = UILabel()
         desc.frame = CGRect(x: 0, y: 0, width: self.view.frame.width * 0.86, height: 150 * screenRatio)
         desc.center = CGPoint(x: self.view.center.x, y: self.view.center.y - 30 * screenRatio)
@@ -301,13 +301,17 @@ extension PhotoReviewViewController: KolodaViewDelegate, KolodaViewDataSource {
         return .fast
     }
     func koloda(_ koloda: KolodaView, didSwipeCardAt index: Int, in direction: SwipeResultDirection) {
-        //TODO: this is the method where you can keep track of swipe actions
-        //TODO: update currentIndex
         if direction == .left {
             analyzer.swiped(index: index, delete: true)
         } else if direction == .right {
             analyzer.swiped(index: index, delete: false)
         }
+        if (currentIndex + 1 < numPhotosToReview) {
+            currentIndex += 1
+            currentPhotoLabel.text = "\(currentIndex + 1)"
+        }
+        
+
     }
     func koloda(_ koloda: KolodaView, viewForCardAt index: Int) -> UIView {
         let view = UIView()
