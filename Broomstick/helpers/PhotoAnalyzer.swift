@@ -56,6 +56,7 @@ class PhotoAnalyzer {
     var final_categorization: [TypeOfWaste] = []
     var similar_groups: [[Int]] = []
     var images_to_delete: [Int] = []
+    var images_flagged: [Int] = []
     var total_image_size: Double = 0.0
 
     
@@ -260,6 +261,8 @@ class PhotoAnalyzer {
         return Calendar.current.dateComponents([.day], from: pic1, to: pic2).day!
     }
     
+    // functions to scan / generate data
+    
     func complete_scan() {
         /*
          A function to demonstrate loopthroughs of the entire camera roll
@@ -332,6 +335,7 @@ class PhotoAnalyzer {
             i += 1
         }
         
+        // remove single groups in similar
         i = 0
         var limit = similar_groups.count
         while i < limit {
@@ -344,6 +348,15 @@ class PhotoAnalyzer {
                 }
                 i += 1
             }
+        }
+        
+        // loopthrough categorizations and generate list of indices to display to user
+        i = 0
+        for category in final_categorization {
+            if category != .normal {
+                images_flagged.append(i)
+            }
+            i += 1
         }
         
         print("similarity analysis complete. ")
@@ -397,4 +410,19 @@ class PhotoAnalyzer {
         }
         return ScanStats (screenshots: screenshots, blurry: blurry, duplicates: duplicates, total_size: load_sizes_imgs(pic_indices: imgs_interest))
     }
+    
+    // functions to clean / display images to users
+    func all_images_to_display() -> [UIImage] {
+        var images_arr: [UIImage] = []
+        for index in images_flagged {
+            do {
+                images_arr.append(try loadImage(index: index)!)
+            } catch {
+                print("something went wrong while converting index to image.")
+            }
+        }
+        return images_arr
+    }
+    
+    
 }
