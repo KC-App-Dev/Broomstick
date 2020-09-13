@@ -46,12 +46,12 @@ class ScanLoadingViewController: UIViewController {
     }
     
     func processImages() {
-        let analyzer = PhotoAnalyzer()
+        let analyzer = PhotoAnalyzer(debug_status: true)
         analyzer.setup()
         analyzer.complete_scan()
         let results = analyzer.scan_results()
         print(results)
-        let vc = ScanResultViewController(scanDate: Date(), totalStorage: results.total_size, deleted: nil, kept: nil, screenshots: results.screenshots, incoherant: results.blurry, duplicates: results.duplicates, reviewFinished: false)
+        let vc = ScanResultViewController(scanDate: Date(), totalStorage: results.total_size, deleted: nil, kept: nil, screenshots: results.screenshots, incoherant: results.blurry, duplicates: results.duplicates, reviewFinished: false, analyzer: analyzer)
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
