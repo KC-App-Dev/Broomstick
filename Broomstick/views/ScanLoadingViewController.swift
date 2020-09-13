@@ -7,25 +7,41 @@
 //
 
 import UIKit
+import NVActivityIndicatorView
 
 class ScanLoadingViewController: UIViewController {
     
+    var labelText = "Analyzing..."
+    let loadingTextLabel = UILabel()
+    let activityIndicator = NVActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: 150 * screenRatio, height: 150 * screenRatio))
+    
     func setUp() {
+        //change background ccolor
         self.view.backgroundColor = mediumColor
-        let tempLoadingLabel = UILabel()
-        tempLoadingLabel.frame = CGRect(x: 0, y: 0, width: 200, height: 100)
-        tempLoadingLabel.center = self.view.center
-        tempLoadingLabel.text = "Loading..."
-        tempLoadingLabel.textAlignment = .center
+        //the loading animation
+        activityIndicator.type = .pacman
+        activityIndicator.color = whiteColor
+        activityIndicator.padding = 20 * screenRatio
+        activityIndicator.center = CGPoint(x: self.view.center.x + 10 * screenRatio, y: self.view.center.y - 20 * screenRatio)
+        activityIndicator.startAnimating()
+        self.view.addSubview(activityIndicator)
+        //the text label below the loading animation
+        loadingTextLabel.frame = CGRect(x: self.view.center.x - 100 * screenRatio, y: self.view.center.y + 5 * screenRatio, width: 200 * screenRatio, height: 100 * screenRatio)
+        loadingTextLabel.text = labelText
+        loadingTextLabel.textAlignment = .center
         
-        tempLoadingLabel.font = headingSmall
-        tempLoadingLabel.textColor = .white
-        self.view.addSubview(tempLoadingLabel)
+        loadingTextLabel.font = headingSmall
+        loadingTextLabel.textColor = .white
+        self.view.addSubview(loadingTextLabel)
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setUp()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         processImages()
     }
     
@@ -34,7 +50,9 @@ class ScanLoadingViewController: UIViewController {
         analyzer.setup()
         analyzer.complete_scan()
         let results = analyzer.scan_results()
-        print("results: ", results)
+        print(results)
+        let vc = ScanResultViewController(scanDate: Date(), totalStorage: results.total_size, deleted: nil, kept: nil, screenshots: results.screenshots, incoherant: results.blurry, duplicates: results.duplicates, reviewFinished: false)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     /*

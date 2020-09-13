@@ -13,8 +13,8 @@ class ScanResultViewController: UIViewController {
     
     var scanDate: Date = Date()
     var totalStorage: Double
-    var deleted: Int
-    var kept: Int
+    var deleted: Int?
+    var kept: Int?
     var screenshots: Int
     var incoherant: Int
     var duplicates: Int
@@ -27,7 +27,7 @@ class ScanResultViewController: UIViewController {
     
     
     init (
-        scanDate: Date, totalStorage: Double, deleted: Int, kept: Int, screenshots: Int, incoherant: Int, duplicates: Int, reviewFinished: Bool
+        scanDate: Date, totalStorage: Double, deleted: Int?, kept: Int?, screenshots: Int, incoherant: Int, duplicates: Int, reviewFinished: Bool
     ) {
         self.scanDate = scanDate
         self.totalStorage = totalStorage
@@ -102,7 +102,7 @@ class ScanResultViewController: UIViewController {
             deletedNumLabel.center = CGPoint(x: 110 * screenRatio, y: 465 * screenRatio)
             deletedNumLabel.textColor = whiteColor
             deletedNumLabel.font = mediumNumber
-            deletedNumLabel.text = "\(deleted)"
+            deletedNumLabel.text = "\(deleted ?? 0)"
             deletedNumLabel.textAlignment = .center
             parent.addSubview(deletedNumLabel)
             //kept
@@ -120,7 +120,7 @@ class ScanResultViewController: UIViewController {
             keptNumLabel.center = CGPoint(x: 271 * screenRatio, y: 465 * screenRatio)
             keptNumLabel.textColor = whiteColor
             keptNumLabel.font = mediumNumber
-            keptNumLabel.text = "\(kept * 3)"
+            keptNumLabel.text = "\((kept ?? 0) * 3)"
             keptNumLabel.textAlignment = .center
             parent.addSubview(keptNumLabel)
         }
@@ -245,7 +245,12 @@ class ScanResultViewController: UIViewController {
     
     
     @objc func goBack() {
-        navigationController?.popViewController(animated: true)
+        if !reviewFinished {
+            navigationController?.popToRootViewController(animated: true)
+        } else {
+             navigationController?.popViewController(animated: true)
+        }
+       
     }
     
     override func viewDidLoad() {

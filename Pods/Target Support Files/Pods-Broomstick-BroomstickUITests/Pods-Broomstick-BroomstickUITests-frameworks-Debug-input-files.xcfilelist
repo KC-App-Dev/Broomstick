@@ -1,2 +1,3 @@
 ${PODS_ROOT}/Target Support Files/Pods-Broomstick-BroomstickUITests/Pods-Broomstick-BroomstickUITests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework
 ${BUILT_PRODUCTS_DIR}/PieCharts/PieCharts.framework

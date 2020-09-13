@@ -7,6 +7,7 @@ target 'Broomstick' do
 
   # Pods for Broomstick
 	pod 'PieCharts'
+	pod 'NVActivityIndicatorView'
   target 'BroomstickTests' do
     inherit! :search_paths
     # Pods for testing
