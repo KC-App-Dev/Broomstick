@@ -38,6 +38,7 @@ class PhotoAnalyzer {
     var final_categorization: [TypeOfWaste] = []
     var similar_groups: [[Int]] = []
     var images_to_delete: [Int] = []
+    var total_image_size: Double = 0.0
     
     init(debug: Bool = false) {
         if debug {
@@ -46,11 +47,31 @@ class PhotoAnalyzer {
     }
     
     func setup() {
+        /*
+         Sets up some convenience values. 
+         */
         let fetchResult: PHFetchResult = PHAsset.fetchAssets(with: .image, options: fetchOptions())
         photoCollection = fetchResult
         num_pics = photoCollection.count
+        
         print("PhotoAnalyzer initialized. printing variables.")
         print("num_pics: ", num_pics)
+    }
+    
+    func load_total_size() -> Double {
+        var total_size: Double = 0.0
+        for i in 0 ... num_pics-1 {
+            let resources = PHAssetResource.assetResources(for: photoCollection.object(at:i))
+            var size: Int64 = 0
+            if let resource = resources.first {
+                let unsignedInt64 = resource.value(forKey: "fileSize") as? CLong
+                size = Int64(bitPattern: UInt64(unsignedInt64!))
+                total_size += Double(size) / (1024.0*1024.0)
+            }
+        }
+        self.total_image_size = total_size
+        print("total sized calculated: ", total_size)
+        return total_size
     }
 
     private func loadImage(index: Int) throws -> UIImage? {

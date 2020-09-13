@@ -29,6 +29,7 @@ class ScanLoadingViewController: UIViewController {
   
     }
     
+    
 
     /*
     // MARK: - Navigation

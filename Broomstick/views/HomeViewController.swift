@@ -172,12 +172,19 @@ class HomeViewController: UIViewController {
     
     func numPhotos() -> Int {
         //returns the total number of photos in the user's photo library
-        return 1024
+        let analyzer = PhotoAnalyzer()
+        analyzer.setup()
+        let num_pics = analyzer.num_pics
+        return num_pics
     }
     
     func numStorage() -> Double {
         //returns the total GB of storage taken up by photos
-        return 60.2
+        let cutoff = 0.01
+        let analyzer = PhotoAnalyzer()
+        analyzer.setup()
+        let size = analyzer.load_total_size()
+        return size - size.truncatingRemainder(dividingBy: cutoff)
     }
     
     func recentScan(totalPhotos: Int, deletedPhotos: Int, reviewComplete: Bool, upper: Bool, action: Selector) -> UIView {
