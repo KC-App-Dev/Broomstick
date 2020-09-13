@@ -19,6 +19,20 @@ class HomeViewController: UIViewController {
     let detailButton1 = UIButton()
     let detailButton2 = UIButton()
     
+    //menu
+    let containerView = UIView()
+    var slideUpView = UIView()
+    let slideUpViewHeight = CGFloat(500)
+    let slideUpTableView = UITableView()
+    let menuDataSource: [Int: (UIImage?, String)] = [
+        0: (UIImage(named: "info"), "About"),
+        1: (UIImage(named: "lock"), "Privacy"),
+        2: (UIImage(named: "alert"), "Report a Bug"),
+        3: (UIImage(named: "user"), "Contact"),
+        4: (UIImage(named: "settings"), "Preferences")
+    ]
+    
+    
     func initializeRatio() {
         //sets the screen ratio of the current device
         let width = self.view.frame.width
@@ -152,9 +166,7 @@ class HomeViewController: UIViewController {
             parent.addSubview(recentScan(totalPhotos: 30, deletedPhotos: 20, reviewComplete: true, upper: true, action: #selector(showDetail)))
             parent.addSubview(recentScan(totalPhotos: 45, deletedPhotos: 12, reviewComplete: false, upper: false, action: #selector(showDetail)))
         }
-        
-        
-        
+  
         //button
         button.frame = CGRect(x: 82 * screenRatio, y: 704 * screenRatio, width: 210 * screenRatio, height: 48 * screenRatio)
         button.layer.cornerRadius = 24 * screenRatio
@@ -168,6 +180,12 @@ class HomeViewController: UIViewController {
         button.layer.shadowOpacity = 1.0
         button.layer.masksToBounds = false
         button.addTarget(self, action: #selector(cleanUp), for: .touchUpInside)
+        
+        //menu table view
+        slideUpTableView.isScrollEnabled = false
+        slideUpTableView.delegate = self
+        slideUpTableView.dataSource = self
+        slideUpTableView.register(SlideUpViewCell.self, forCellReuseIdentifier: "SlideUpViewCell")
     }
     
     func numPhotos() -> Int {
@@ -267,7 +285,80 @@ class HomeViewController: UIViewController {
     
     @objc func showMenu() {
         //shows the hamburger menu
+        let window = UIApplication.shared.connectedScenes        .filter({$0.activationState == .foregroundActive})
+            .map({$0 as? UIWindowScene})
+            .compactMap({$0})
+            .first?.windows
+            .filter({$0.isKeyWindow}).first
+        let screenSize = UIScreen.main.bounds.size
+        containerView.backgroundColor = blackColor.withAlphaComponent(0.95)
+        containerView.frame = self.view.frame
+        window?.addSubview(containerView)
+        let _recognizer = UITapGestureRecognizer(target: self, action: #selector(slideUpTapped))
+        containerView.addGestureRecognizer(_recognizer)
+        containerView.alpha = 0
+        slideUpView.frame = CGRect(x: 0, y: screenSize.height, width: screenSize.width, height: slideUpViewHeight * screenRatio)
+        slideUpView.backgroundColor = darkColor
+        slideUpView.layer.cornerRadius = 30 * screenRatio
+        slideUpView.clipsToBounds = true
+        window?.addSubview(slideUpView)
+        //settings label
+        let settingsLabel = UILabel()
+        settingsLabel.frame = CGRect(x: 0, y: 20 * screenRatio, width: slideUpView.frame.width, height: 20 * screenRatio)
+        settingsLabel.textAlignment = .center
+        settingsLabel.textColor = whiteColor
+        settingsLabel.font = boldLabel
+        settingsLabel.text = "Settings"
+        slideUpView.addSubview(settingsLabel)
+        //close icon for settings
+        let closeButtonImage = UIImage(named: "close")
+        let closeButton = UIButton()
+        closeButton.frame = CGRect(x: slideUpView.frame.width * 0.88, y: 25 * screenRatio, width: 15 * screenRatio, height: 15 * screenRatio)
+        closeButton.setImage(closeButtonImage, for: .normal)
+        closeButton.addTarget(self, action: #selector(slideUpTapped), for: .touchUpInside)
+        slideUpView.addSubview(closeButton)
+        //table view for the settings menu
+        slideUpTableView.frame = CGRect(x: 0, y: 60 * screenRatio, width: slideUpView.frame.width, height: slideUpView.frame.height - 50 * screenRatio)
+        slideUpTableView.separatorStyle = .none
+        slideUpTableView.backgroundColor = darkColor
+        slideUpView.addSubview(slideUpTableView)
+        
+        //animate the menu to the correct position
+        UIView.animate(withDuration: 0.5,
+                       delay: 0, usingSpringWithDamping: 1.0,
+                       initialSpringVelocity: 1.0,
+                       options: .curveEaseInOut, animations: {
+                        self.containerView.alpha = 0.8
+                        self.slideUpView.frame = CGRect(x: 0, y: screenSize.height - self.slideUpViewHeight * screenRatio, width: screenSize.width, height: self.slideUpViewHeight)
+        }, completion: nil)
+        
+        
+        
+        
     }
+    
+    @objc func slideUpTapped() {
+        let screenSize = UIScreen.main.bounds.size
+        UIView.animate(withDuration: 0.5,
+                       delay: 0, usingSpringWithDamping: 1.0,
+                       initialSpringVelocity: 1.0,
+                       options: .curveEaseInOut, animations: {
+                        self.containerView.alpha = 0
+                        self.slideUpView.frame = CGRect(x: 0, y: screenSize.height, width: screenSize.width, height: self.slideUpViewHeight * screenRatio)
+        }, completion: nil)
+    }
+    
+    func itemTapped(completion: ((Bool)->(Void))?) {
+        let screenSize = UIScreen.main.bounds.size
+        UIView.animate(withDuration: 0.5,
+                       delay: 0, usingSpringWithDamping: 1.0,
+                       initialSpringVelocity: 1.0,
+                       options: .curveEaseInOut, animations: {
+                        self.containerView.alpha = 0
+                        self.slideUpView.frame = CGRect(x: 0, y: screenSize.height, width: screenSize.width, height: self.slideUpViewHeight * screenRatio)
+        }, completion: completion)
+    }
+    
     
     @objc func showDetail(sender: UIButton)
     {
@@ -299,15 +390,60 @@ class HomeViewController: UIViewController {
     }
     
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        let analyzer = PhotoAnalyzer()
+        analyzer.request_perms()
         initializeRatio()
         setUp()
+        
         
     }
     
     
 }
 
+extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return menuDataSource.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "SlideUpViewCell", for: indexPath) as? SlideUpViewCell
+            else {fatalError("cannot load cells")}
+        cell.iconView.image = menuDataSource[indexPath.row]?.0
+        cell.labelView.text = menuDataSource[indexPath.row]?.1
+        cell.labelView.font = boldLabel
+        cell.labelView.textColor = whiteColor
+        let _image = UIImage(named: "back")!
+        cell.arrowView.image = _image
+        cell.arrowView.transform = CGAffineTransform(scaleX: -1, y: 1)
+        cell.selectionStyle = .none
+        return cell
+        
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 70 * screenRatio
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        itemTapped { (_) -> () in
+            switch indexPath.row {
+                case 4:
+                    let vc = PreferencesViewController()
+                    self.present(vc, animated: true)
+                    break
+                default: break
+            }
+
+        }
+    }
+    
+    
+}
 
 
