@@ -159,7 +159,7 @@ class PhotoReviewViewController: UIViewController {
         swiperView.delegate = self
         swiperView.dataSource = self
         parent.addSubview(swiperView)
-        updateTag(category: "Duplicate", currentDuplicate: 1, totalDuplicate: 2)
+        // updateTag(category: "Duplicate", currentDuplicate: 1, totalDuplicate: 2)
     }
     
     @objc func goBack() {
@@ -336,6 +336,20 @@ extension PhotoReviewViewController: KolodaViewDelegate, KolodaViewDataSource {
         view.addSubview(imageView)
         return view
     }
+    
+    func koloda(_ koloda: KolodaView, didShowCardAt index: Int) {
+        print("this function is running.")
+        print("categories: ", analyzer.delete_categories())
+        let category = analyzer.delete_categories()[index]
+        if category == .screenshot {
+            updateTag(category: "screenshot", currentDuplicate: nil, totalDuplicate: nil)
+        } else if category == .blurry {
+            updateTag(category: "incoherent", currentDuplicate: nil, totalDuplicate: nil)
+        } else if category == .similar {
+            updateTag(category: "duplicate", currentDuplicate: 1, totalDuplicate: 2)
+        }
+    }
+    
     func koloda(_ koloda: KolodaView, viewForCardOverlayAt index: Int) -> OverlayView? {
         return CustomOverlayView(frame: CGRect(x: 0, y: 0, width: 300 * screenRatio, height: 300 * screenRatio))
     }

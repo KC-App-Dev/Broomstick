@@ -64,6 +64,7 @@ class PhotoAnalyzer {
     var images_to_delete: [Int] = []
     var images_flagged: [Int] = []
     var current_review_arr: [Int] = []
+    var current_categories: [TypeOfWaste] = []
     
     // saving
     var clean_save: SavedClean = SavedClean(screenshots: -1, blurry: -1, duplicates: -1, kept: -1, size_detected: 0.0, size_cleaned: 0.0, date_cleaned: Date(), completed: true)
@@ -497,6 +498,7 @@ class PhotoAnalyzer {
             do {
                 current_review_arr.append(index)
                 images_arr.append(try loadImage(index: index)!)
+                current_categories.append(final_categorization[index])
             } catch {
                 print("something went wrong while converting index to image.")
             }
@@ -512,6 +514,7 @@ class PhotoAnalyzer {
                 if final_categorization[index] == category {
                     images_arr.append(try loadImage(index: index)!)
                     current_review_arr.append(index)
+                    current_categories.append(final_categorization[index])
                 }
             } catch {
                 print("something went wrong while converting index to image.")
@@ -533,13 +536,9 @@ class PhotoAnalyzer {
     
     func delete_categories() -> [TypeOfWaste] {
         /*
-         Returns the categories of each image in images_flagged
+         Returns the categories of each image in current_categories
          */
-        var categories: [TypeOfWaste] = []
-        for i in images_flagged {
-            categories.append(final_categorization[i])
-        }
-        return categories
+        return current_categories
     }
     
     func update_images_to_delete(indices: [Int]) {
