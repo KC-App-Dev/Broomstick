@@ -172,12 +172,19 @@ class HomeViewController: UIViewController {
     
     func numPhotos() -> Int {
         //returns the total number of photos in the user's photo library
-        return 1024
+        let analyzer = PhotoAnalyzer()
+        analyzer.setup()
+        let num_pics = analyzer.num_pics
+        return num_pics
     }
     
     func numStorage() -> Double {
         //returns the total GB of storage taken up by photos
-        return 60.2
+        let cutoff = 0.01
+        let analyzer = PhotoAnalyzer()
+        analyzer.setup()
+        let size = analyzer.load_total_size()
+        return size - size.truncatingRemainder(dividingBy: cutoff)
     }
     
     func recentScan(totalPhotos: Int, deletedPhotos: Int, reviewComplete: Bool, upper: Bool, action: Selector) -> UIView {
@@ -256,7 +263,7 @@ class HomeViewController: UIViewController {
         
         return view
     }
-
+    
     
     @objc func showMenu() {
         //shows the hamburger menu
@@ -268,7 +275,7 @@ class HomeViewController: UIViewController {
             //the first item is tapped
             animateButton(inputButton: detailButton1)
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.15) {
-                let vc = ScanResultViewController(scanDate: Date(), totalStorage: 0.5, deleted: 25, kept: 5, screenshots: 30, incoherant: 12, duplicates: 10, scanFinished: true)
+                let vc = ScanResultViewController(scanDate: Date(), totalStorage: 0.5, deleted: 25, kept: 5, screenshots: 30, incoherant: 12, duplicates: 10, reviewFinished: true)
                 self.navigationController?.pushViewController(vc, animated: true)
             }
             
@@ -276,16 +283,21 @@ class HomeViewController: UIViewController {
             //the second item is tapped
             animateButton(inputButton: detailButton2)
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.15) {
-                
+                let vc = ScanResultViewController(scanDate: Date(), totalStorage: 0.5, deleted: 25, kept: 5, screenshots: 30, incoherant: 12, duplicates: 10, reviewFinished: false)
+                self.navigationController?.pushViewController(vc, animated: true)
             }
             
         }
     }
     @objc func cleanUp() {
         animateButton(inputButton: button)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.15) {
+            let vc = ScanLoadingViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
         //executes the clean up method
     }
-
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

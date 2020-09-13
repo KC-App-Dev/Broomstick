@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5D1B184B59A83FEF31435B10 /* Pods_BroomstickTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5FFCE1EFD9F6D20F5BB41F4 /* Pods_BroomstickTests.framework */; };
+		C58DF296250D942F00AB82A1 /* PhotoAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58DF295250D942F00AB82A1 /* PhotoAnalyzer.swift */; };
+		C58DF298250D972C00AB82A1 /* MobileNetV2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C58DF297250D972C00AB82A1 /* MobileNetV2.mlmodel */; };
 		C837908D250C942500ED58B9 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = C837908C250C942500ED58B9 /* Global.swift */; };
 		C837909D250C993C00ED58B9 /* ProximaNova_Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = C8379091250C993C00ED58B9 /* ProximaNova_Light.otf */; };
 		C837909E250C993C00ED58B9 /* ProximaNova_Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = C8379092250C993C00ED58B9 /* ProximaNova_Regular.otf */; };
@@ -18,6 +20,7 @@
 		C83790B0250C9C9E00ED58B9 /* noRecentScans.png in Resources */ = {isa = PBXBuildFile; fileRef = C83790AC250C9C9E00ED58B9 /* noRecentScans.png */; };
 		C83790B1250C9C9E00ED58B9 /* noRecentScans.svg in Resources */ = {isa = PBXBuildFile; fileRef = C83790AD250C9C9E00ED58B9 /* noRecentScans.svg */; };
 		C8BB3D98250D5F5000C6B511 /* ScanResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BB3D97250D5F5000C6B511 /* ScanResultViewController.swift */; };
+		C8BB3D9A250D95A900C6B511 /* ScanLoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BB3D99250D95A900C6B511 /* ScanLoadingViewController.swift */; };
 		F017B2C5250C89860015C4BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F017B2C4250C89860015C4BD /* AppDelegate.swift */; };
 		F017B2C7250C89860015C4BD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F017B2C6250C89860015C4BD /* SceneDelegate.swift */; };
 		F017B2C9250C89860015C4BD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F017B2C8250C89860015C4BD /* HomeViewController.swift */; };
@@ -54,6 +57,8 @@
 		A0E32A834A6B93BFAFFF713D /* Pods-BroomstickTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BroomstickTests.release.xcconfig"; path = "Target Support Files/Pods-BroomstickTests/Pods-BroomstickTests.release.xcconfig"; sourceTree = "<group>"; };
 		AFF83D21CC1977651A061F1A /* Pods-Broomstick.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Broomstick.debug.xcconfig"; path = "Target Support Files/Pods-Broomstick/Pods-Broomstick.debug.xcconfig"; sourceTree = "<group>"; };
 		B5FFCE1EFD9F6D20F5BB41F4 /* Pods_BroomstickTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BroomstickTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C58DF295250D942F00AB82A1 /* PhotoAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoAnalyzer.swift; sourceTree = "<group>"; };
+		C58DF297250D972C00AB82A1 /* MobileNetV2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNetV2.mlmodel; sourceTree = "<group>"; };
 		C837908C250C942500ED58B9 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		C8379091250C993C00ED58B9 /* ProximaNova_Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ProximaNova_Light.otf; sourceTree = "<group>"; };
 		C8379092250C993C00ED58B9 /* ProximaNova_Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ProximaNova_Regular.otf; sourceTree = "<group>"; };
@@ -64,6 +69,7 @@
 		C83790AC250C9C9E00ED58B9 /* noRecentScans.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noRecentScans.png; sourceTree = "<group>"; };
 		C83790AD250C9C9E00ED58B9 /* noRecentScans.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = noRecentScans.svg; sourceTree = "<group>"; };
 		C8BB3D97250D5F5000C6B511 /* ScanResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanResultViewController.swift; sourceTree = "<group>"; };
+		C8BB3D99250D95A900C6B511 /* ScanLoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanLoadingViewController.swift; sourceTree = "<group>"; };
 		E17CA6CAB3FB8EB633EF3E01 /* Pods-BroomstickTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BroomstickTests.debug.xcconfig"; path = "Target Support Files/Pods-BroomstickTests/Pods-BroomstickTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E26E59C46147498D9F6590D7 /* Pods-Broomstick-BroomstickUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Broomstick-BroomstickUITests.release.xcconfig"; path = "Target Support Files/Pods-Broomstick-BroomstickUITests/Pods-Broomstick-BroomstickUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E634AFF8397ED1616FA68993 /* Pods-Broomstick.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Broomstick.release.xcconfig"; path = "Target Support Files/Pods-Broomstick/Pods-Broomstick.release.xcconfig"; sourceTree = "<group>"; };
@@ -124,7 +130,9 @@
 		C837908B250C940700ED58B9 /* helpers */ = {
 			isa = PBXGroup;
 			children = (
+				C58DF297250D972C00AB82A1 /* MobileNetV2.mlmodel */,
 				C837908C250C942500ED58B9 /* Global.swift */,
+				C58DF295250D942F00AB82A1 /* PhotoAnalyzer.swift */,
 			);
 			path = helpers;
 			sourceTree = "<group>";
@@ -173,6 +181,7 @@
 			children = (
 				F017B2C8250C89860015C4BD /* HomeViewController.swift */,
 				C8BB3D97250D5F5000C6B511 /* ScanResultViewController.swift */,
+				C8BB3D99250D95A900C6B511 /* ScanLoadingViewController.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -495,8 +504,11 @@
 			files = (
 				F017B2C9250C89860015C4BD /* HomeViewController.swift in Sources */,
 				C8BB3D98250D5F5000C6B511 /* ScanResultViewController.swift in Sources */,
+				C58DF298250D972C00AB82A1 /* MobileNetV2.mlmodel in Sources */,
+				C58DF296250D942F00AB82A1 /* PhotoAnalyzer.swift in Sources */,
 				C837908D250C942500ED58B9 /* Global.swift in Sources */,
 				F017B2C5250C89860015C4BD /* AppDelegate.swift in Sources */,
+				C8BB3D9A250D95A900C6B511 /* ScanLoadingViewController.swift in Sources */,
 				F017B2C7250C89860015C4BD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
