@@ -263,7 +263,7 @@ class HomeViewController: UIViewController {
         
         return view
     }
-
+    
     
     @objc func showMenu() {
         //shows the hamburger menu
@@ -275,7 +275,7 @@ class HomeViewController: UIViewController {
             //the first item is tapped
             animateButton(inputButton: detailButton1)
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.15) {
-                let vc = ScanResultViewController(scanDate: Date(), totalStorage: 0.5, deleted: 25, kept: 5, screenshots: 30, incoherant: 12, duplicates: 10, scanFinished: true)
+                let vc = ScanResultViewController(scanDate: Date(), totalStorage: 0.5, deleted: 25, kept: 5, screenshots: 30, incoherant: 12, duplicates: 10, reviewFinished: true)
                 self.navigationController?.pushViewController(vc, animated: true)
             }
             
@@ -283,7 +283,8 @@ class HomeViewController: UIViewController {
             //the second item is tapped
             animateButton(inputButton: detailButton2)
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.15) {
-                
+                let vc = ScanResultViewController(scanDate: Date(), totalStorage: 0.5, deleted: 25, kept: 5, screenshots: 30, incoherant: 12, duplicates: 10, reviewFinished: false)
+                self.navigationController?.pushViewController(vc, animated: true)
             }
             
         }
@@ -296,7 +297,7 @@ class HomeViewController: UIViewController {
         }
         //executes the clean up method
     }
-
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
