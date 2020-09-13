@@ -58,12 +58,14 @@ class PhotoAnalyzer {
     var images_to_delete: [Int] = []
     var images_flagged: [Int] = []
     var total_image_size: Double = 0.0
+    var debug = false
 
     
-    init(debug: Bool = false) {
-        if debug {
+    init(debug_status: Bool = false) {
+        if debug_status {
             print("Debug mode is on.")
         }
+        debug = debug_status
     }
     
     func setup() {
@@ -72,7 +74,11 @@ class PhotoAnalyzer {
          */
         let fetchResult: PHFetchResult = PHAsset.fetchAssets(with: .image, options: fetchOptions())
         photoCollection = fetchResult
-        num_pics = photoCollection.count
+        if debug {
+            num_pics = 10
+        } else {
+            num_pics = photoCollection.count
+        }
         
         print("PhotoAnalyzer initialized. printing variables.")
         print("num_pics: ", num_pics)
