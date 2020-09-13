@@ -36,6 +36,14 @@ class PhotoReviewViewController: UIViewController {
     let ssView = UIView()
     let dupView = UIView()
     
+    //button
+    let button = UIButton()
+    
+    //category tag
+    var categoryTag = UIView()
+    
+    
+    
     //swiper view
     let swiperView = KolodaView(frame: CGRect(x: 0, y: 0, width: 300 * screenRatio, height: 300 * screenRatio))
     
@@ -151,6 +159,7 @@ class PhotoReviewViewController: UIViewController {
         swiperView.delegate = self
         swiperView.dataSource = self
         parent.addSubview(swiperView)
+        updateTag(category: "Duplicate", currentDuplicate: 1, totalDuplicate: 2)
     }
     
     @objc func goBack() {
@@ -177,7 +186,7 @@ class PhotoReviewViewController: UIViewController {
         } else {
             filter = 0
         }
-
+        
     }
     
     @objc func blurryFilter() {
@@ -214,16 +223,72 @@ class PhotoReviewViewController: UIViewController {
         }
     }
     
+    func updateTag(category: String, currentDuplicate: Int?, totalDuplicate: Int?) {
+        var _color = whiteColor
+        var _tagString = ""
+        if category.lowercased() == "incoherant" {
+            _color = darkColor
+            _tagString = "Incoherant"
+        } else if category.lowercased() == "screenshot" {
+            _color = lightColor
+            _tagString = "Screenshot"
+        } else if category.lowercased() == "duplicate" {
+            _color = whiteColor
+            _tagString = "Duplicate \(currentDuplicate!)/\(totalDuplicate!)"
+        }
+        categoryTag = labelCard(inputText: _tagString, color: _color, centerX: self.view.center.x, y: 200 * screenRatio)
+        if (self.view.subviews.contains(categoryTag)) {
+            categoryTag.removeFromSuperview()
+        }
+        self.view.addSubview(categoryTag)
+    }
+    
+    func promptDelete() {
+        let desc = UILabel()
+        desc.frame = CGRect(x: 0, y: 0, width: self.view.frame.width * 0.86, height: 150 * screenRatio)
+        desc.center = CGPoint(x: self.view.center.x, y: self.view.center.y - 30 * screenRatio)
+        desc.numberOfLines = 0
+        desc.font = boldLabel
+        desc.textColor = whiteColor
+        desc.textAlignment = .center
+        desc.text = "You have finished reviewing all the photos! Click on the button below to confirm your selections."
+        desc.alpha = 0
+        self.view.addSubview(desc)
+        button.frame = CGRect(x: 0 * screenRatio, y: 0 * screenRatio, width: 210 * screenRatio, height: 48 * screenRatio)
+        button.center = CGPoint(x: self.view.center.x, y: self.view.center.y + 40 * screenRatio)
+        button.layer.cornerRadius = 24 * screenRatio
+        button.backgroundColor = darkColor
+        button.setTitle("Confirm", for: .normal)
+        button.titleLabel?.font = buttonText
+        self.view.addSubview(button)
+        button.layer.shadowColor = UIColor.black.withAlphaComponent(0.25).cgColor
+        button.layer.shadowOffset = CGSize(width: 0, height: 10 * screenRatio)
+        button.layer.shadowRadius = 15 * screenRatio
+        button.layer.shadowOpacity = 1.0
+        button.layer.masksToBounds = false
+        button.addTarget(self, action: #selector(confirmDelete), for: .touchUpInside)
+        UIView.animate(withDuration: 0.5) {
+            desc.alpha = 1
+        }
+    }
+    
+    @objc func confirmDelete() {
+        animateButton(inputButton: button)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.15) {
+              //TODO: confirms deleting all the pics, invoke system method
+        }
+      
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setUp()
     }
-    
 }
 
 extension PhotoReviewViewController: KolodaViewDelegate, KolodaViewDataSource {
     func kolodaDidRunOutOfCards(_ koloda: KolodaView) {
-        koloda.reloadData()
+        promptDelete()
     }
     func koloda(_ koloda: KolodaView, didSelectCardAt index: Int) {
         //selected card
