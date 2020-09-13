@@ -31,7 +31,10 @@ enum TypeOfWaste {
 }
 
 struct ScanStats {
-    
+    var screenshots: Int
+    var blurry: Int
+    var duplicates: Int
+    var total_size: Double
 }
 
 class PhotoAnalyzer {
@@ -63,8 +66,12 @@ class PhotoAnalyzer {
     }
     
     func load_total_size() -> Double {
+        return load_sizes_imgs(pic_indices: Array(0 ... num_pics-1))
+    }
+    
+    func load_sizes_imgs(pic_indices: [Int]) -> Double {
         var total_size: Double = 0.0
-        for i in 0 ... num_pics-1 {
+        for i in pic_indices {
             let resources = PHAssetResource.assetResources(for: photoCollection.object(at:i))
             var size: Int64 = 0
             if let resource = resources.first {
@@ -102,12 +109,12 @@ class PhotoAnalyzer {
     }
 
     func request_perms() {
-    print("requesting permissions...")
-    PHPhotoLibrary.requestAuthorization{
-        received_status in
-        print(received_status)
+        print("requesting permissions...")
+        PHPhotoLibrary.requestAuthorization{
+            received_status in
+            print(received_status)
+        }
     }
-}
     
     func retrievePhoto(index: Int) throws -> UIImage? {
         let status = PHPhotoLibrary.authorizationStatus()
@@ -346,5 +353,35 @@ class PhotoAnalyzer {
             i += 1
         }
         library.performChanges({PHAssetChangeRequest.deleteAssets(assets_to_delete as NSFastEnumeration)})
+    }
+    
+    func scan_results() -> ScanStats {
+        /*
+         Returns results of scan in an easily displayable manner. Assumes
+         scan is complete.
+         */
+        var screenshots = 0
+        var blurry = 0
+        var duplicates = 0
+        var normal = 0
+        var imgs_interest: [Int] = []
+        var i = 0
+        for img in final_categorization {
+            switch img {
+                case .blurry:
+                    blurry += 1
+                    imgs_interest.append(i)
+                case .screenshot:
+                    screenshots += 1
+                    imgs_interest.append(i)
+                case .similar:
+                    duplicates += 1
+                    imgs_interest.append(i)
+                case .normal:
+                    normal += 1
+            }
+            i += 1
+        }
+        return ScanStats (screenshots: screenshots, blurry: blurry, duplicates: duplicates, total_size: load_sizes_imgs(pic_indices: imgs_interest))
     }
 }

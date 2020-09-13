@@ -236,8 +236,6 @@ class ScanResultViewController: UIViewController {
             button.addTarget(self, action: #selector(continueCleanUp), for: .touchUpInside)
         }
         
-        
-        
     }
     
     @objc func continueCleanUp() {

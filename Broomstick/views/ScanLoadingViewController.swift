@@ -26,16 +26,17 @@ class ScanLoadingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setUp()
-  
+        processImages()
     }
     
     func processImages() {
         let analyzer = PhotoAnalyzer()
         analyzer.setup()
         analyzer.complete_scan()
+        let results = analyzer.scan_results()
+        print("results: ", results)
     }
     
-
     /*
     // MARK: - Navigation
 
