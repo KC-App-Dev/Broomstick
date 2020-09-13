@@ -37,6 +37,17 @@ struct ScanStats {
     var total_size: Double
 }
 
+struct SavedClean {
+    var screenshots: Int
+    var blurry: Int
+    var duplicates: Int
+    var kept: Int
+    var sized_detected: Double
+    var size_cleaned: Double
+    var date_cleaned: Date
+    var completed: Bool
+}
+
 class PhotoAnalyzer {
     
     var photoCollection: PHFetchResult<PHAsset> = PHFetchResult()
@@ -46,6 +57,7 @@ class PhotoAnalyzer {
     var similar_groups: [[Int]] = []
     var images_to_delete: [Int] = []
     var total_image_size: Double = 0.0
+
     
     init(debug: Bool = false) {
         if debug {
@@ -88,6 +100,7 @@ class PhotoAnalyzer {
     private func loadImage(index: Int) throws -> UIImage? {
         let manager = PHImageManager.default()
         var image: UIImage? = nil
+        print("Image unique id: ", photoCollection.object(at: index).localIdentifier)
         manager.requestImage(for: try photoCollection.object(at: index), targetSize: CGSize(), contentMode: .aspectFill, options: generateRequestOptions()) {
             result, info in
             image = result

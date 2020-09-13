@@ -187,6 +187,12 @@ class HomeViewController: UIViewController {
         return size - size.truncatingRemainder(dividingBy: cutoff)
     }
     
+    func loadPastCleans() -> [SavedClean]? {
+        let defaults = UserDefaults.standard
+        let past_cleans = defaults.object(forKey: "pastCleans") as? [SavedClean]
+        return past_cleans
+    }
+    
     func recentScan(totalPhotos: Int, deletedPhotos: Int, reviewComplete: Bool, upper: Bool, action: Selector) -> UIView {
         //background white tab
         let view = UIView()
