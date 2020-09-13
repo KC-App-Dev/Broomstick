@@ -324,18 +324,18 @@ class PhotoAnalyzer {
                     print("metadata: ", metadata)
                     
                     // ml model processing
-                    let blurry = self.mobilenet_results(image: image_retrieved ?? UIImage(named: randomImage[Int.random(in: 0 ..< randomImage.count)])!)[0].1 < 0.1
+                    let blurry = self.mobilenet_results(image: image_retrieved!)[0].1 < 0.1
                     
                     // feature print processing
-                    let feature_print = self.generate_features(image: image_retrieved ?? UIImage(named: randomImage[Int.random(in: 0 ..< randomImage.count)])!)
-                    print("size in bytes: ", (image_retrieved ?? UIImage(named: randomImage[Int.random(in: 0 ..< randomImage.count)])!).jpegData(compressionQuality: 1.0)!.count)
+                    let feature_print = self.generate_features(image: image_retrieved!)
+                    print("size in bytes: ", (image_retrieved!).jpegData(compressionQuality: 1.0)!.count)
 
                     // add analysis to total array
                     let analysis = ImageAnalysis (
                         creation_date: metadata["creationDate"] as! Date,
                         featureprint: feature_print,
-                        size_mb: Double((image_retrieved ?? UIImage(named: randomImage[Int.random(in: 0 ..< randomImage.count)])!).jpegData(compressionQuality: 1.0)!.count) / Double(1024 * 1024),
-                        screenshot: self.image_is_screenshot(image: (image_retrieved ?? UIImage(named: randomImage[Int.random(in: 0 ..< randomImage.count)])!), metadata: metadata),
+                        size_mb: Double((image_retrieved!).jpegData(compressionQuality: 1.0)!.count) / Double(1024 * 1024),
+                        screenshot: self.image_is_screenshot(image: (image_retrieved!), metadata: metadata),
                         blurry: blurry
                     )
                     self.image_data[i] = analysis
@@ -519,7 +519,7 @@ class PhotoAnalyzer {
         for index in images_flagged {
             do {
                 current_review_arr.append(index)
-                images_arr.append(try (loadImage(index: index) ?? UIImage(named: randomImage[Int.random(in: 0 ..< randomImage.count)])!))
+                images_arr.append(try (loadImage(index: index)!))
                 current_categories.append(final_categorization[index])
             } catch {
                 print("something went wrong while converting index to image.")

@@ -99,6 +99,5 @@ func labelCard(inputText: String, color: UIColor, centerX: CGFloat, y: CGFloat) 
 }
 
 
-let randomImage = ["trophy", "alert", "back", "close", "duplicate", "menu", "lock", "user", "trophy", "finishScan", "finishScan"]
-
+var scans: [Scan] = []
 

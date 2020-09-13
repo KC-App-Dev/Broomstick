@@ -244,6 +244,7 @@ class PhotoReviewViewController: UIViewController {
     
     func promptDelete() {
         categoryTag.removeFromSuperview()
+        scans.last?.reviewComplete = true
         let desc = UILabel()
         desc.frame = CGRect(x: 0, y: 0, width: self.view.frame.width * 0.86, height: 150 * screenRatio)
         desc.center = CGPoint(x: self.view.center.x, y: self.view.center.y - 30 * screenRatio)
@@ -306,8 +307,18 @@ extension PhotoReviewViewController: KolodaViewDelegate, KolodaViewDataSource {
     func koloda(_ koloda: KolodaView, didSwipeCardAt index: Int, in direction: SwipeResultDirection) {
         if direction == .left {
             analyzer.swiped(index: index, delete: true)
+            if (scans.last?.deleted != nil) {
+                scans.last?.deleted! += 1
+            } else {
+                scans.last?.deleted = 1
+            }
         } else if direction == .right {
             analyzer.swiped(index: index, delete: false)
+            if (scans.last?.kept != nil) {
+                scans.last?.kept! += 1
+            } else {
+                scans.last?.kept = 1
+            }
         }
         if (currentIndex + 1 < numPhotosToReview) {
             currentIndex += 1

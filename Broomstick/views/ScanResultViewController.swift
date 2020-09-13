@@ -124,7 +124,7 @@ class ScanResultViewController: UIViewController {
             keptNumLabel.center = CGPoint(x: 271 * screenRatio, y: 465 * screenRatio)
             keptNumLabel.textColor = whiteColor
             keptNumLabel.font = mediumNumber
-            keptNumLabel.text = "\((kept ?? 0) * 3)"
+            keptNumLabel.text = "\((kept ?? 0))"
             keptNumLabel.textAlignment = .center
             parent.addSubview(keptNumLabel)
         }
@@ -266,6 +266,7 @@ class ScanResultViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setUp()
+        scans.append(Scan(totalStorage: totalStorage, deleted: nil, kept: nil, incoherent: incoherent, screenshots: screenshots, duplicates: duplicates, reviewComplete: false, date: Date()))
     }
     
     

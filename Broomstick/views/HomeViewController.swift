@@ -11,19 +11,13 @@ import Photos
 
 class HomeViewController: UIViewController {
     
-    //***(TEMP)*** number of recent scans variable
-<<<<<<< HEAD
-    let scans: [Scan] = []
-    
-=======
-    var scans = [[30, 25, true], [45, 12, true]]
-    var scans_object: [SavedClean] = []
->>>>>>> master
+    var totalScanLocal: [Scan] = []
     
     //button as class var
     let button = UIButton()
     let detailButton1 = UIButton()
     let detailButton2 = UIButton()
+    let noScanImageView = UIImageView()
     
     //menu
     let containerView = UIView()
@@ -54,7 +48,7 @@ class HomeViewController: UIViewController {
         boldLabel = UIFont(name: "ProximaNova-Bold", size: 18 * screenRatio)
         label = UIFont(name: "ProximaNova-Regular", size: 18 * screenRatio)
         smallLabel = UIFont(name: "ProximaNova-Regular", size: 14 * screenRatio)
-   
+        
     }
     
     func setUp() {
@@ -71,7 +65,7 @@ class HomeViewController: UIViewController {
         menuButton.addTarget(self, action: #selector(showMenu), for: .touchUpInside)
         parent.addSubview(menuButton)
         //Your Photos
- 
+        
         let yourPhotosView = UILabel()
         yourPhotosView.frame = CGRect(x: 0, y: 0, width: 175 * screenRatio, height: 32 * screenRatio)
         yourPhotosView.textColor = whiteColor
@@ -112,7 +106,7 @@ class HomeViewController: UIViewController {
         totalPhotosLael.leadingAnchor.constraint(equalTo: parent.leadingAnchor, constant: 139 * screenRatio).isActive = true
         totalPhotosLael.topAnchor.constraint(equalTo: parent.topAnchor, constant: 256 * screenRatio).isActive = true
         //Total Storage
-      
+        
         let numSpace = UILabel()
         numSpace.frame = CGRect(x: 0, y: 0, width: 150 * screenRatio, height: 60 * screenRatio)
         numSpace.textColor = whiteColor
@@ -149,47 +143,9 @@ class HomeViewController: UIViewController {
         recentCleanUpsView.heightAnchor.constraint(equalToConstant: 24 * screenRatio).isActive = true
         recentCleanUpsView.leadingAnchor.constraint(equalTo: parent.leadingAnchor, constant: 37 * screenRatio).isActive = true
         recentCleanUpsView.topAnchor.constraint(equalTo: parent.topAnchor, constant: 428 * screenRatio).isActive = true
-
-     
-
         
-        // load scans
-        let loaded_scan = loadPastCleans()
-        if loaded_scan == nil {
-            scans = []
-        } else {
-            scans_object = loaded_scan!
-            for scan in loaded_scan! {
-                scans.append([scan.blurry+scan.blurry+scan.duplicates, scan.blurry+scan.blurry+scan.duplicates-scan.kept, true])
-            }
-        }
+        setUpScans()
         
-
-        if scans.count == 0 {
-            //Image for no scans
-            let noScanImageView = UIImageView()
-            noScanImageView.frame = CGRect(x: 107 * screenRatio, y: 494 * screenRatio, width: 160 * screenRatio, height: 126 * screenRatio)
-            noScanImageView.image = UIImage(named: "noRecentScans")
-            parent.addSubview(noScanImageView)
-            //No scans label
-            let noScanLabel = UILabel()
-            noScanLabel.frame = CGRect(x: 0, y: 0, width: 135 * screenRatio, height: 18 * screenRatio)
-            noScanLabel.textColor = whiteColor
-            noScanLabel.font = label
-            noScanLabel.text = "No Recent Scans"
-            parent.addSubview(noScanLabel)
-            noScanLabel.translatesAutoresizingMaskIntoConstraints = false
-            noScanLabel.widthAnchor.constraint(equalToConstant: 135 * screenRatio).isActive = true
-            noScanLabel.heightAnchor.constraint(equalToConstant: 18 * screenRatio).isActive = true
-            noScanLabel.leadingAnchor.constraint(equalTo: parent.leadingAnchor, constant: 120 * screenRatio).isActive = true
-            noScanLabel.topAnchor.constraint(equalTo: parent.topAnchor, constant: 634 * screenRatio).isActive = true
-        } else if scans.count == 1 {
-            parent.addSubview(recentScan(totalPhotos: 0, deletedPhotos: 0, reviewComplete: false, upper: true, action: #selector(showDetail)))
-        } else {
-            parent.addSubview(recentScan(totalPhotos: 30, deletedPhotos: 20, reviewComplete: true, upper: true, action: #selector(showDetail)))
-            parent.addSubview(recentScan(totalPhotos: 45, deletedPhotos: 12, reviewComplete: true, upper: false, action: #selector(showDetail)))
-        }
-  
         //button
         button.frame = CGRect(x: 82 * screenRatio, y: 704 * screenRatio, width: 210 * screenRatio, height: 48 * screenRatio)
         button.layer.cornerRadius = 24 * screenRatio
@@ -209,7 +165,36 @@ class HomeViewController: UIViewController {
         slideUpTableView.delegate = self
         slideUpTableView.dataSource = self
         slideUpTableView.register(SlideUpViewCell.self, forCellReuseIdentifier: "SlideUpViewCell")
-      
+        
+    }
+    
+    func setUpScans() {
+        let  parent = self.view!
+        if scans.count == 0 {
+            //Image for no scans
+           
+            noScanImageView.frame = CGRect(x: 107 * screenRatio, y: 494 * screenRatio, width: 160 * screenRatio, height: 126 * screenRatio)
+            noScanImageView.image = UIImage(named: "noRecentScans")
+            parent.addSubview(noScanImageView)
+            //No scans label
+            let noScanLabel = UILabel()
+            noScanLabel.frame = CGRect(x: 0, y: 0, width: 135 * screenRatio, height: 18 * screenRatio)
+            noScanLabel.textColor = whiteColor
+            noScanLabel.font = label
+            noScanLabel.text = "No Recent Scans"
+            parent.addSubview(noScanLabel)
+            noScanLabel.translatesAutoresizingMaskIntoConstraints = false
+            noScanLabel.widthAnchor.constraint(equalToConstant: 135 * screenRatio).isActive = true
+            noScanLabel.heightAnchor.constraint(equalToConstant: 18 * screenRatio).isActive = true
+            noScanLabel.leadingAnchor.constraint(equalTo: parent.leadingAnchor, constant: 120 * screenRatio).isActive = true
+            noScanLabel.topAnchor.constraint(equalTo: parent.topAnchor, constant: 634 * screenRatio).isActive = true
+        } else if scans.count == 1 {
+            noScanImageView.removeFromSuperview()
+            parent.addSubview(recentScan(totalPhotos: scans[0].duplicates + scans.first!.incoherent + scans.first!.screenshots, deletedPhotos: scans[0].deleted ?? 0, reviewComplete: scans[0].reviewComplete, upper: true, action: #selector(showDetail)))
+        } else {
+            parent.addSubview(recentScan(totalPhotos: 30, deletedPhotos: 20, reviewComplete: true, upper: true, action: #selector(showDetail)))
+            parent.addSubview(recentScan(totalPhotos: 45, deletedPhotos: 12, reviewComplete: true, upper: false, action: #selector(showDetail)))
+        }
     }
     
     func numPhotos() -> Int {
@@ -315,7 +300,8 @@ class HomeViewController: UIViewController {
     
     @objc func showMenu() {
         //shows the hamburger menu
-        let window = UIApplication.shared.connectedScenes        .filter({$0.activationState == .foregroundActive})
+        let window = UIApplication.shared.connectedScenes
+            .filter({$0.activationState == .foregroundActive})
             .map({$0 as? UIWindowScene})
             .compactMap({$0})
             .first?.windows
@@ -360,7 +346,7 @@ class HomeViewController: UIViewController {
                        options: .curveEaseInOut, animations: {
                         self.containerView.alpha = 0.8
                         self.slideUpView.frame = CGRect(x: 0, y: screenSize.height - self.slideUpViewHeight * screenRatio + 60, width: screenSize.width, height: self.slideUpViewHeight)
-        }, completion: nil)
+                       }, completion: nil)
         
     }
     
@@ -372,7 +358,7 @@ class HomeViewController: UIViewController {
                        options: .curveEaseInOut, animations: {
                         self.containerView.alpha = 0
                         self.slideUpView.frame = CGRect(x: 0, y: screenSize.height, width: screenSize.width, height: self.slideUpViewHeight * screenRatio)
-        }, completion: nil)
+                       }, completion: nil)
     }
     
     func itemTapped(completion: ((Bool)->(Void))?) {
@@ -383,17 +369,27 @@ class HomeViewController: UIViewController {
                        options: .curveEaseInOut, animations: {
                         self.containerView.alpha = 0
                         self.slideUpView.frame = CGRect(x: 0, y: screenSize.height, width: screenSize.width, height: self.slideUpViewHeight * screenRatio)
-        }, completion: completion)
+                       }, completion: completion)
     }
     
     
     @objc func showDetail(sender: UIButton)
     {
+        var topObject: Scan
+        var bottomObject: Scan
+        if scans.count == 1 {
+            topObject = scans.first!
+        } else if scans.count == 2 {
+            //TODO
+            topObject = scans.first!
+        } else {
+            topObject = scans.first!
+        }
         if (sender.tag == 0) {
             //the first item is tapped
             animateButton(inputButton: detailButton1)
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.15) {
-                let vc = ScanResultViewController(scanDate: Date(), totalStorage: 0.5, deleted: 25, kept: 5, screenshots: 30, incoherent: 12, duplicates: 10, reviewFinished: true, analyzer: nil, photosToDelete: nil)
+                let vc = ScanResultViewController(scanDate: topObject.date, totalStorage: topObject.totalStorage, deleted: topObject.deleted ?? 0, kept: topObject.kept ?? 0, screenshots: topObject.screenshots, incoherent: topObject.incoherent, duplicates: topObject.duplicates, reviewFinished: topObject.reviewComplete, analyzer: nil, photosToDelete: nil)
                 self.navigationController?.pushViewController(vc, animated: true)
             }
             
@@ -429,10 +425,10 @@ class HomeViewController: UIViewController {
         label.center = self.view.center
         self.view.addSubview(label)
     }
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
-<<<<<<< HEAD
         initializeRatio()
         PHPhotoLibrary.requestAuthorization { (status) in
             if status == .authorized {
@@ -443,21 +439,20 @@ class HomeViewController: UIViewController {
                 DispatchQueue.main.async {
                     self.noPermission()
                 }
-               
             }
-=======
-        let analyzer = PhotoAnalyzer(debug_status: true)
-        analyzer.request_perms { (completed) in
->>>>>>> master
-            
         }
-    
-        initializeRatio()
-        setUp()
-      
     }
     
-    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        if totalScanLocal != scans {
+            totalScanLocal = scans
+            for subviews in view.subviews {
+                subviews.removeFromSuperview()
+            }
+            setUp()
+        }
+    }
 }
 
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
@@ -468,7 +463,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "SlideUpViewCell", for: indexPath) as? SlideUpViewCell
-            else {fatalError("cannot load cells")}
+        else {fatalError("cannot load cells")}
         cell.iconView.image = menuDataSource[indexPath.row]?.0
         cell.labelView.text = menuDataSource[indexPath.row]?.1
         cell.labelView.font = boldLabel
@@ -488,13 +483,13 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         itemTapped { (_) -> () in
             switch indexPath.row {
-                case 4:
-                    let vc = PreferencesViewController()
-                    self.present(vc, animated: true)
-                    break
-                default: break
+            case 4:
+                let vc = PreferencesViewController()
+                self.present(vc, animated: true)
+                break
+            default: break
             }
-
+            
         }
     }
     
